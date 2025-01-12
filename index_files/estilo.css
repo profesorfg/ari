@@ -1,0 +1,1129 @@
+ * {	/*elinina todos los margenes a todo alinea todos los li al borde*/
+			margin:0px;
+            padding:0px;
+			}	
+   ul {
+				list-style:none;  /*quita el formato de punto y guiones de inicio de la lista */
+			} 
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* titulos*/
+
+h1 {
+    background: #965078;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 4px;
+    border-radius: 20px;
+    text-align: center;
+    margin:0 20px;
+    overflow: hidden;
+}
+
+
+h2 {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #741;
+    border-radius: 20px;
+
+    /*text-transform: capitalize;*/
+}
+
+
+
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(120, 120, 120)
+}
+
+h5 {
+    background: rgb(245, 245, 245);
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(240, 200, 240)
+}
+
+.h2_vigor {
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+P {
+    margin-bottom: 1em;
+}
+
+
+
+
+/* ---    ORGANIZACION: CONTENEDOR, MAIN ASIDE LATERAL FOOTER--ASIDE SECTION      -------*/
+#contenedor {
+    background-color: #e3d5bc;
+    display: grid;
+    /* grid-template-columns: 25% 1fr 25%;*/
+    grid-template-columns: 1fr 20%;
+    grid-template-rows: 100px 1fr 40px;
+    grid-gap: 5px;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    min-height: 100vh;
+}
+
+
+#contenedor1 {
+    background-color: #e3d5bc;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 40px;
+    grid-gap: 5px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+
+
+ #contenedor2 {
+   
+    background-color: #e3d5bc;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto 1fr 40px;
+    grid-gap: 5px;
+    grid-template-areas:
+        "header"
+        "lateral"
+        "aside"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+#contenedor3 {
+    background-color: #e3d5bc;
+    display: grid;
+    /*  grid-template-columns: 120px 1fr 25%; */
+    grid-template-columns: 20% 2fr 15%;
+    grid-template-rows: 100px 1fr 40px;
+    grid-gap: 5px;
+    grid-template-areas:
+        "header header header"
+        "lateral main aside"
+        "footer footer footer";
+    min-height: 100vh;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #contenedor {
+        background-color: #e3d5bc;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 1fr 40px;
+        grid-gap: 5px;
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";
+        min-height: 100vh;
+    }
+
+    #contenedor3 {
+        background-color: #e3d5bc;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto auto auto 40px;
+        grid-gap: 5px;
+        grid-template-areas:
+            "header"
+            "aside"
+            "lateral"
+            "main"
+
+            "footer";
+        min-height: 100vh;
+
+        /*  border: 3px solid green; borrame esta linea*/
+    }
+}
+
+
+
+
+
+
+
+
+header {
+    grid-area: header;
+    z-index: 1;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    box-sizing: border-box;
+    grid-area: main;
+
+  
+
+
+}
+
+.articulo {
+    background-image: url(../imagenes/fondo.gif);
+    background-color: #e3c6c6;
+    margin:0 2%;
+
+
+    padding: 10px;
+    border-radius: 10px;
+    color: #555555;
+    font-family: verdana;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+/* para paginas de imagenes o videos*/
+
+
+.article_flex_contenedor1 {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin: 4%;
+    justify-content: center;
+}
+
+
+
+
+
+aside {
+    grid-area: aside;
+    /*  background-color: #e3d5bc; */
+
+}
+
+#lateral {
+    grid-area: lateral;
+
+}
+
+section {
+
+    margin: 2%;
+    padding: 2%;
+
+    overflow: hidden;
+}
+
+
+section a {
+    text-decoration: none;
+    color: green;
+}
+
+section a:hover {
+    color: blue;
+}
+
+
+
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*   ----------------------  particularidades   colores flex ancho--------------------*/
+.section_naranja {
+    background-color: rgb(220, 220, 220);
+
+    border-radius: 20px;
+    border: 2px solid orange;
+
+}
+
+.article_curso{
+  background-color: #8a8;
+max-width: 800px;
+    border-radius: 20px;
+    border: 2px solid orange;  
+    padding:30px;
+    margin: auto;
+    margin-bottom: 30px;
+    
+}
+
+.article_curso h2{
+    font-size: 2em;
+       text-align: center;
+    padding-bottom: 10px;
+  
+}
+
+.article_curso_enlaces {
+     padding: 10%;
+    
+}
+.article_curso_enlaces a{
+    color:#6d4f13;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+   
+}
+
+
+
+ 
+
+
+
+.flex_wrap {
+
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+
+
+.flex_ {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex10auto_center {
+    flex: 1 0 auto;
+    margin: 0 10px;
+    text-align: center;
+ /*   border: 2px solid green; borrame*/
+
+}
+
+
+.flex10auto_center img {
+    max-height: 250px;  
+    max-width: 100%; /*añadida por una foto de 3d reductora*/
+  
+} 
+
+
+
+.flex11auto_center {
+    flex: 1 1 180px; /* el div tiene una anchura minima de  Xpx cuando llega a esa hace un wrap  la div ocupan de X px al total de ancho y todos se reducen en la misma proporcion */
+
+    text-align: center;
+  /*  border: 2px solid red;  borrame*/
+   
+
+}
+
+.flex11400px {
+    flex: 1 1 400px; /* el div tiene una anchura minima de  Xpx cuando llega a esa hace un wrap  la div ocupan de X px al total de ancho y todos se reducen en la misma proporcion */
+
+    text-align: center;
+  /* border: 2px solid gray; borrame*/
+   
+
+}
+
+
+
+
+
+.padding_{
+    padding: 2%;
+}
+
+.width_ajustable{
+width: min(1000px, 100%);
+    margin: auto;
+ 
+}
+.centrar{  text-align: center;}
+.derecha{text-align: end;}
+
+/* -----------------------clases particulares ------------------------------------------*/
+
+.azul_negrita {
+    color: #00f;
+    font-weight: bold;
+}
+.fondo_verde{
+    background: #0d0;
+    padding: 10px;
+  
+}
+.fondo_verde:hover{
+     background: #ada;
+}
+.fondo_contenedor{
+     background-color: #edb;
+}
+
+.ancho30 {
+
+    width: 30%;
+}
+
+
+.lateral_impresora3d{
+  
+    background:linear-gradient(to right,#447f, #4479, #447f);
+
+   text-align: center;
+    padding-top: 40px;
+}
+
+.lateral_impresora3d img{
+   max-width: 100%;
+    border-radius: 20px;
+
+    
+}
+
+.conpunto{
+    list-style: circle;
+    padding-left:50px;
+}
+/* ----------------------------- listas-  remarcar alternativamente------------*/
+/*---  https://developer.mozilla.org/es/docs/Web/CSS/:nth-child------------------*/
+/* ------------------------------------------------------------------------------*/
+
+
+.lista0 li:nth-child(odd){/*odd impares   even par*/
+	background: #bfbfbf;
+	
+}
+
+.marcar_impares a:nth-child(even){
+    	background: #bbb;
+    
+}
+
+
+
+
+/* ----------------------- imagenes  ------------------------------------------*/
+.div_imagen {
+    background-color: rgb(220, 220, 220);
+ text-align: center;
+    border-radius: 20px;
+  overflow: hidden;
+    /*  border: 2px solid red; pruebas*/
+}
+
+
+
+.imagen {
+    max-width: 100%;
+    height: auto;
+
+}
+.imagen1 {
+    max-width: 100%;
+    height: auto;
+  padding-top: 20px;
+    padding-bottom: 15px;
+
+}
+ 
+
+
+
+
+
+.max_ancho200px{
+    max-width: 200px;
+}
+
+.max-height_230px{
+    max-height: 230px;
+}
+
+
+.overflow_auto{
+   overflow:auto; 
+    
+}
+
+
+
+/* 
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    max-width:100%;
+       display: inline-block;
+
+    overflow-y: hidden;
+
+  
+
+}
+ */
+
+/* ------------------  details----------------------------*/
+
+/*  https://www.silocreativo.com/details-summary-elementos-desplegables-ocultos-html/  */
+
+/* ------------------  details----------------------------*/
+.detalles{
+}
+
+.detalles[open] {
+  background: #ddd; 
+}
+
+.detallescard{
+    max-width: 200px;
+    min-height: 200px;
+    margin: 5px;
+}
+
+.detallescard[open] {
+  background: #ddd; 
+    max-width: 100%;
+     background: #222; 
+    color:white;
+    padding: 4px;
+    border-radius: 8px;
+    border-color: greenyellow;
+}
+
+
+.sumario{
+      list-style: none;
+    
+}
+
+.puntero{
+      cursor: pointer;
+      background: #bbb;
+     padding: 4px;
+     border-radius: 8px;
+}
+
+
+
+
+ 
+
+
+/* ------------------  ver mas  ----------------------------*/
+  .flex_wrap_vermas {
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    border-radius: 20px;
+    gap:20px;
+    justify-content: center;
+
+}
+        .vermas_texto{
+           
+           /* width: 70%;*/
+            flex:4 2 500px;
+        
+        }  
+        
+        .vermas_imagen{
+            flex:1 0 200px;
+            text-align: center;
+            
+           
+        }   
+        
+        .vermas_imagen img{
+        max-height: 300px;
+         max-width: 200px;
+     }
+       .flex-item {
+    flex: 1 0 auto;
+    margin: 0 10px;
+    text-align: center;
+
+} 
+
+/*-------------------------  videos  ------------------------------------------*/
+
+.videos-youtube {
+    /* explicado en Emprinnos como poner e insertar videos en html */
+    position: relative;
+    /* para que se pueda colocar dentro position absoluta ??*/
+    padding-bottom: 56.25%;
+    /*crea un div con un ratio de 16/9 */
+    overflow: hidden;
+    /* oculto lo que se salga del div*/
+    height: 0%;
+    /* lo he puesto porque me aparecio en gpt*/
+
+
+
+}
+
+.videos-youtube iframe {
+    /* los videos que esten dentro dentro de esta clase*/
+    position: absolute;
+    /* no ocupa espacio, por lor que se pondra encima del paddin del div padre*/
+    top: 0;
+    /* coloco en la parte superior del padre*/
+    left: 0;
+    /* coloca a la izquierda del padre*/
+    width: 100%;
+    /* ocupa el 100% del ancho del padre y por el ratio del padre el 100% del ancho*/
+    height: 100%;
+    /*no lo puse y me quedo una mierda de altura*/
+}
+
+
+/* video en la pagina de renovables y va bien para tener dos videos en una fila */
+
+.video-container {
+    width: 45%;
+    margin: 5px;
+    min-width: 350px;
+}
+
+.video-container iframe {
+    width: 100%;
+    /* height: 250px;*/
+    height: auto;
+    /* Puedes ajustar la altura según tus necesidades */
+}
+
+.video-container h2 {
+    margin-bottom: 5px;
+}
+
+
+.video-container_3videos {
+    /* poner detras de video containerpara que me pise el width*/
+    width: 30%;
+}
+.video-container1{
+     width: 45%;
+    min-width: 400px;
+ aspect-ratio:16/9;
+}
+.video-container1 iframe {
+    width: 100%;
+    height: 100%;
+    /* Puedes ajustar la altura según tus necesidades */
+}
+
+
+
+/* ------------------------- TXT  programa----------------------- */
+.txt iframe{
+ overflow: auto;
+    width: 100%;
+    height:700px;
+}
+
+/*  ------------------------  ENLACES  -----------------------------*/
+.boton {
+    background: #69f;
+    height: 30px;
+    width: 200px;
+    color: #fff;
+    cursor: pointer;
+    border=0px;
+    border-radius: 10px;
+
+}
+
+/*
+
+ <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">  */
+
+
+/* al seleccionar una pagina con un boton este queda activado indicando la pagina en la estoy */
+.pagina_seleccionada {
+    border: none;
+    color: #050;
+    background: none;
+    /*  font-weight: bold; */
+    font-size: 0.8em;
+
+}
+
+.pagina_seleccionada:hover {
+    color: #957;
+    background: #fff;
+}
+
+.pagina_seleccionada:focus {
+    color: #fff;
+    background: #957;
+    padding: 0 8px;
+    border-radius: 3px;
+
+}
+
+
+
+
+
+/*  ENLACES   */
+.enlaces {
+    background-color: #e3c6c6;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    /*  margin: 0 6% 0 0;*/
+    padding: 16px;
+    justify-content: space-evenly;
+
+}
+
+.enlaces-navegacion {
+
+    color: #e4f428;
+    background-color: #347;
+    border-radius: 20px;
+    border: 2px solid orange;
+
+}
+
+
+.enlaces-navegacion a {
+    color: #fff;
+
+}
+
+.enlaces-navegacion a:hover {
+    color: #deca2f;
+}
+
+.enlaces-titulo {
+    margin: 0px;
+    padding: 0px;
+}
+
+.enlaces-titulo h2 {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #958;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+
+.ancla {
+    position: relative;
+    bottom: 120px;
+    /* bottom: 90px;*/
+
+}
+
+
+
+/* ---------------  tarjetas--------------------------*/
+
+
+.card {
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*  width: 300px; */
+    width: 220px;
+    height: 160px;
+}
+
+.card_vertical {
+    background-color: #ffddaa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* .card_vertical {
+    background-color: #ffddaa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 150px;
+    height: 210px;
+}
+ */
+
+
+.card_icono {
+
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    line-height: normal;
+    /* interlineado*/
+    width: 120px;
+    height: 130px;
+
+}
+
+
+.card:hover {
+    background-color: blanchedalmond;
+    /* Color de fondo al pasar el ratón */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    /*  max-width: 100%;
+             max-height: 200px; */
+    width: 210px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+
+.card_vertical img {
+
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+
+}
+
+.card_icono img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: 3px solid #666;
+
+}
+
+.card h3 {
+
+
+    text-align: center;
+    line-height: 16px;
+    font-size: 16px;
+
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.card a {
+    font-size: 1rem;
+    color: #555;
+    text-decoration: none;
+    /* Sin subrayado */
+
+    transition: color 0.3s;
+    /* Transición suave del color */
+}
+
+.card_icono a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: green;
+
+    transition: color 0.3s;
+    /* Transición suave del color */
+}
+
+
+
+/* Cambio de color al pasar el mouse sobre el enlace */
+.card a:hover {
+    /* font-size: 1rem;*/
+    color: #bfac89;
+
+
+    text-decoration: none;
+    /* Sin subrayado */
+}
+
+
+/*  ---------------------------------- dropdwon  --------------------------------*/
+.dropdown {
+    display: inline-block;
+    /* Con display block el ancho es el 100% de la pagina. 
+            con display inline block el ancho es lo que ocupa (ene este caso el boton)
+            con display inline tiene un resultado similar*/
+    position: relative;
+    /* ocupa lugar y se puede mover, por defecto al posicion es static y no le afecte el padding y he comprobado que le afecta como si pongo un display block ocupando el 100% del ancho de la página*/
+}
+
+.dropdown-content {
+    display: none;
+    /*desaparece*/
+    position: absolute;
+    /* si lo quito lo unico que he visto que el las opciones se ajustan al tamaño máximo, por lo que no hacemos overflow
+            SI PONGO DOS SEGUIDOS Si me doy cuenta de lo importante de esta instruccion, al se posicion static, OCUPA ESPACIO y al aparecer el submenu me DESCUADRA la segunda opcion
+            
+            */
+    width: 100%;
+    /* ocupa el 100% del ANCHON DELM PADRE .dropdown*/
+    overflow: auto;
+    /* en caso de desbordamiento HORIZONTAL sale un barra de desplazamiento y no se sale del ancho del padre */
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    /* una sombra para la caja */
+}
+
+.dropdown:hover .dropdown-content {
+    /* dos clases seguidas separadas por un espacio es un selector descendente, en esta caso en particular, convierte el bloque a la clase dropdown-content cuando pasamos el raton por dropdown*/
+    display: block;
+}
+
+.dropdown-content a {
+    /* doy formato al enlace a que esten dentro de la clase dropdown-content */
+    display: block;
+    color: #000000;
+
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* doy formato al enlace a cuando se pasa el raton que esten dentro de la clase dropdown-content */
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+
+
+
+
+
+-----------------------------------------------------------------------------*/
+/*--------------------               MENÚ PRINCIPAL  ------------------------*/
+/*---------------------------------------------------------------------------*/
+
+.siborronofunciona {}/* Si borro esto se me va el menu y no se porque antes habia instrucciones generales que he pasado al inicio del css, sera porque no puede empezsr por media*/
+ 
+ @media not screen and (max-width: 720px){   
+      .menu {
+          width: 100%;
+          height: 50px;
+         
+          padding: 20px 10%;
+          
+          background-image: url(../imagenes/cabezera1.jpg)}	
+			.menu > li {   /*li directos se refiere al primer nivel*/      				
+			float:left;
+               
+		/*	box-shadow: 2px 2px 1px 1px #fff; /*sombreado*/
+			}
+ 	.menu li a {    /*actua sobre todos los elementos de la clase menu  y los selectores a que esten dentro del li*/
+
+				
+				background-color:rgba(59,93,148,1);;
+				color:#fff;     /*color texto*/
+				text-decoration:none;/*elimina el subrayado de los enlaces*/
+				padding:10px 12px; /*10 pixles de altura y 10 pixel largo*/
+				display:block;
+				width: 90px;/*tamanño del bloque*/
+				height: 30px;
+				box-shadow: 2px 2px 1px 1px #0062ff; /*sombreado*/				
+				border: solid 1px #fff;/*borde en blanco*/
+				text-align: center;
+				border-radius: 5px;
+                margin: 1px;
+                
+			}
+			
+			.menu li a:hover { /*actua sobre todos los elementos al pasar el raton*/
+				color:#CF3;
+				background-color:#603;
+				
+			}
+     
+     
+
+			
+			.menu li ul { /* a todos los submenus */
+				display:none;/*todos los submenus desaparecen del segundo nivel en adelante*/
+				position:absolute; /*con respeto al menu */
+				min-width:140px;
+			}
+			
+			.menu li:hover > ul {/* al menu de segundo nivel al pasar el raton se vuelve visible al recuperar la propiedad display:block que antes tenia display:none*/
+				display:block;
+			}
+			
+			.menu li ul li { /* los li derech que esten dentro de ul que esten dentro de li, osea para los submenus*/
+				position:relative; /* lo pone para poder poner los submenus al lado*/
+			}
+			
+			.menu li ul li ul {/* al tener posicion relativa los podemos desplazar -140 pix a la derecha*/				
+				right:-115px; /*este se aplica a todos los submenus*/
+				top:0px;
+			}   
+    
+  }
+    
+/*ELEMENTOS RESPONSIVOS -----------------------------------------------------------*/
+
+.icon__menu{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    margin-left: 50px;
+   
+   
+}
+
+#label__check{
+   /* width: 26px;*/
+    width:100%;
+    height: 100%;
+    background-attachment:fixed;
+    background-image: url(../imagenes/cabezera.jpg);
+     
+   
+}
+    
+#check__menu{
+    display: none;
+}
+    
+/*   MEDIA SCREEN  --------------------------para el movil -----------------------  */    
+  @media screen and (max-width: 720px){      
+    
+    .header__superior{
+        padding: 10px;
+    }
+			
+  /*  .menu{background-color: black;}	*/	
+      .menu {background-image: url(../imagenes/cabezera.jpg)}	
+	.menu >  li {   /*li directos se refiere al primer nivel*/      				
+			display: flex;
+             opacity: 0;
+              visibility: hidden;
+                height: 0px;
+            }
+    
+    .menu >  li ul li {   /*li directos se refiere al segundo  nivel*/      				
+			display: flex;
+        flex-direction: row;
+ 			}
+  			.menu li  a {    /*actua sobre todos los elementos de la clase menu  y los selectores a que esten dentro del li*/
+
+				
+				background-color:rgba(59,93,148,1);
+				color:#fff;     /*color texto*/
+				text-decoration:none;/*elimina el subrayado de los enlaces*/
+				padding:10px 12px; /*10 pixles de altura y 10 pixel largo*/
+				display:block;
+              
+				width: 90px;/*tamanño del bloque*/
+				height: 30px;
+								
+				border: solid 1px #fff;/*borde en blanco*/
+				text-align: center;
+				border-radius: 5px;
+                margin: 1px;
+                
+			}
+			
+			.menu li a:hover { /* propiedades al pasar el raton*/
+				color:#CF3;
+				background-color:#603;
+				
+			}
+    
+    	.menu li ul {
+				display:none;/*todos los submenus desaparecen*/
+			/*	position:absolute; con respeto al menu
+				min-width:140px; */
+			}
+    
+    
+    	.menu li:hover > ul{/* los li de menu al pasar el raton que sean directos de ul (esto lo dicho pero no le entiendo) aparecen el menu*/
+				display: flex;
+                  flex-direction: column;
+            
+            left: 120px;
+			}
+    
+    .menu li ul li:hover > ul{/* los li de menu al pasar el raton que sean directos de ul (esto lo dicho pero no le entiendo) aparecen el menu*/
+     display:block;
+        top:50px;
+				 left: 80px;
+             }        
+        #label__check{
+        display: block;
+    }
+
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ .menu > li{
+   
+       height: 50px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+		
+-----------------------------------------------------------------------------*/
+/*--------------------       FIN   MENÚ PRINCIPAL  ------------------------*/
+/*---------------------------------------------------------------------------*/

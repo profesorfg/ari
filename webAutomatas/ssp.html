@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>automatas</title>
+
+    <link href="../index_files/estilo.css" rel="stylesheet" type="text/css">
+    <script src="../index_files/menu.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="profesorfg" name="author">
+    <meta content="automatizacion industrial" name="description">
+    <meta name="keywords" content="automatas electricidad">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div id="contenedor">
+
+        <header>
+            <nav>
+                <menu-principal></menu-principal>
+            </nav>
+
+        </header>
+        <main>
+
+            <h1>AUTOMATAS</h1>
+            <br>
+            <article class="flex_wrap articulo">
+
+                <!-- Por ejemplo: -->
+                <div class="card card_icono">
+                    <a href="ssp.html">
+                        <img alt="automas" src="../imagenes/ssp.jpeg">SSP
+                    </a>
+                </div>
+
+
+                <!-- Por ejemplo: -->
+                <div class="card card_icono">
+                    <a href="tiaportal.html">
+
+                        <img src="imagenes/tia_teoria_nuevo_proyecto5.png" alt="1200"> 1200</a>
+                </div>
+                <!-- Por ejemplo: -->
+                <div class="card card_icono">
+                    <a href="logo.html">
+
+                        <img src="imag_logo/logo.png" alt="logo">LOGO
+
+                    </a>
+                </div>
+
+
+                <!-- Por ejemplo: -->
+                <div class="card card_icono">
+                    <a href="programados.html">
+
+                        <img src="imagenes/cuest-s7-200.png" alt="S7-2000">S7-200
+
+                    </a>
+                </div>
+
+
+
+            </article>
+
+            <br>
+            <article class="articulo">
+
+
+                <!-- *************** inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <h2><a name="prac1"></a> Deposito</h2>
+
+                    <img class="imagen" src="imagenes/ssp-deposito.png" alt="deposito"><br>
+                    En una instalación con un depósito de agua con tres detectores, uno en la parte inferior, otro la parte media, otro en la parte superior y una luz roja. <br> <br>
+                    Crea la función lógica de activación de la luz roja cuando,
+                    el depósito no tenga agua o haya un error con las detectores de agua, ejemplo que estén los dos detectores superiores y no esté en inferior
+
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica  -->
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <h2><a name="prac2"></a> Embotelladora</h2>
+                    <img class="imagen" src="imagenes/ssp-botellas.png" alt="embotelladora"><br>
+                    En una instalación embotelladora, me vienen por una cinta transportadora botellas en grupos de 1, 2 3 o 4 botellas, <br>
+                    Cuando los grupos sea de 3 botellas de encendera una luz verde<br>
+                    Crea la función lógica del encendido del piloto<br>
+
+
+
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica  
+                   <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <h2><a name="prac3"></a> Embotelladora 2</h2>
+                    <img class="imagen" src="imagenes/ssp-botellas.jpg" alt="embotelladora"><br>
+                    En una instalación embotelladora, me vienen por una cinta transportadora botellas en grupos de 1, 2 3 o 4 botellas, <br>
+                    Cuando los grupos sea de 2 o 3 botellas de encendera una luz verde<br>
+                    Crea la función lógica del encendido del piloto<br>
+
+
+
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica .
+                    <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <h2><a name="prac4"></a> Embotelladora 3</h2>
+                    <img class="imagen" src="imagenes/ssp-botellas3.png" alt="embotelladora"><br>
+                    En una instalación embotelladora, me vienen por una cinta transportadora botellas en grupos de 1, 2 3 o 4 botellas, <br>
+                    <ul>
+                        <li> Las botellas detectadas con el sensor A contienen 3 litros de agua</li>
+                        <li> Las botellas detectadas con el sensor B contienen 2 litros de agua</li>
+                        <li> Las botellas detectadas con el sensor C contienen 1 litros de agua</li>
+                        <li> Las botellas detectadas con el sensor D contienen 1 litros de agua</li>
+                    </ul>
+                    Cuando las botellas que estan en la cinta contenga 4 litros se encendera el piloto verde<br>
+                    Crea la función lógica del encendido del piloto<br>
+
+
+
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica-->
+
+                <a name="prac5"></a><br><br><br>
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <h2> Inicio a la programación, encendido 4 bombillas</h2>
+                    <br>
+                    <p>Realiza el programa y el esquema el&eacute;ctrico para el LOGO 230RC ( se valorara que este hecho con ordenador o a regla), identifica las entradas del aut&oacute;mata en el programa LOGOSoft Comfort como:&nbsp;</p>
+                    <p>I1 pulsador NO1</p>
+                    <p>I2 pulsador NO2</p>
+                    <p>I3 pulsador NC1</p>
+                    <p>I4 interruptor rotativo.</p>
+                    <br>
+                    <p>Q1 bombilla 1</p>
+                    <p>Q2 bombilla 2</p>
+                    <p>Q3 bombilla 3</p>
+                    <p>Q4 bombilla 4</p>
+                    <br>
+
+                    <p><strong>Funcionamiento:&nbsp;<br></strong>La bombilla conectada a Q1 se puede encender y apagar mediante pulsaciones en el &nbsp;pulsador &nbsp;conectado a I1 &nbsp;o accionando la tecla arriba del logo.</p>
+
+                    <p>La bombilla conectada a Q2 se enciende &nbsp;pulsando el pulsador conectado a I2 si el interruptor conectado a I4 esta abierto, y se apaga al soltar el pulsador NC conectado a I3&nbsp;</p>
+
+                    <p>La bombilla conectada a Q3 se enciende con pulsando el pulsador conectado a I2 si el interruptor conectado a I4 esta cerrado, y se apaga al soltar el pulsador NC conectado a I3</p>
+
+                    <p>La bombilla conectada a Q4 se enciende intermitentemente con una frecuencia de 1 segundo, &nbsp;si hay alguna bombilla conectada a Q1, Q2 o Q3 encendida.&nbsp;</p>
+
+                    <p><strong>Transfiere el programa al aut&oacute;mata con IP 192.168.1.4, comprueba su funcionamiento, Entrega un informe en pdf donde incluya el programa el nombre de las entradas y salidas y el esquema el&eacute;ctrico.</strong><br><br></p>
+
+                    <p><strong>Nota:&nbsp;</strong></p>
+
+                    <div><strong>Solo se puede transferir 1 vez el programa.</strong></div>
+
+                    <div>El funcionamiento se comprueba en orden desde Q1 a Q4</div>
+                    <div>Secuencia de comprobaci&oacute;n de Q1.</div>
+                    <div>Q1 se &nbsp;enciende con I1, se apaga con I1, se enciende con la tecla superior, se apaga con la tecla superior, se enciende con I1, se apaga con la tecla superior.</div>
+
+                    <div>Encendemos Q2 y apagamos Q2</div>
+                    <div>Encendemos Q3 y apagamos Q3</div>
+                    <div>Q4 observamos que se ha encendido en las tres se secuencias anteriores</div>
+
+
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica  -->
+
+                <a name="prac6"></a><br><br><br>
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <h2> Iluminación y contadores</h2>
+                    <p>En la instalación anterior, contamos las pulsaciones sobre el pulsador conectado a I1 y descontamos las pulsaciones sobre el pulsador I2.
+                    <p> Si el valor contado es cero las bombillas Q1 y Q2 están apagadas, si es 1 encendemos la bombilla Q1, si es dos encendemos la bombilla Q2, si es tres encendemos las dos bombillas.</p>
+                    <p> <strong> Nota: </strong></p>
+                    <p> Si pulsamos I1 mas de 3 veces no se tendrá en cuenta.</p>
+                    <img class="imagen" src="imag_logo/ssp_iluminacion_contador.png" alt="tcp"><br>
+
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica  -->
+                <a name="prac7"></a><br><br><br>
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <h2>Funciones analógicas</h2>
+                    <img class="imagen" src="imag_logo/ssp_analogica_basico.png" alt="tcp"><br>
+
+                    <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica  --> <br>
+                <a name="prac8"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Encendio dos puntos de luz desde 3 sitios
+                        distintos</h2>
+                        <img class="imagen" src="imagen/pract_dos_puntos_tres_sitios.jpg" alt="tablero con la práctica">
+                    <br>
+                    Realiza el montaje dos puntos de luz que se pueda encender desde tres
+                    puntos distinos. Antes de empezar a montar debes de tener realizado un
+                    boceto del plano de distribución <br>
+                    Entrega un informe en el que incluya ademas del esquema eléctrico
+                    unifilar, multifilar, un plano de distribución, lista de herramientas,
+                    lista de materiales... y una expliación del funciomiento del
+                    conmutador.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica entender el funcionamiento del conmutador
+                    de cruze, posiciones estables, puntos de conexión, símbolo, esquema de
+                    todas las posibles conexiones internas. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac4"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Instalación de una habitación ciega</h2>
+                    <br>
+                    Realiza el montaje de la iluminación de 3 habitaciones con un punto de
+                    luz cada una, que tiene 3 elementos de maniobra, al inico todas las
+                    bombillas deben deben de estar apagadas, al activar el primer elemento
+                    de maniobra se enciende la luz en la primera habitación, al pasar a la
+                    segunda habitación y activo el segundo elemento de maniobra, y se
+                    apaga la luz de habitacion 1 y se enciende la luz de la habitación 2,
+                    al pasar a la tercera habitación y activo el tercer elemento de
+                    maniobra, y se apaga la luz de habitacion 2 y se enciende la luz de la
+                    habitación 3, al regresar se van apagando la luces que abandono y se
+                    enciende en la que entro, hasta que al abandonar la primera habitación
+                    quedan apagadas todas la luces. Antes de empezar a montar debes de
+                    tener realizado un boceto del plano de distribución <br>
+                    Entrega un informe en el que incluya ademas del esquema eléctrico
+                    unifilar, multifilar, un plano de distribución, lista de herramientas,
+                    lista de materiales...<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica poner el práctica los conocimiento
+                    alcanzados, de cableado y funcionamiento de los elementos de maniobra.
+                    <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac10"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Telerruptor</h2>
+                    <br>
+                    Realiza el encendido de 3 puntos de luz mediante 2 pulsadores,
+                    utilizando un telerrupor <br>
+                    Entrega un informe en el que incluya ademas del esquema multifilar, un
+                    plano de distribución, lista de herramientas, lista de materiales... y
+                    una expliación del funcionamiento y caracteristicas (tensión de
+                    funcioinamiento, intensidad max que puede controlar...) del
+                    telerruptor.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer el funcionamiento del
+                    telerrupor. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac11"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>Fluorescente</h2>
+                    <br>
+                    Realiza el encendido de un flourescente desde un sitio. <br>
+                    Entrega un informe en el que incluya ademas del esquema multifilar, un
+                    plano de distribución, lista de herramientas, lista de materiales... y
+                    una expliación del funciomiento del flourescente.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer el funcionamiento de una
+                    flourescente. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac12"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <!-- *****************************19 19 ************** inicio practica  19 19 19**********************************  
+                <section class="section_naranja">
+                    <h2>"Fluorescente" LED</h2>
+                    <br>
+                    Realiza el encendido de un "flourescente" LED desde tres sitio. <br>
+                    Entrega un informe en el que incluya ademas del esquema multifilar, un
+                    plano de distribución, lista de herramientas, lista de materiales... y
+                    una expliación del funciomiento del flourescente.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer el funcionamiento de una
+                    flourescente. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac13"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> PIA</h2>
+                    <br>
+                    Realiza el encendido de un punto de luz protegido por PIA <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales... y una expliación del funciomiento de un
+                    magnetotérmico.¿contra que proteje?¿Contra que proteje la parte
+                    térmica? ¿Contra que proteje la parte magnética? ¿Que es el calibre de
+                    un magnetotermcico? ¿Que tipo de curva tiene? ¿A que circuito
+                    pertenece la iluminación?<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer el funcionamiento de un
+                    magnetotérmico. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac14"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>IGA</h2>
+                    <br>
+                    Realiza la instalación de un punto de luz y un zumbador protegido por
+                    un IGA y un PIA <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales... y Calibre y tipo de curva del IGA y del PIA para una
+                    vivienda con grado de eléctificación básica y para el circuito de
+                    iluminación. ¿A que circuito pertenece la iluminación?¿y el zumbador?¿
+                    cuantos puntos de luz y zumbadores puedo poner en total en el circuito
+                    C1?<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer la función del IGA y del PIA<br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac15"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>Diferencial</h2>
+                    <br>
+                    Realiza la instalación de un punto de luz y un zumbador protegido por
+                    un IGA, un diferencial y un PIA <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales... e indica los calibres del IGA, PIA y diferencial, y la
+                    sensibilidad del diferencial.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer el funcionamiento del
+                    diferencial. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac16"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>Diferencial funcionamiento.</h2>
+                    <br>
+                    Realiza la instalación de dos puntos de luz que se controlan desde un
+                    sitio y otro punto de luz que se controla desde otro, protegido con un
+                    magnetotérmico y un diferencial. De forma que al enceder los dos
+                    puntos de luz la instalación funciona correctamente, pero al encender
+                    el segundo punto de luz salta el diferencial, (porque se "ha montado
+                    mal la instalación"). Mide con una pinza amperimetrica, la fuga de
+                    intensidad en el primer caso, y en el segundo ( para este caso
+                    sustituye el diferencial por un magnetotérmico para que la instalación
+                    puede funcionar y medir la corriente del fuga en el magnetotérmico).
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales... y explica el funcionamiento del diferncial, y la
+                    conexión de la pinza amperimetrica indica los calibres del IGA, PIA y
+                    diferencial, y la sensibilidad del diferencial.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer el funcionamiento del
+                    diferencial. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac17"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                              <!-- ******************************************* inicio practica  **********************************  
+  <section class="section_naranja">
+                    <h2>Circuitos C1 y C2.</h2>
+                    <br>
+                    <img class="imagen" src="imagen/pract_instalacionC1_C2.jpg" alt="tablero con la práctica">
+                    Realiza la instalación de un punto de luz y una toma de corriente con
+                    toma de tierra, protegido por un IGA, un diferencial y PIAs<br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales... y explica el funcionamiento del buscapolos. Mide la
+                    tensión en la toma de corriente, identifica con el polimetro la fase y
+                    el neutro y con un busca polos, mide la continidad de la fase, neutro
+                    y toma de tierra desde la toma de corriente, (para ello debes
+                    desconectar y puentear el circuito C2 .<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer la forma de conectar tomas de
+                    corriente, utilizar un busca polos. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac18"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Instalación de un bar.</h2>
+                    <br>
+                    Realiza la instalación de una toma de corriente, una bombilla y un
+                    fluorescentes, La bombilla se enciende desde un elemento de maniobra,
+                    y el fluorescente lo puede encender y apagar los camareros desde otro
+                    elemento de maniobra solo si el jefe a habilitado el encendido desde
+                    un elemento de maniobra que dispone en su despacho. Toda la
+                    instalación esta protegida por un CGMP<br>
+                    <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales... y explica ¿que es? y lo elemtos que componen un CGMP,
+                    entrega un esquema unifilar de un CGMP de una vivienda con
+                    electrificación básica.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es aplicar los conocimientos adquiridos
+                    para realizar un pequeño proyecto, y conocer que es CGMP <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica    <br>
+                <a name="prac19"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>"Fluorescente" LED.</h2>
+                    <br>
+                    Sustituye en la instalación anterior el flourescente por un
+                    "fluorescente" LED<br>
+                    <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales...<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es convertir una instalación con
+                    flurencentes a iluminación led. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac20"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <!-- *****************la etiqueta practica 19 esta despues de la 11     ***************************  
+                <section class="section_naranja">
+                    <h2>Curvado de tubo.</h2>
+                    <br>
+                    Sustituye en la instalación anterior un tubo corrugado que con un codo
+                    de 90º por un tubo rigido.<br>
+                    <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales...<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo..<br>
+                    El objetivo de la práctica es realizar el curvado de tubo riguido. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac21"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>Persiana eléctrica.</h2>
+                    <br>
+                    Realiza la instalción de un persina eléctrica, con un elemento de
+                    maniobra para subir y otro para bajar, de forma que si se pulsan los
+                    dos a la vez, la persiana baja, <br>
+                    La subida de la persiana se simulara con una bombilla y la bajada con
+                    otra. protegida por un IGA, un diferencial y PIAs<br>
+                    <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales...explica la conexión de un pulsador de persiana y de un
+                    motor de persiana.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer la forma de conectar persianas
+                    eléctricas. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac22"></a><br><br><br>
+                <section class="section_naranja">
+                    <h2> Circuito de calefación.</h2>
+                    <br>
+                    Realiza el encendido de una calefacción electrica, mediante un
+                    termostato y un interruptor con señalización. <br>
+                    Funcionamiento:la calefacción se enciende si hace frio y el termostato
+                    esta activo la calefacción o si doy al interruptor ( la señalización
+                    me indica esta cerrado). La calefacción se simulara por una bombilla
+                    de alta potencia. protegida por un IGA, un diferencial y PIAs<br>
+                    <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales...explica la conexión de un pulsador de persiana y de un
+                    motor de persiana.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer la forma de conectar persianas
+                    eléctricas. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac23"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Interruptor de escalera.</h2>
+                    <br>
+                    Realiza la instalación de la iluminación de
+                    una escalera utilizando un automático de escalera de carril DIN, con
+                    tres puntos de luz que se pueden encender desde 2 sitios distintos.<br>
+                    <ul>
+                        <li>a) Realiza la instalación montando el automático de escalera a
+                            tres hilos.</li>
+                        <li>b) Realiza la instalación montando el automático de escalera a
+                            cuatro hilos.</li>
+                    </ul>
+                     <img class="imagen" src="imagen/pract_Interruptor_escalera4%20hilos.jpg" alt="tablero con la práctica">
+                    Busca información de las ventajas y desventajas de cada montaje.<br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales...mide la tensión con respecto a neutro en el borna 4 del temporizador que este conectada a los pulsadores.<br>
+                    Comprobar que:<br>
+                    - En la conexión a 3 hilos, la tensión que en la borna 4 es de 230V, al activar el pusador pasa a 0V hasta que se escucha el relé que pasa otra vez a 230V.<br>
+                    - En la conexión a 4 hilos, la tensión que en la borna 4 es de 0V, al activar el pusador pasa a 230V hasta que se escucha el relé que pasa otra vez a 0V. <br>
+                    ( la borna 4, en 3 hilos se conecta la borna 4 a neutro a través de los pulsadores y a 4 hilos se conecta a fase [ver esquemas]). <br>
+                    El objetivo de la práctica es saber conectar temporizadores de escalera a 3 y 4 hilos.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac24"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Interruptor de escalera antiguo.</h2>
+                    <br>
+                    Realiza la instalación de la iluminación de
+                    una escalera utilizando un automático antiguo, con
+                    tres puntos de luz que se pueden encender desde 2 sitios distintos.<br>
+
+                    Busca información de las ventajas y desventajas de cada montaje.<br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales.<br>
+                    El objetivo de la práctica es conectar un elemento comprendiendo su funcionamiento y deducir las conexiónes
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac25"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Cuadro de contadores.</h2>
+                    <br>
+                    Desconectar un contador del cuadro de contadores, y volver a conectarlo a una línea distinta.<br>
+                    La práctica se realizara en parejas.<br>
+                    Analizar las conexiones de un cuadro de contadores, comprobar las conexiones mediante continidad. <br>
+                    Entrega un informe en el que incluya un dibujo del cuadro de contadores indicando las partes que lo componen.<br>
+                    El objetivo de la práctica es saber conectar un cuadro de contadores.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+
+                <a name="prac26"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Contador.</h2>
+                    <br>
+                    Conecta un contador para medir el consumo de una bombilla.
+                    Busca en internet el manual de contador e indica alguna fución mas que tiene ademas de poder mider la energía consumida.<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y funcionamiento del contador.
+                    El objetivo de la práctica es saber conectar un contador y busqueda de internet del manual de funcionamiento.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac27"></a><br><br><br>
+                <!-- ******************************************* inicio practica *************************  
+
+                <section class="section_naranja">
+                    <h2> Detector de presencia.</h2>
+                    <br>
+                    Realiza una instalación del encendido de un bombilla mediante un detector de presencia.<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y funcionamiento del detector de presencia, parametros que se pueden regular, como se regulan y ejemplos de funcionamiento.
+                    El objetivo de la práctica es saber conectar un detector de presencia.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac28"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Detector crepuscular.</h2>
+                    <br>
+                    Realiza una instalación del encendido de un bombilla mediante un detector crepuscular.<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y funcionamiento del detector de crepuscular, parametros que se pueden regular, como se regulan y ejemplos de funcionamiento.
+                    El objetivo de la práctica es saber conectar un detector de crepuescular.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac29"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>Alumnbrado de emergencia.</h2>
+                     <img class="imagen" src="imagen/pract_Alumbrado_emergencia.jpg" alt="tablero con la práctica">
+                    <br>
+                    Realiza una instalación un punto de luz contralado desde 1 sitio y otro punto de luz controlado desde 3 sitios distintos, y una toma de corriente,
+                    con sus circuitos C1 y C2 de forma que si se pruduce la activación del magnetotermico de iluminación se activa el alumbrado de emergencia.<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y funcionamiento del alumbrado de emergencia, donde es obligatorio su uso y que caracteristcas de iluminación (tiempos y lux) deben de tener.
+                    El objetivo de la práctica es conocer el funcionamiento de alumnbrado de emergencia.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac30"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Halogeno</h2>
+                    <br>
+                    Realiza la instalación de encendido de un halogeno de 12V desde 3 sitios distintos<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y mide la tensión de entrada al transformador, la tensión de alimentación, la intensidad de entrada y la intensidad de salida. Calcula la potencia del halogeno según los
+                    valores de entrada y los valores de salida, comprueba que coinciden con la potencia del halogeno.<br>
+                    Razona como deben de ser los cables de primario y del secundario.
+                    Selecciona unos cables para está instalación.
+                    El objetivo de la práctica es conocer el funcionamiento del encendido de un halogeno de 12V.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac31"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>Tres Halogeno</h2>
+                    <br>
+                    Realiza la instalación de encendido de 3 halogenos halogeno de 12V desde 3 sitios distintos<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y mide la tensión de entrada al transformador, la tensión de alimentación, la intensidad de entrada y la intensidad de salida. Calcula la potencia del halogeno según los
+                    valores de entrada y los valores de salida, comprueba que coinciden con la potencia del halogeno.<br>
+                    Razona como deben de ser los cables de primario y del secundario.
+                    Selecciona unos cables para está instalación.<br>
+                    Si dejas una sección mínima en el primario y en el secundario del transformador ¿que cable rompera antes?
+                    El objetivo de la práctica es conocer el funcionamiento del encendido de un halogeno de 12V.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+
+                <a name="prac32"></a><br><br><br>
+                <section class="section_naranja">
+                    <h2>Lamparas de descarga</h2>
+                    <br>
+
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica  -->
+            </article>
+        </main>
+        <aside>
+            <!--  <a href="#menuimagencabecera">INICIO</a> <br>-->
+            <section class="section_naranja">
+                <h2>
+                    PRÁCTICAS
+                </h2>
+
+                <a href="#prac1">Deposito</a> <br>
+                <a href="#prac2">Embotelladora 1</a> <br>
+                <a href="#prac3">Embotelladora 2</a> <br>
+                <a href="#prac4">Embotelladora 3</a> <br>
+                <a href="#prac5"> Inicio a la programación, encendido 4 bombillas</a> <br>
+                <a href="#prac6"> Iluminación y contadores</a> <br>
+                <a href="#prac7">Funciones analógicas</a> <br>
+                <!--     <a href="#prac8">Dos puntos de luz desde 3 sitios</a> <br>
+                <a href="#prac9">Habitación ciega</a> <br>
+
+                <a href="#prac11">Fluorescente</a> <br>
+                <h2>
+                    2ª Evaluación
+                </h2>
+                <a href="#prac12">"Fluorecente" LED</a> <br>
+                <a href="#prac13">PIA</a> <br>
+                <a href="#prac14">IGA</a> <br>
+                <a href="#prac15">Diferencial</a> <br>
+                <a href="#prac16">Funcionamiento del diferencial</a> <br>
+                <a href="#prac17">Circuitos C1 y C2</a> <br>
+                <a href="#prac18">Instalación de un bar</a> <br>
+                <a href="#prac19">Cambio a iluminación Led</a> <br>
+                <a href="#prac20">Curvado de tubo</a> <br>
+                <a href="#prac21">Persiana eléctrica</a> <br>
+                <a href="#prac22">Circuito de calefacción</a> <br>
+
+                <h2>
+                    3ª Evaluación
+                </h2>
+                <a href="#prac23">Interruptor de escalera 3 hilos</a> <br>
+                <a href="#prac23">Interruptor de escalera 4 hilos</a> <br>
+                <a href="#prac10">Telerruptor</a> <br>
+                <a href="#prac24">Interruptor de escalera antiguo.</a> <br>
+                <a href="#prac25">Cuadro de contadores</a> <br>
+                <a href="#prac26">Contador</a> <br>
+                <a href="#prac27">Detector de presencia</a> <br>
+                <a href="#prac28">Detector crepuscular</a> <br>
+                <a href="#prac29">Alumbrado de emergencia</a> <br>
+                <a href="#prac30">Halogeno</a> <br>
+                <a href="#prac31">Tres halogenos</a> <br>
+                <a href="#prac32">Lamparas de descarga</a> <br>   -->
+
+            </section>
+
+
+        </aside>
+
+
+        <footer>
+            1 CV= 0,735 kW=735W 1kW=1.36CV<br>
+        </footer>
+    </div>
+</body>
+
+</html>

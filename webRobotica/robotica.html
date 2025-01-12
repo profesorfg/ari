@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>robotica</title>
+
+    <link href="../index_files/estilo.css" rel="stylesheet" type="text/css">
+    <script src="../index_files/menu.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="profesorfg" name="author">
+    <meta content="automatizacion industrial" name="description">
+    <meta name="keywords" content="automatas electricidad">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div id="contenedor">
+
+        <header>
+            <nav>
+                <menu-principal></menu-principal>
+            </nav>
+
+        </header>
+        <main>
+
+            <h1>PRÁCTICAS DE ROBOTICA</h1>
+            <br>
+            
+            <article class="flex_wrap articulo">
+
+                <!-- Por ejemplo: -->
+                <div class="card card_icono">
+                    <a href="temario.html">
+                        <img alt="Robotica" src="imagen/temario.jpg">Temario
+                    </a>
+                </div>
+
+               
+                <!-- Por ejemplo: -->
+                <div class="card card_icono">
+                    <a href="robotica.html">
+                        <img alt="Robotica" src="imagen/robot-soldador1.jpeg">Prácticas
+                    </a>
+                </div>
+
+
+                <!-- Por ejemplo: -->
+                <div class="card card_icono">
+                    <a href="videos_robotica.html">
+
+                        <img src="imagen/videos.jpeg" alt="Videos"> Videos</a>
+                </div>
+                <!-- Por ejemplo: -->
+                <div class="card card_icono">
+                    <a href="minimanuales.html">
+
+                        <img src="imagen/mini_manuales.jpg" alt="mini manuales">Migas de pan
+
+                    </a>
+                </div>
+
+
+              
+
+
+            </article>
+
+            <br>
+            <article class="articulo">
+
+
+                <!-- *************** inicio practica  ********************************** -->
+                <section class="section_naranja">
+
+                    <a name="prac1"></a>
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero">
+
+                                Colocación de objetos en robotstudio.</h2>
+                        </summary>
+
+                        <img class="imagen" src="imagen/act_Colocacion_objetos_robotstido.png" alt="punto de luz"><br>
+                        Crea una estación vacía<br>
+                        Inserta <br>
+                        - un robot 120<br>
+                        - un soporte de 400*200 y altura 100<br>
+                        - coloca el robot encima de soporte<br>
+                        - Inserta una controladora y una flexpendal. Colócala en un sitio adecuado en el espacio de trabajo<br>
+
+                        crea otro soporte de 300*400*400, desplazado 300cm en dirección X<br>
+                        y en el centro del soporte coloca un cono de diámetro 50 y altura 100<br>
+                        
+                        <p>NOTA: Una contralodra IRC puede controlar 4 brazos manipuladores.</p>
+
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica  -->
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+
+                    <a name="prac2"></a>
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero">
+                                Crea una herramienta</h2>
+                        </summary>
+                        Dibuja un tetraedro de longitud 200 anchura 400 altura 50<br>
+
+                        Un hexágono circunscrito en una circunferencia de 50 y altura 50<br>
+                        Un cono de diámetro 150 altura 300<br>
+
+                        Un tubo con diámetro exterior 150 y diámetro interior 100 altura 200<br>
+
+                        Traslada el hexágono al centro del tetraedro<br>
+
+                        Mueve el tubo a 100-75-50<br>
+
+                        Mueve el cono a 100-325-50<br>
+
+                        Crea una pieza vacía con el nombre herramienta que contenga todos los cuerpos renombrados a base, tubo tuerca, puntero<br>
+
+                        Posiciona los ejes el centro de la base<br>
+
+                        Haz coincidir el eje de la pieza con eje mundo<br>
+
+                        Crea una herramienta con el nombre propia de peso 500gr con dos tcp una en la punta del cono llamado puntero
+                        Y otro creado en el centro de la parte superior del tubo llamado tubo<br>
+
+                        Inserta el robot y colócale la herramienta<br>
+
+                        Instala la controladora y mueve robot según tcp del cono y mueve el robot según el tcp del tubo) <br>
+                        <img class="imagen" src="imagen/actividad%201-0.png" alt="actividad1"><br>
+                        <img class="imagen" src="imagen/actividad%201-1.png" alt="actividad1"><br>
+                        <img class="imagen" src="imagen/actividad%201-2.png" alt="actividad1"><br>
+
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica  -->
+
+
+
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+
+                    <a name="prac2a"></a>
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Crea un WorkObject 2024</h2>
+                        </summary>
+
+                        Crea una instalación vacia, incorpora <br>
+                        <ul>
+                            <li><br>
+                            </li>
+                            <li>- un robot IRB120</li>
+                            <li>- Un controlador</li>
+                            <li>- La herramienta mytool</li>
+                            <li>- Un cubo de 300*300*300, con el nombre pieza1</li>
+                            <li>- Un cubo de 200*200*200, con el nombre pieza2</li>
+                            <li>- Desplaza la pieza1 a 250, -150,0</li>
+                            <li>- Desplaza la pieza2 a 150,-300,0</li>
+                            <li>- Crea un objeto de trabajo, llamado objeto1</li>
+                            <li>- Crea un objeto de trabajo, llamado objeto2</li>
+                            <li>- Conecta la pieza1 con el objeto de trabajo objeto1</li>
+                            <li>- Conecta la pieza2 con el objeto de trabajo objeto2</li>
+                        </ul>
+
+                        <br> <img class="imagen" src="imagen/act_workobject.png" alt="workobject"><br>
+                        Selecciona el workobject, botón derecho -> conectar y seleccionar la pieza deseada. <br>
+                        Cuando muevas las pieza, también se movera el Wobject conectado a la pieza y los puntos refereridos al Wobject
+
+                        <ul>
+                            Crea los siguientes puntos
+                            <li>- Punto INICIO, en la posición inicial del robot relativo al
+                                WObj0</li>
+                            <li>- 4 puntos coincidentes con la esquinas de la cara superior
+                                de la pieza1 relativo al objeto de trabajo objeto1</li>
+                            <li>- 3 puntos coincidentes con la esquinas de la cara superior
+                                de la pieza2 relativo al objeto de trabajo objeto2</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            Crea las siguientes trayectorias
+                            <li>-Desde el punto de inicio, que recorra las 4 esquinas de la
+                                pieza1 y vuelva al punto de inicio</li>
+                            <li>-Desde el punto de inicio, que recorra las 3 esquinas
+                                accesibles de la pieza2 y vuelva al punto de inicio</li>
+                            <li>- Una trayectoria main (todo en minusculas) que incluya las
+                                dos trayectorias anteriores</li>
+                        </ul>
+
+
+                        <p>Simula las trayectorias añadiendo una colisión entre mytool y las piezas 1 y 2 y graba la simulación de la trayectora
+                            main</p>
+
+                        <br> <img class="imagen" src="imagen/act_colision.png" alt="colisión"><br>
+                        <p>Desplaza la pieza1 y el objeto de trabajo objeto1 una distancia
+                            sufiente para que el robot no choque con la pieza1, graba la
+                            simulación de la nueva trayectoria</p>
+                        <p>Guarda el proyecto, empaquetalo en pack and go y envía las
+                            simulaciones grabadas y la estación empaquetada.</p>
+                        <p>Al sincronizar la estación con RAPID podemos ver los workobjet (objetos de trabajo) en el archivo calib data</p>
+                        <br> <img class="imagen" src="imagen/act_workobject1.png" alt="workobject"><br>
+
+
+
+
+                        <a href="https://youtu.be/1jr0G5oGVnw" target="_blank">Video de como mover un Wobject y sus puntos referenciados, moviendo la pieza</a>
+                        <br>
+                        <h3 class="centrar">CalibData</h3>
+                        <br>
+                        <article class="article_curso txt">
+
+
+                            <iframe src="txt/creawobject2024/CalibData.txt" frameborder="0"></iframe>
+
+                        </article>
+
+                        <br>
+                        <h3 class="centrar">Module1</h3>
+                        <br>
+                        <article class="article_curso txt">
+                            <iframe src="txt/creawobject2024/Module1.txt" frameborder="0"></iframe>
+                        </article>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica  -->
+
+
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+
+                    <a name="prac2b"></a>
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> WorkObject y sistemas de coordenadas 2024</h2>
+                        </summary>
+                        <h2></h2>
+                        <h3>Creación de un workobject desde la estación y exportarlo al controlador
+                            virtual. </h3>
+                        <p></p>
+                        <p>Desde la estación, hemos creado un brazo robotico IRB120 con su
+                            controladora y le hemos insertado la herramienta mytool, también se ha
+                            creado un cubo de lado 300, y se ha desplazado 300mm en dirección&nbsp;
+                            del eje X y -150 mm en dirección de eje Y y un WorkObject con el nombre
+                            estación_basecubo que tiene su origen de coordenadas en el punto
+                            (300,-150,0)&nbsp; que coincide con un vertice del cubo. Despues creamos
+                            los puntos inicio, que coincide con la posición inicial del brazo, y los
+                            puntos p10, p20,p30, p40 que coinciden con los vertices de la cara
+                            superior del cubo.</p>
+                        <p><br>
+                        </p>
+                        <p>Posición del Workobject. </p>
+                        <img src="imagen/act_workobject00.png" alt="workobject" title="workobject">
+                        <p><br>
+                        </p>
+                        <p>En primer lugar vemos el punto P10 con respecto a su eje local ( el
+                            mismos). El valor siempre sera (0, 0, 0), podemos utilizar esta referencia
+                            para mover el punto con una distancia respecto el mismo.</p>
+                        <img src="imagen/act_workobject01.png" alt="workobject" title="workobject">
+                        <p>Si la referencia la tomamos respecto el objeto superior ( workobject
+                            estacion_basecubo) vemos la nuevas coordenas. </p>
+                        <p>Nota: El punto P10 puede estar referenciado a distinstos sistemas
+                            referencia. Los sistemas de referencia tienen una gerarquia que de mayor a
+                            menor seran: </p>
+                        <p> Mundo&nbsp;&nbsp;&nbsp;&nbsp; -&gt; objeto superior&nbsp; ( el
+                            workobject del
+                            punto)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            -&gt; punto que sera (0, 0, 0)</p>
+                        <img src="imagen/act_workobject02.png" alt="workobject" title="workobject">
+                        <p>Si la referencia la tomamos respecto a Mundo vemos la nuevas coordenas. </p>
+                        <p>Nota: Tambien podemos observar que los ejes del punto están girados
+                            respecto a los sistemas de coordenadas Mundo y workobject. Esto es debido
+                            a que los puntos se crearon desde la flexpendant.</p>
+                        <img src="imagen/act_workobject03.png" alt="workobject" title="workobject">
+                        <p>Sincronizamos la estación con el contralador virtual o RAPID, abrimos la
+                            flexpendant y datos de programa -&gt; Wobjdata vemos dos sistemas de
+                            referencias: </p>
+                        <ul>
+                            <li>El mundo con el nombre Wobj0 y sus datos están almacenados en el
+                                MODULO BASE.</li>
+                            <li>estacion_basecubo, creado por nosotros y guardado en el MODULO
+                                CalibData<br>
+                            </li>
+                        </ul>
+                        <img src="imagen/act_workobject04.png" alt="workobject" title="workobject">
+                        <p>En datos de programa, ROBTARGET vemos que los puntos p10, p20, p30, p40
+                            estan referenciados al sistema de coordenadas de nuestro workobject
+                            estación_basecubo.</p>
+                        <p>El punto de inicio esta referenciado respecto el sistema de coordenadas
+                            mundo.</p>
+                        <p> <img src="imagen/act_workobject05.png" alt="workobject" title="workobject"></p>
+                        <p><br>
+                        </p>
+                        <p>En el programa, vemos que los puntos donde se encuentra Mytool estan
+                            referenciados a al workobject </p>
+                        <br>
+                        <img src="imagen/act_workobject06.png" alt="workobject" title="workobject">
+                        <p> y queda reflejada en la instrucción de movimiento.</p>
+                        <img src="imagen/act_workobject07.png" alt="workobject" title="workobject">
+                        <p>p10 marcado por TCP de Mytool&nbsp; esta en la posición (300, 300, 300)
+                            respecto el workobject data (estación_basecubo) </p>
+                        <p><br>
+                        </p>
+                        <p><br>
+                        </p>
+                        <h3>Modificación del workobject "estacion_basecubo" desde la flexpendant</h3>
+                        <br>
+                        <img src="imagen/act_workobject08.png" alt="workobject" title="workobject">
+                        <p> subimos el eje Z 30mm </p>
+                        <br>
+                        <img src="imagen/act_workobject09.png" alt="workobject" title="workobject">
+                        <p> y con la flexpendant en la pantalla movimiento (jogging) vamos al punto
+                            p10 y vemos que ahora el punto esta 30 mm mas arriba. </p>
+                        <br>
+                        <img src="imagen/act_workobject10.png" alt="workobject" title="workobject">
+                        <h3> Creación de un workobject desde la flexpenant, introduciendo valores </h3>
+
+                    </details>
+                </section>
+                <!-- fin practica  -->
+
+
+
+
+
+
+
+
+
+
+                <a name="prac3"></a>
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Trayectoria</h2>
+                        </summary>
+                        Crea una estación con dos objetos, un cubo de 200mm y otro un cubo de 200mm al que se la ha añadido un medio cilindro.<br>
+                        coloca el robot en la posición inicial, y crea un punto en esa posición con referencia al robot.<br><br>
+                        Crea dos trayectorias una que recorra el cubo con una base de coordenadas llamada cubo y otra que recorra la cubo con el cilindro con otra base de coordenadas llamada cubo curvado.<br><br>
+                        haz que el robot pase exactamente por dos puntos del cubo y reduce a 100 mm/s en dos tramos.<br><br>
+                        Graba la animación donde el robot parte de la posición inicial, recorre primero el cubo vuelve a la posición inicial, luego el recorre el cubo curvado y termina en la posición inicial.<br>
+
+                        Mueve la base de coordenadas del cubo curvado y graba la animación donde el robot parte de la posición inicial, recorre primero el cubo curvado vuelve a la posición inicial, luego el recorre el cubo y termina en la posición inicial.<br>
+
+                        Entrega los dos videos.<br><br>
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+
+                        <a href="https://youtu.be/SSz8bD2jNEA" target="_blank"> Trayectorias con referencia a objetos</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SSz8bD2jNEA?si=Ifw_vZtcqpU9Gwt7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+                        <a href="https://youtu.be/N9e6ICzQukU" target="_blank">Base de coordenadas desplazada</a><br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/N9e6ICzQukU?si=k2II-lkWuwq0Ih8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br>
+
+                        <h2>PROPUESTA</h2>
+                        Crea una instalación vacio, incorpora <br>
+                        <ul>
+                            <li></li>
+                            <li>- un robot IRB120</li>
+                            <li>- Un controlador</li>
+                            <li>- La herramienta mytool</li>
+                            <li>- Un cubo de 300*300*300, con el nombre pieza1</li>
+                            <li>- Un cubo de 200*200*200, con el nombre pieza2</li>
+                            <li>- Crea un objeto de trabajo, llamado objeto1</li>
+                            <li>- Crea un objeto de trabajo, llamado objeto2</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <li>- Desplaza la pieza1 a 250, -150,0</li>
+                            <li>- Desplaza la pieza2 a 150,-300,0</li>
+                        </ul>
+                        <br>
+                        <ul>Crea los siguientes puntos
+                            <li>- Punto INICIO, en la posición inicial del robot relativo al WObj0</li>
+                            <li>- 4 puntos coincidentes con la esquinas de la cara superior de la pieza1 relativo al objeto de trabajo objeto1</li>
+                            <li>- 3 puntos coincidentes con la esquinas de la cara superior de la pieza2 relativo al objeto de trabajo objeto2</li>
+                        </ul>
+                        <br>
+                        <ul>Crea las siguientes trayectorias
+                            <li>-Desde el punto de inicio, que recorra las 4 esquinas de la pieza1 y vuelva al punto de inicio</li>
+                            <li>-Desde el punto de inicio, que recorra las 3 esquinas accesibles de la pieza2 y vuelva al punto de inicio</li>
+                            <li>- Una trayectoria main (todo en minusculas) que incluya las dos trayectorias anteriores</li>
+                        </ul>
+
+                        <p>Simula las trayectorias y graba la simulación de la trayectora main</p>
+
+                        <p>Desplaza la pieza1 y el objeto de trabajo objeto1 una distancia sufiente para que el robot no choque con la pieza1, graba la simulación de la nueva trayectoria</p>
+
+                        <p>Guarda el proyecto, empaquetalo en pack and go y envía las simulaciones grabadas y la estación empaquetada.</p>
+
+                        <a href="#contenedor">INICIO</a>
+                    </details>
+
+                </section>
+                <!-- fin practica  -->
+                <a name="prac4"></a>
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Trayectoria con flexPendant</h2>
+                        </summary>
+
+                        <br>
+                        Realiza una trayectoria con flexPendant que recorra aproximadamente las 4 esquinas de cada caja sin tocar la pared intermedia.
+                        <br>
+                        <img class="imagen" src="imagen/act_flexpendant.png" alt="flexpendant"><br>
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+
+                        <a href="https://youtu.be/EBQ7CrFpn0M" target="_blank"> Trayectorias con flexpendant</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EBQ7CrFpn0M?si=cKFxAcDsNdf9mY7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br><a href="#contenedor">INICIO</a>
+
+                    </details>
+                </section>
+                <!-- fin practica  -->
+                <a name="prac5"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <section class="section_naranja">
+
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> RAPID</h2>
+                        </summary>
+                        <br>
+                        Crea una pieza con un hexágono de altura 200mm y un cilindro de altura 300 mm.<br>
+                        Con la herramienta tool haz que el robot:<br>
+                        Parta de posición de inicio,
+                        se acerque al vértice 1 a una velocidad de 1000 y con una precisión de 100,
+                        <br> coloca la herramienta de forma que no este perpendicular a la base del hexágono
+                        vaya al vértice 2 con una velocidad de 250 y que la herramienta toque el vértice y se pare 1 segundo, <br>
+                        coloca la herramienta de forma que este perpendicular a la base del hexágono
+                        vaya al vértice 3 con una velocidad de 250 y que la herramienta toque el vértice y se pare 1 segundo, <br>
+                        coloca la herramienta de forma que este perpendicular a la base del hexágono
+                        vaya al vértice 1 a una velocidad de 1000 y con una precisión de 100, <br>
+                        coloca la herramienta de forma que no este perpendicular a la base del hexágono
+                        vaya al cilindro y recorra 3 puntos del cilindro con precisión cero con un movimiento curvo y una velocidad de 500 mm/s
+                        vaya a la posición de inicio<br>
+                        y repita el tantas veces como este indicado en una variable llamada ciclos, ( valor de la variable ciclos=3)<br>
+                        inserta un comentario después de cada parada que ponga REALIZACIÓN DE SOLDADURA.
+                        <br><br>
+
+                        Envía el video del funcionamiento del programa, y la parte de programación module1 con extensión txt
+                        <br>
+                        <br>
+                        <img class="imagen" src="imagen/act_RAPID.png" alt="RAPID"><br>
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+
+                        <a href="https://youtu.be/-GX-248CYzk" target="_blank"> RAPID</a> <br>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-GX-248CYzk?si=tpyQH1fuZ8jMfnsK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica  -->
+                <a name="prac6"></a>
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> TCP con flexpendant</h2>
+                        </summary>
+                        Diseña en robotstudio un objeto con las medidas de la herramienta real rotulador de nuestro robot IRB120. <br>
+                        En robotstudio conecta el objeto al robot y desde la flexpendant crea la herramienta. <br>
+                        Desde la flexpendant del robot real, crea una herramienta, identificala con tu nombre, dala un peso de 100gr, ponla un centro de gravedad aproximado y desde definir crea con 4 puntos el TCP de la herramienta. <br>
+                        Observa el error de creación del TCP, y compara los los valores del TCP de la herramienta obtenido a partir de la medición con el TCP obtenido por el método definir. <br>
+                        Convierte en robotstudio el objeto rotulador a herramienta rotulador con los valores del TCP, que mejor funcionamiento haya tenido en el robot, guarda la herramienta en la biblioteca de robot estudio con el nombre rotulador, envía los valores TCP junto con una imagen del robot con la herramienta.
+                        <br>
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+                        <img class="imagen" src="imagen/act_tcp_flexpendant_Herramienta.PNG" alt="tcp"><br>
+                        <img class="imagen" src="imagen/act_tcp_flexpendant_Coordenadas_Herramienta.PNG" alt="tcp"><br>
+                        <br>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica            ********************************** -->
+                <a name="prac6a"></a>
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> TCP con flexpendant 2024</h2>
+                        </summary>
+                        Diseña en robotstudio o con otro programa de 3D un objeto con las medidas de la herramienta real rotulador de nuestro robot IRB120. <br>
+                        <img class="imagen" src="imagen/act_tcp2024_1.png" alt="tcp"><br>
+
+
+                        <a href=" https://drive.google.com/drive/folders/1fOCFth-VBuhmPO7KKbvEitevhOLNvvG4?usp=sharing" target="_blank">
+
+
+
+
+                            En el este enlace encontraras la pieza realizada con freecad </a>de la siguiente manera
+                        <ul>
+                            <li>cilindro de diámetro 40 altura 60 </li>
+                            <li>Un cono de diámetro 20 altura 200, gira 90 grados frente al eje y, subirlo con z=40mm</li>
+                        </ul>
+                        y exportada a formato STL.<br>
+
+                        Abrir Robotstudio y arrastrar el archivo STL a robotstudio <br>
+                        <img class="imagen" src="imagen/act_tcp2024_0.png" alt="tcp"> <br>
+                        Creo una herramienta a partir del objeto con un peso 100gr cdg z=40 x=40 y un tcp (200,0,40) <br>
+                        Al conectarlo al robot observo que el eje Z del TCP no es correcto <br>
+                        <img class="imagen" src="imagen/act_tcp2024_2.png" alt="tcp"><br>
+                        Tendre que rotarlo 90º respecto el eje Y
+                        <br>
+                        Vuelvo a crear la herramienta con los siguientes datos del TCP
+                        <br>
+                        <img class="imagen" src="imagen/act_tcp2024_3.png" alt="tcp"><br>
+                        Ahora si que esta colocado correctamente el TCP <br>
+                        <img class="imagen" src="imagen/act_tcp2024_4.png" alt="tcp"><br>
+                        Incorporo la herramienta al robot estudio y pruebo movimientos de reorientación
+                        <br> <img class="imagen" src="imagen/act_tcp2024_5.png" alt="tcp"><br>
+                        <br>
+                        <h3>El TCP en la flexpendat</h3>
+                        Abrimos la flexpendant y vemos que no tenie ninguna herramienta incorporada, solo aparace la brida, tool0
+                        <br>
+                        <img class="imagen" src="imagen/act_tcp2024_6.png" alt="tcp"> <br>
+
+                        Sincronizo la estación con RAPID, reinicio la flexpendant, y veo que se ha incoporado la herramienta <br>
+                        <img class="imagen" src="imagen/act_tcp2024_7.png" alt="tcp"> <br> y vemos los valores del TCP <br>
+                        <img class="imagen" src="imagen/act_tcp2024_8.png" alt="tcp"> <br>
+
+
+                        En RAPID -> Módulos de programa -> Calib Data vemos los datos de la herramienta creada
+                        <br>
+                        <img class="imagen" src="imagen/act_tcp2024_9.png" alt="tcp"> <br>
+                        <br>
+
+                        <br>
+                        Valores del TCP obtenido por el metodo de 4 puntos<br>
+
+
+                        <br> <br> <img class="imagen" src="imagen/act_tcp2024_91.png" alt="tcp"> <br>
+
+                        <br> <img class="imagen" src="imagen/act_tcp2024_92.png" alt="tcp"> <br>
+                        <h3>VALORES DEL TCP DE MYTOOL</h3>
+                        Valores del TCP dados por Robotstudio.
+                        <br> <img class="imagen" src="imagen/act_tcp2024_9_mytool.png" alt="tcp"> <br>
+                        Valores del TCP de MyTool obtenido por el metodo de 4 puntos<br>
+                        <br> <img class="imagen" src="imagen/act_tcp2024_9_mytool4puntos.png" alt="tcp"> <br>
+
+                        <a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica  -->
+
+
+
+
+
+
+
+
+
+
+                <a name="prac7"></a>
+                <!-- ******************************************* inicio practica  ********************************** -->
+                <section class="section_naranja">
+
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Crear una trayectoria con flexpendant</h2>
+                        </summary>
+                        <br>
+                        Crear con la herramienta rotulador y desde la flexpendant de robotstudio primero y luego desde la flexpendant real la siguiente trayectoria: <br>
+                        Desde la posición inicial ( posición de calibración con el eje 5 girado hacia abajo),con la herramienta rotulador, el robot toca una esquina de una caja, se levanta, para dirigirse otra esquina, se levanta para dirigirse a la tercera esquina, se levanta y se dirige a la cuarta esquina, y vuelve a la posición inicial. <br>
+                        Velocidad 200mm/s aproximación 0. <br>
+                        Envía el archivo grabado desde grabar en visor de la trayectoria donde con el rastreo TCP activado. <br>
+
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+
+                        <a href="https://youtu.be/eueQkBiFZeg" target="_blank"> Trayectorias con flexpendant</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eueQkBiFZeg?si=rAfiOm6JQ_LsJt3_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica  -->
+                <a name="prac8"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Trayectoria N-L 2024</h2>
+                        </summary>
+
+                        <p>Realiza el programa con la flexpendant, que dibuje una N,vuelva a la posición inicial espere un segundo y dibuje una L con la herramienta myTool, sobre un cubo de 300mm situado de forma simétrica a 300 mm de la base del manipulador.</p>
+                        <p>La herramienta myTool debe de estar colocada perpendicularmente al cubo al realizar el dibujo.</p>
+                        <p>Los puntos deben de estar referenciados al TCP de la herramienta.</p>
+                        <p>Utiliza "incrementos" para afinar los puntos del cubo.</p>
+                        <p>Utiliza la ejecución del programa desde la flexpendant, </p>
+                        <ul>
+                            <li>Utiliza la ejecución del programa desde la flexpendant, </li>
+                            <li>Paso a paso, hacia adelante.</li>
+                            <li>Pasos a paso, hacia atrás.</li>
+                        </ul>
+                        <p>Utiliza la opción ir A para ir a los puntos</p>
+
+                        <a href="https://youtu.be/x2DC2GD8Ogo" target="_blank"> Trayectorias N - L</a> <br>
+
+
+                        <div class=videos-youtube>
+                            <iframe src="https://www.youtube.com/embed/x2DC2GD8Ogo?si=5EJCcfxeXKwCkBEx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   -->
+                <a name="prac9"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Programación con flexpendant </h2>
+                        </summary>
+
+                        <br>
+                        Realiza con la flexpendant de robot estudio un programa que desde la posición de inicio
+                        Toque una esquina de la caja durante 1 segundo.
+                        Vuelva a la posición inicial.
+                        Toque otra esquina durante 2 segundos. <br>
+                        Y repita el ciclo 3 veces (utiliza variables para repetir el ciclo). <br>
+                        Velocidad 100 mm/s <br>
+                        Movimiento J <br>
+                        Ajuste fine.
+                        <br>
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+                        <a href="https://youtu.be/-gtK11RTYCg" target="_blank"> Programación con flexpendant</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-gtK11RTYCg?si=SA24AyRosvjhLhap" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br>
+                        <img class="imagen" src="imagen/act_programacion_flexpendant.PNG" alt="RAPID"><br>
+
+                        <a href="#contenedor">INICIO</a>
+                    </details>
+
+
+                </section>
+                <!-- fin practica -->
+                <a name="prac10"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <a name="prac10a"></a>
+                <section class="section_naranja">
+
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> 4 Taladros en un cubo 2024</h2>
+                        </summary>
+                       <p>Crea un tetraedro de longitud 300mm, anchura 400mm y altura 200mm, trasládalo a una distancia de 300mm de la base de robot, crea 4 orificios pasantes de 12mm de diámetro a un distancia de 20mm de los bordes. llama a la figura creada guía.</p>
+                       
+                       <p>Crea otro tetraedro de 320mm, anchura 420mm y altura 175mm, y sitúalo de forma que sobresalga 10mm por los lados. Llama a la figura objetivo</p>
+                        <img class="imagen" src="imagen/act_taladro.png" alt="
+                        taladro"><br>
+                       
+                       
+                       
+                       
+                       <p>Crea un programa que vaya de la posición inicial, entre en un orificio toque la figura objetivo durante 2 segundos sin tocar la figura guía,  salga y vuelva a hacer la misma operación en los tres orificios restantes, vuelve a la posición inicial y desde esta posición en 5 segundos toque el centro de la figura guía sin tocar la figura objetivo.</p>
+                       <ul>Nota: 
+                           <li>Velocidad de robot 200mm/s</li>
+                           <li>Todos los puntos salvo el inicial deben de estar referenciados a un workobject llamado WO_objetivo situado en la esquina inferior derecha de la figura objetivo desde el punto de vista del robot.</li>
+                           <li>A producirse una colisión deben de cambiar de color las piezas que colisionan</li>
+                           <li> <img class="imagen" src="imagen/act_taladro_.colision.png" alt="
+                        taladro"><br></li>
+                       </ul>
+                       <p>Debes de enviar un video de la simulación, el programa rapid (module1 y calibdata) y el archivo pack and go</p>
+                       
+                       
+                       
+                       
+                        <h3> Ejemplo resuelto realizado Mario Sobradillo</h3>
+                        <a href="https://youtu.be/JywKWJin7Jg" target="_blank">  4 taladros en un cubo</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JywKWJin7Jg?si=12DzbaqSTOFGg0Fy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                         <h3> Ejemplo resuelto realizado Mario Sobradillo</h3>
+                        <a href="https://youtu.be/JywKWJin7Jg" target="_blank">  4 taladros en un cubo</a> <br>
+                        
+                         <h3> Ejemplo resuelto realizado Sergio Sanchez</h3>
+                        <a href="https://youtu.be/nYbxppdN0aI" target="_blank">  4 taladros en un cubo</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nYbxppdN0aI?si=SF_TqIHE1sAkxGvZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                        
+                        
+                        
+                        
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   -->
+                
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <section class="section_naranja">
+
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Programación y trayectoria</h2>
+                        </summary>
+                        <br>
+                        Realiza con la flexpendant con robot estudio, un programa que desde la posición de inicio escriba una I vuelva a la posición de inicio, este 2 segundos, escriba O vuelva a la posición de inicio. <br>
+                        Velocidad 100 mm/s <br>
+                        Ajuste fine. <br>
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+                        <a href="https://youtu.be/7vzdONY7aQw" target="_blank"> Programación con flexpendant y trayectoria</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7vzdONY7aQw?si=k_g75cz3c3g83NsH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   -->
+                
+                
+                
+                
+                
+                <a name="prac11"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Instrucciones Rapid</h2>
+                        </summary>
+
+                        <br>
+                        Realiza con la herramienta lápiz, una N, y mediante programación Rapid , tiene que repetir dos veces la trayectoria.
+                        realiza el incremento mediante: <br>
+
+                        suma <br>
+
+                        add <br>
+                        incr <br>
+
+                        Poner a cero <br>
+
+                        asignar valor <br>
+                        clear <br>
+
+
+                        Observa el comportamiento de la variable en OBSERVACIÓN DE RAPID <br>
+
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+                        <a href="https://youtu.be/WuZHq97JXEw" target="_blank"> Instrucciones RAPID</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WuZHq97JXEw?si=-9NiC5v8sYU-xkZW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   -->
+                <a name="prac12"></a>
+                <!-- ******************************************* inicio practica  **********************************  
+                <!-- *****************************19 19 ************** inicio practica  19 19 19**********************************  -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Cargar un programa RAPID en IRB120</h2>
+
+                        </summary>
+                        <br>
+                        Graba el programa RAPID creado en la practica anterior y cárgalo en la flexpendant de nuestro robot, con el nombre p22NOMBRE (práctica 2 evaluación 2 práctica comprueba la desviación del "tablero de escritura" realizado con robot estudio y el real, borra la práctica de la flexpendant y modifica la altura del WOBJ_caja para que el robot real escriba la N sobre su tablero, vuelve a repetir el proceso de cargar y borrar el programa RAPID en el robot. <br>
+                        La práctica se realiza en grupo de dos, en la primera parte cargara el programa un alumno del grupo y en la segunda el otro alumno. <br>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica    -->
+                <a name="prac13"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Proyecto</h2>
+                        </summary>
+
+                        <br>
+                        Coloca la hoja con los 5 puntos en la mesa del robot. Desde la flexpendant , crea la herramienta puntero, y realiza un programa que cree una trayectoria que recorra los puntos inicio, punto 1, puntos 2, punto 3, punto 4 y punto 5. En todos los puntos la herramienta debe de estar alineada con el eje Z. Graba el programa en un USB.
+                        <br>
+                        Desde el ordenador realiza los path N, M, L, U, Z y una trayectoria desde el punto de inicio al punto 1, inicio, punto 2, inicio, punto 3 y finalmente inicio. Y crea un programa que escriba en la pantalla de la flexpendant la instrucción " Introduce un cero para la trayectoria 123, un uno para dibujar una M, un dos para una N, un tres para una L, un cuatro para una U y un cinco para una Z", si el numero introducido es mayor que 5, borrara la pantalla y te indicara durante 3 segundos " El numero seleccionado no esta entre 0 y 5" borra la pantalla y vuelve a aparecer la instrucción.
+                        <br>
+                        Si el numero esta entre 0 y 5, la pantalla de la flexpendant mostrara " Escribiendo la letra ___"mientras este trabajando el robot
+                        <br>
+                        A terminar el robot vuelve a la posición inicio y a repetir el ciclo.<br>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   -->
+
+                <a name="prac14"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Instrucción FOR y WHILE</h2>
+                        </summary>
+                        <br>
+                        Añade a la práctica anterior la pregunta "Entre 1 y 4,cuantas veces quiere que remarque la letra seleccionada" si el número introducido esta entre 1 y 4 el robot dibuja la letra el numero de veces que seleccionado, borra la pantalla y vuelta a comenzar, si es el numero no esta entre 1 y 4, borra la pantalla y vuelta a comenzar. realiza esta última parte del programa con al instrucción WHILE.<br>
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+                        <a href="https://youtu.be/KHliikTf_K8" target="_blank"> Instrucciones FOR WHILE</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KHliikTf_K8?si=44GmH1w2gek80qED" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   -->
+                <a name="prac15"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <section class="section_naranja">
+                    <h2>Esquema eléctrico entradas salidas</h2>
+
+
+                </section>
+                <!-- fin practica    -->
+                <a name="prac16"></a>
+                <!-- ******************************************* inicio practica  **********************************   -->
+                <section class="section_naranja">
+                    <h2>Crea una instalación con 8 entradas y 8 salidas.</h2>
+
+
+
+                </section>
+                <!-- fin practica    -->
+                <a name="prac17"></a>
+                <!-- ******************************************* inicio practica  **********************************  
+                              <!-- ******************************************* inicio practica  **********************************   -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> esquema eléctrico de entradas y salidas APILAR</h2>
+                        </summary>
+
+                        <br>
+                        Programa y realiza un esquema eléctrico de la instalación del robot, conectado con una herramienta ventosa, que apila piezas, una encima de otra, El robot comienza a apilar las piezas cuando pulsamos en la flexpendant la tecla programable 1, y apila piezas hasta que detecte que al ir a recoger una pieza no hay ninguna entonces se para en la posición inicial a la espera de volver a pulsar la tecla programable 1. <br>
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+                        <a href="https://youtu.be/gRjkCk3x0pQ" target="_blank"> Esquema entradas salidas Apilar</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gRjkCk3x0pQ?si=8aFUAgc9ecHz41VB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   -->
+                <a name="prac18"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> OFFS</h2>
+                        </summary>
+
+                        <br>
+                        Realiza un programa que escriba NI o IN, en función si se selecciona un 1 o 2 respectivamente. <br>
+
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+                        <a href="https://youtu.be/UK4dhglwZLQ" target="_blank"> OFFS</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UK4dhglwZLQ?si=-4_zOaBy5swlghM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br>
+                        <a href="https://youtu.be/4LJyUwV6yT4" target="_blank"> OFFS</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4LJyUwV6yT4?si=ZNU1PkiudaykvEsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   -->
+                <a name="prac19"></a>
+                <!-- ******************************************* inicio practica  **********************************   -->
+                <section class="section_naranja">
+
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Video Paletizado</h2>
+                        </summary>
+
+
+                        <h3> Ejemplo resuelto realizado por los alumnos</h3>
+                        <a href="https://youtu.be/TcVfNDiGzio" target="_blank">Video Paletizado</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TcVfNDiGzio?si=ZL3-pfYqUXtujc_b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica  -->
+                <a name="prac20"></a>
+                <!-- ******************************************* inicio practica  **********************************  
+                <!-- *****************la etiqueta practica 19 esta despues de la 11     *************************** -->
+                <section class="section_naranja">
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> Proyecto: Creación de una instalación virtual en Robot Studio</h2>
+                        </summary>
+
+                        <br>
+                        Se valorará : <br>
+
+                        La utilización de dos robot. <br>
+                        Utilización de nuevos componentes. <br>
+
+                        Ayuda: <br>
+                        Se ha creado un espacio colaborativo en Block de notas de clase. <br>
+                        con la publicación un enlace a un video para crear una cinta transportadora <br>
+
+                        <a href="https://www.youtube.com/watch?app=desktop&v=AqIVLxeobC0 " target="_blank">Video ejemplo</a> <br>
+                        <br>
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   
+                <a name="prac21"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>Persiana eléctrica.</h2>
+                     <details>
+
+                        <summary>
+                        </summary>
+                    <br>
+                    Realiza la instalción de un persina eléctrica, con un elemento de
+                    maniobra para subir y otro para bajar, de forma que si se pulsan los
+                    dos a la vez, la persiana baja, <br>
+                    La subida de la persiana se simulara con una bombilla y la bajada con
+                    otra. protegida por un IGA, un diferencial y PIAs<br>
+                    <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales...explica la conexión de un pulsador de persiana y de un
+                    motor de persiana.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer la forma de conectar persianas
+                    eléctricas. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac22"></a><br><br><br>
+                <section class="section_naranja">
+                    <h2> Circuito de calefación.</h2>
+                    <br>
+                    Realiza el encendido de una calefacción electrica, mediante un
+                    termostato y un interruptor con señalización. <br>
+                    Funcionamiento:la calefacción se enciende si hace frio y el termostato
+                    esta activo la calefacción o si doy al interruptor ( la señalización
+                    me indica esta cerrado). La calefacción se simulara por una bombilla
+                    de alta potencia. protegida por un IGA, un diferencial y PIAs<br>
+                    <br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema unifilar,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales...explica la conexión de un pulsador de persiana y de un
+                    motor de persiana.<br>
+                    <br>
+                    <br>
+                    Realización de un montaje sobre el tablero simulando una instalación
+                    real, en pared y techo, utilizado tubo corrugado..<br>
+                    El objetivo de la práctica es conocer la forma de conectar persianas
+                    eléctricas. <br>
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac23"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Interruptor de escalera.</h2>
+                    <br>
+                    Realiza la instalación de la iluminación de
+                    una escalera utilizando un automático de escalera de carril DIN, con
+                    tres puntos de luz que se pueden encender desde 2 sitios distintos.<br>
+                    <ul>
+                        <li>a) Realiza la instalación montando el automático de escalera a
+                            tres hilos.</li>
+                        <li>b) Realiza la instalación montando el automático de escalera a
+                            cuatro hilos.</li>
+                    </ul>
+                     <img class="imagen" src="imagen/pract_Interruptor_escalera4%20hilos.jpg" alt="tablero con la práctica">
+                    Busca información de las ventajas y desventajas de cada montaje.<br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales...mide la tensión con respecto a neutro en el borna 4 del temporizador que este conectada a los pulsadores.<br>
+                    Comprobar que:<br>
+                    - En la conexión a 3 hilos, la tensión que en la borna 4 es de 230V, al activar el pusador pasa a 0V hasta que se escucha el relé que pasa otra vez a 230V.<br>
+                    - En la conexión a 4 hilos, la tensión que en la borna 4 es de 0V, al activar el pusador pasa a 230V hasta que se escucha el relé que pasa otra vez a 0V. <br>
+                    ( la borna 4, en 3 hilos se conecta la borna 4 a neutro a través de los pulsadores y a 4 hilos se conecta a fase [ver esquemas]). <br>
+                    El objetivo de la práctica es saber conectar temporizadores de escalera a 3 y 4 hilos.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac24"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Interruptor de escalera antiguo.</h2>
+                     <details>
+
+                        <summary>
+                        </summary>
+                    <br>
+                    Realiza la instalación de la iluminación de
+                    una escalera utilizando un automático antiguo, con
+                    tres puntos de luz que se pueden encender desde 2 sitios distintos.<br>
+
+                    Busca información de las ventajas y desventajas de cada montaje.<br>
+                    <br>
+                    Entrega un informe en el que incluya ademas del esquema,
+                    multifilar, un plano de distribución, lista de herramientas, lista de
+                    materiales.<br>
+                    El objetivo de la práctica es conectar un elemento comprendiendo su funcionamiento y deducir las conexiónes
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac25"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Cuadro de contadores.</h2>
+                    <br>
+                    Desconectar un contador del cuadro de contadores, y volver a conectarlo a una línea distinta.<br>
+                    La práctica se realizara en parejas.<br>
+                    Analizar las conexiones de un cuadro de contadores, comprobar las conexiones mediante continidad. <br>
+                    Entrega un informe en el que incluya un dibujo del cuadro de contadores indicando las partes que lo componen.<br>
+                    El objetivo de la práctica es saber conectar un cuadro de contadores.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+
+                <a name="prac26"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Contador.</h2>
+                    <br>
+                    Conecta un contador para medir el consumo de una bombilla.
+                    Busca en internet el manual de contador e indica alguna fución mas que tiene ademas de poder mider la energía consumida.<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y funcionamiento del contador.
+                    El objetivo de la práctica es saber conectar un contador y busqueda de internet del manual de funcionamiento.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac27"></a><br><br><br>
+                <!-- ******************************************* inicio practica *************************  
+
+                <section class="section_naranja">
+                    <h2> Detector de presencia.</h2>
+                     <details>
+
+                        <summary>
+                        </summary>
+                    <br>
+                    Realiza una instalación del encendido de un bombilla mediante un detector de presencia.<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y funcionamiento del detector de presencia, parametros que se pueden regular, como se regulan y ejemplos de funcionamiento.
+                    El objetivo de la práctica es saber conectar un detector de presencia.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac28"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Detector crepuscular.</h2>
+                    <br>
+                    Realiza una instalación del encendido de un bombilla mediante un detector crepuscular.<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y funcionamiento del detector de crepuscular, parametros que se pueden regular, como se regulan y ejemplos de funcionamiento.
+                    El objetivo de la práctica es saber conectar un detector de crepuescular.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac29"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>Alumnbrado de emergencia.</h2>
+                     <img class="imagen" src="imagen/pract_Alumbrado_emergencia.jpg" alt="tablero con la práctica">
+                    <br>
+                    Realiza una instalación un punto de luz contralado desde 1 sitio y otro punto de luz controlado desde 3 sitios distintos, y una toma de corriente,
+                    con sus circuitos C1 y C2 de forma que si se pruduce la activación del magnetotermico de iluminación se activa el alumbrado de emergencia.<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y funcionamiento del alumbrado de emergencia, donde es obligatorio su uso y que caracteristcas de iluminación (tiempos y lux) deben de tener.
+                    El objetivo de la práctica es conocer el funcionamiento de alumnbrado de emergencia.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac30"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2> Halogeno</h2>
+                    <br>
+                    Realiza la instalación de encendido de un halogeno de 12V desde 3 sitios distintos<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y mide la tensión de entrada al transformador, la tensión de alimentación, la intensidad de entrada y la intensidad de salida. Calcula la potencia del halogeno según los
+                    valores de entrada y los valores de salida, comprueba que coinciden con la potencia del halogeno.<br>
+                    Razona como deben de ser los cables de primario y del secundario.
+                    Selecciona unos cables para está instalación.
+                    El objetivo de la práctica es conocer el funcionamiento del encendido de un halogeno de 12V.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+                <a name="prac31"></a><br><br><br>
+                <!-- ******************************************* inicio practica  **********************************  
+                <section class="section_naranja">
+                    <h2>Tres Halogeno</h2>
+                    <br>
+                    Realiza la instalación de encendido de 3 halogenos halogeno de 12V desde 3 sitios distintos<br>
+                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
+                    materiales y mide la tensión de entrada al transformador, la tensión de alimentación, la intensidad de entrada y la intensidad de salida. Calcula la potencia del halogeno según los
+                    valores de entrada y los valores de salida, comprueba que coinciden con la potencia del halogeno.<br>
+                    Razona como deben de ser los cables de primario y del secundario.
+                    Selecciona unos cables para está instalación.<br>
+                    Si dejas una sección mínima en el primario y en el secundario del transformador ¿que cable rompera antes?
+                    El objetivo de la práctica es conocer el funcionamiento del encendido de un halogeno de 12V.
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica   
+
+                <a name="prac32"></a><br><br><br>
+                <section class="section_naranja">
+                    <h2>Lamparas de descarga</h2>
+                    <br>
+
+                    <br><a href="#contenedor">INICIO</a>
+                </section>
+                <!-- fin practica  -->
+                <br><a href="#contenedor">INICIO</a>
+            </article>
+        </main>
+        <aside>
+            <!--  <a href="#menuimagencabecera">INICIO</a> <br>-->
+            <section class="section_naranja">
+                <h2>
+                    PRÁCTICAS
+                </h2>
+<ul class="lista0"> 
+               <li> <a href="#prac1">Colocación de objetos en robotstido.</a> </li>
+              <li>  <a href="#prac2">Crea un herramienta</a> </li>
+              <li>  <a href="#prac2a">Crea un WorkObject 2024</a> </li>
+             <li>   <a href="#prac2b"> WObj y sistemas de coordenadas 2024</a> </li>
+             <li>   <a href="#prac3">Trayectoria</a> </li>
+              <li>  <a href="#prac4">Trayectoria con flexPendant</a> </li>
+              <li>  <a href="#prac5">RAPID</a></li>
+             <li>   <a href="#prac6">TCP con flexpendant</a> </li>
+             <li>   <a href="#prac6a">TCP con flexpendant 2024</a> </li>
+             <li>   <a href="#prac7">Crear una trayectoria con flexpendant</a> </li>
+             <li>   <a href="#prac8">Trayectoria N-L 2024</a> </li>
+            <li>    <a href="#prac9">Programación con Flexpendant</a> </li>
+                <li><a href="#prac10">Programación y trayectoria</a> </li>
+              <li>  <a href="#prac10a"> 4 taladros en un cubo 2024</a> </li>
+              <li>  <a href="#prac11">Instrucciones RAPID</a> </li>
+             <li>   <a href="#prac12">Cargar un programa RAPID en IRB120</a></li>
+             <li>   <a href="#prac13">Proyecto</a> </li>
+             <li>   <a href="#prac14">Instrucción FOR y WHILE</a> </li>
+             <li>   <a href="#prac15">Esquema eléctrico entradas salidas</a> </li>
+             <li>   <a href="#prac16">Crea una instalación con 8 entradas y 8 salidas.</a></li>
+           <li>     <a href="#prac17">esquema eléctrico de entradas y salidas APILAR</a></li>
+            <li>    <a href="#prac18">OFFS</a></li>
+            <li>    <a href="#prac19">Video Paletizado</a></li>
+            <li>    <a href="#prac20">Proyecto: Creación de una instalación virtual en Robot Studio</a> </li>
+
+            
+</ul>
+            </section>
+            <section class="section_naranja">
+                <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+            </section>
+        </aside>
+
+
+        <footer>
+            1 CV= 0,735 kW=735W 1kW=1.36CV<br>
+        </footer>
+    </div>
+</body>
+
+</html>
