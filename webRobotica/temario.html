@@ -65,7 +65,7 @@
             </article>
             <br>
             
-            <article class="articulo">
+
                
                
                
@@ -84,11 +84,127 @@
                    <li>   tipos de robot según su movimiento</li> 
                    <li>   Partes del Robot: controladora - Brazo robotico o manipulador, flexpendant</li> 
                    </ul>
-                    
+                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
                       
     <!-- ***************ETIQUETA 2  ********************************** -->          
-              <!--   <details class="detallescard"> <summary class="sumario">
+             <details class="detallescard"> <summary class="sumario">
+                    <h2 class="puntero"> Módulo de entradas y salidas DSQC652</h2></summary>
+                     <p>IDENTIFICAR EL MODULO DE ENTRADAS Y SALIDAS INCORPORADO EN EL irc5 y
+                       buscamos en internet  dsqc652</p>
+                
+                   <p>OBSERVAMOS</p>
+                     
+                        <p>Dos m&oacute;dulos de 8 entradas y 0V &rarr; XS12 Y XS13</p>
+                        <p>Dos m&oacute;dulos de 8 salidas 0v y 24 v XAS14 y XS15</p>
+                        <p>Fuente de alimentaci&oacute;n 24v 0v 24V 0V XS16</p>
+
+                        <img class="imagen" src="imagen/migas_DSQC652.png" alt="DSQC652"><br>
+
+
+                        <h2>****** HABILITAR EL MODULO DSQC652 DESDE LA FLEXPENDANT *******</h2>
+                        <p>nota: Para que aparezca la opción divice device-net se debe de tener habilitado desde el controlador,  Industrial networks, diviceNet master slave <br>
+                           <img class="imagen" src="imagen/migas_DSQC65_controlador.png" alt="DSQC652"><br>
+                        <br>
+                        
+                        panel de control -&gt; configuraci&oacute;n -&gt;devicenet device-&gt; a&ntilde;adir -&gt; usar valores de plantilla -&gt; dsqc652 CAMBIAR ADRRES 63 por 10 -&gt; reiniciar el controlador</p>
+                        <p>en device net aparece el d652</p>
+                        <h3>CONFIGURAR ENTRADAS Y SALIDAS</h3>
+                        <p>panel de control -&gt; configuraci&oacute;n -&gt; signal-&gt; a&ntilde;adir -&gt; nombre DI0; tipo de se&ntilde;al digital input ; asignado al dispositivo d652; device maping 0; nivel de acceso all<br />reiniciar el controlador</p>
+                        
+                        <p>VER SE&Ntilde;ALES EN LA FLEXPENDANT<br />desde flexpendant ver entradas y salidas y fijarse en la opci&oacute;n entradas y salidas mas comunes, &iquest;como se pueden introducir entradas y salidas en esta opci&oacute;n?
+                        <br>a&ntilde;adir desde panel de control las ENTRADAS SALIDAS MAS COMUNES para verlas posteriormente en el men&uacute; de entradas-salidas
+                        <br>panel de control -&gt; entradas y salidas-&gt; seleccionar la E/S mas comunes -&gt; aplicar<br>
+                        
+                          <img class="imagen" src="imagen/migas_DSQC652_io_1.png" alt="DSQC652"><br>
+                         <img class="imagen" src="imagen/migas_DSQC652_io_2.png" alt="DSQC652"><br>
+                          <img class="imagen" src="imagen/migas_DSQC652_io_3.png" alt="DSQC652"><br>
+                           <img class="imagen" src="imagen/migas_DSQC652_io_4.png" alt="DSQC652"><br>
+                        
+                        VER EL ESTADO DE LAS ENTRADAS Y SALIDAS<br />desde la p&aacute;gina principal seleccionar entradas y salidas y vemos el estado de la entradas y salidas mas comunes </p>
+                        
+                         <img class="imagen" src="imagen/migas_DSQC652_simular.png" alt="DSQC652"><br>
+                        
+                        <p>En ver podemos seleccionar las entradas, salidas, mas comunes &hellip;</p>
+                        <p>si selecci&oacute;n una entrada puedo simular el estado 1 o 0</p>
+                        
+                        <p>en teclas programables puede generar la simulaci&oacute;n de una entradas pag 39<br />panel de control&rarr; teclas programables</p>
+                        <h2>****** HABILITAR EL MODULO DSQC652 DESDE ROBOTSTUDIO ******</h2>
+                        <p><br />si no incorporo Industrial networks -&gt; 709-1 devieNet Master/Slave no aparece el men&uacute; device net device<br />si no lo hago la incorporaci&oacute;n al inicio puedo hacerlo desde controlador CAMBIAR OPCIONES, despu&eacute;s de a&ntilde;adir hay que reiniciar.<br />ahora si<br />desde controlador-&gt; configuracion-&gt; i/o System -&gt; DeviceNet Device-&gt; nuevo deviceNet device -&gt; usar valores de plantilla -&gt; seleccionar DSQ 652 cambiar adress 63 por 10<br />aceptar y reiniciar el controlador</p>
+                        <p>a&ntilde;adir se&ntilde;ales<br />controlador -&gt; configuraci&oacute;n -&gt; i/o system -&gt; signal-&gt; bot&oacute;n derecha a&ntilde;adir signal -&gt;nombre DI0; digital input; dsqc652; adress 0 &hellip; 16; nivel de acceso all</p>
+                        <p>SIMULAR</p>
+                        <p>Simulaci&oacute;n -&gt; entradas y salidas -&gt; listas de usuario; editar listas-&gt; nueva lista -&gt; a&ntilde;adir las entradas y salidas creadas</p>
+
+
+                        <h2>Conexi&oacute;n de entradas y salida y FA </h2>
+                        <img class="imagen" src="imagen/migas_conexion_entradas.png" alt="DSQC652"><br>
+                        <img class="imagen" src="imagen/migas_conexion_salidas.png" alt="DSQC652"><br>
+                        <img class="imagen" src="imagen/migas_conexion_FA.png" alt="DSQC652"><br>
+                        <img class="imagen" src="imagen/migas_DSQC652-1.png" alt="DSQC652"><br>
+
+
+                        <h2>instrucciones relacionadas</h2>
+                        <p>WaitDI DI0,1; espero hasta que la entrada este a 1<br />SetDO DO0,1; activo la salida <br />SetDO DO0,0; desactivo la salida<br /> IF DI10_0=1 AND DI10_1=1 path_10;<br />las dos siguientes instrucciones hacen lo mismo<br /> MoveL \Conc Target_10,v1000,z100,MyTool;<br /> SetDO DO10_1,1;</p>
+                        <p>MoveLDo Target_10,v1000,z100,MyTool, DO10_1,1;<br /> La salida se activa despu&eacute;s de pasar por el punto de instrucci&oacute;n anterior</p>
+                        <br><a href="#contenedor">INICIO</a>
+                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                      </details>
+            
+          <!-- ***************ETIQUETA   ********************************** -->          
+                <details class="detallescard"> <summary class="sumario">
+                    <h2 class="puntero">SMART COMPONET Practica guiada</h2></summary>
+               
+<p>La practica consiste cambiar una caja de lugar con un brazo rob&oacute;tico, cuando una fotoc&eacute;lula detecta que hay una caja el brazo robotica la traslada a una nueva posici&oacute;n.</p>
+<p>Al llegar a su posici&oacute;n la caja es retirada y nos quedamos a la espera de una nueva caja.</p>
+<p>Abre la una estaci&oacute;n e incorpora el robot y mytool, conecta mytool al robot</p>
+<p>Crea un cubo de 400,1000,250, cambia el nombre a mesa, y comportamiento f&iacute;sico anclado</p>
+<p>Desplaza la mesa a 200 -500 0</p>
+<p>Crea un cubo 100,100,100 cambia el color a rojo, y la f&iacute;sica del comportamiento inactivo y hazlo invisible</p>
+<p>Desplaza el cubo a 400,400,400</p>
+<p>Desde modelado crea un componente inteligente llamado pick and play</p>
+<p>Arrastra la mesa y la pieza dentro dentro del componente inteligente pick and play</p>
+<p>Edita el componente inteligente pick and play, la primera vez, se abre directamente la edici&oacute;n</p>
+<p>En componer a&ntilde;ade el componente</p>
+<p>source, completa el cuadro con source pieza, posici&oacute;n 400,400,400 y selecciona transient y fisica de comportamiento din&aacute;mico</p>
+<p>En attacher; parent ( my tool) child (source /copy)</p>
+<p>En detacher child (source /copy)</p>
+<p>Sink object (source /copy)</p>
+<p>En dise&ntilde;o crea</p>
+<p>una entrada con el nombre sacar y selecciona restablecimiento autom&aacute;tico para que se comporte con un pulsador.</p>
+<p>una entrada con el nombre borrar y selecciona restablecimiento autom&aacute;tico para que se comporte con un pulsador.</p>
+<p>Una entrada con el nombre coger</p>
+<p>Una entrada con el nombre soltar</p>
+<p>Desde dise&ntilde;o o desde se&ntilde;ales y conexi&oacute;n une</p>
+<p>la entrada sacar con executed de source</p>
+<p>la entrada borrar con executed de sink</p>
+<p>la entrada coger con executed de attacher</p>
+<p>la entrada soltar con executed de detacher</p>
+<p>Incorpora el controlador a la estaci&oacute;n</p>
+<p>a&ntilde;&aacute;dale 3 entradas digitales y 3 salidas digitales</p>
+<p>a&ntilde;&aacute;dele las salidas virtuales</p>
+<p>DO_sacarCaja</p>
+<p>DO_borrar caja</p>
+<p>Desde simulaci&oacute;n crea una l&oacute;gica de estaci&oacute;n</p>
+<p>incorpora al controlador las 5 salidas</p>
+<p>conecta las salidas del controlador con el componente inteligente pick and play</p>
+<p>DO_sacarCaja con SacarCaja</p>
+<p>DO_borrar caja con borrar Caja</p>
+<p>DO_0 con coger</p>
+<p>DO_1 con soltar</p>
+<p>Realiza un programa en robotStudio para el siguiente funcionamiento de la instalaci&oacute;n:</p>
+<p>Pulsa en la salida Virtual DO_SacarCaja</p>
+<p>Pulsa la Entrada DI_0</p>
+<p>El robot se pone en marcha coge la caja y la desplaza 200mm,</p>
+<p>Una vez situada la caja, pulsa borrar y la caja desparece</p>
+<p>y as&iacute; sucesivamente</p>
+<p>Pr&aacute;ctica:</p>
+<p>Mejora la pr&aacute;ctica anterior, incorporando un fotoc&eacute;lula que detecte la caja autom&aacute;ticamente.</p>
+                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                      </details>
+                      
+    <!-- ***************ETIQUETA   ********************************** -->                                   
+    
+         <details class="detallescard"> <summary class="sumario">
                     <h2 class="puntero">    QUE ES UN ROBOT</h2></summary>
                    <ul>
                    <li> Aplicaciones</li> 
@@ -97,12 +213,8 @@
                    <li>   tipos de robot según su movimiento</li> 
                    <li>   Partes del Robot: controladora - Brazo robotico o manipulador, flexpendant</li> 
                    </ul>
-                    
-                      </details>
-                         -->
-                                         
-    
-                    
+                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                      </details>               
                     
                     
    
@@ -114,44 +226,16 @@
 
             </article>
      
-            <div class="section_naranja " >
-                 <label for="check_practica1" id="pract1"> fgaf   
-                  
-        </label><!-- ATENCION ATENCION Puse el label debajo del input un NO FUNCIONA, Cuidado con la cascada -->
-        
- 
-                          
-                
-        
-       <input id="check_practica1" type="checkbox"> 
-                
-            
-                
-                 <div id="practica1">
-                <section class="section_naranja"> <a name="prac1"></a>
-                  
-                    
-                            <h2><a id="mozTocId742047" class="mozTocH2"></a>Desparece el
-                                menú derecha</h2>
-                 
-                        <p>Si me desaparece un menú y no se reinstalarlo, siempre se puede
-                            volver al menú predeterminado</p>
-                        <img class="imagen" src="imagen/m_manuales_diseno_predetermindo.png" alt="Diseño predetereminado"><br>
-                        <br>  esto es la practica 1 	que debe de aparecer cuando selecciones practica1 en el check
-                        <a href="#contenedor">INICIO</a>
-               
-                </section>
-                </div>
-                
-                
-                    </div>
+     
                 <!-- fin practica  -->
                
-            </article>
+      
         </main>
         <aside>
            
-            
+               <section class="section_naranja">
+                <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+            </section>
         </aside>
         <footer>Velocidad máxima del robot en modo manual 200mm/s
         </footer>

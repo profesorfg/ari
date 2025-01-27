@@ -92,7 +92,7 @@ class menuprincipalindex extends HTMLElement {
       			 <ul> 
            			<li> <a href="webAutomatismos/programados.html">S7-200</a> </li>
            			<li> <a href="webAutomatismos/logo.html">LOGO</a> </li>
-           			<li> <a href="webAutomatismos/tiaportal.html">TIA-PORTAL</a> </li>
+           			<li> <a href="webAutomatas/tiaportal.html">TIA-PORTAL</a> </li>
       			</ul>  
   <li> <a href="#" >Mecatrónica</a> 
        <ul> 

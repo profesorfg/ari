@@ -3,3 +3,39 @@ git commit -m "comentario"
 git push -u origin main
 
 
+
+
+
+git init
+
+git config --global user.email "profesorfg@gmail.com"
+
+git config --global user.email
+> profesorfg@gmail.com
+
+git config --global user.name "profesorfg"
+
+git config --global user.name
+> Mona Lisa
+
+
+git add .
+
+
+
+git commit -m "first commit"
+G
+git remote add origin https://github.com/profesorfg/profesorfg.git
+
+git push -u origin master
+
+
+publicar
+setting-> page-> 
+buscar el apartado Branch 
+cambiar por master  root  -> save
+pasado un tiempor 1min refrescamos la pagina y en la primera opcion Github pages
+aparece la direccion de la página
+
+
+

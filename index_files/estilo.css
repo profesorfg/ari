@@ -382,7 +382,7 @@ max-width: 800px;
 }
 
 .width_ajustable{
-width: min(1000px, 100%);
+width: min(1500px, 100%);
     margin: auto;
  
 }
@@ -533,7 +533,7 @@ width: min(1000px, 100%);
     max-width: 100%;
      background: #222; 
     color:white;
-    padding: 4px;
+    padding: 30px;
     border-radius: 8px;
     border-color: greenyellow;
 }
