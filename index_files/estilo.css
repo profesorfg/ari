@@ -523,13 +523,13 @@ width: min(1500px, 100%);
 }
 
 .detallescard{
-    max-width: 200px;
-    min-height: 200px;
+    max-width: 300px;
+   /*  min-height: 200px;    */
     margin: 5px;
 }
 
 .detallescard[open] {
-  background: #ddd; 
+ 
     max-width: 100%;
      background: #222; 
     color:white;
