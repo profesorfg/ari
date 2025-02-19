@@ -392,13 +392,45 @@
                  <h2 class="puntero">IO Factory</h2>
               
       </summary>
-                   <a href="https://www.programacionmultidisciplinar.com/factory-io/manual-de-uso-en-espanol/" >Manual IO Factory</a>
+                 <h3>PREPARACIÓN TIA PORTAL</h3>
               
-                       <!--  <p>.</p>
+                      <p>Descargar la plantilla template de Factory IO  para plc sim</p>
+                       <p>Abrimos TIA portal y cargamos el proyecto template</p>
+                       <p>Al cargar el proyecto template, inserta un autómata 1200, se crea un nuevo bloque, y en la primera linea del OB1 hace una llamada a un bloque, en ese bloque esta toda la programación para la comunicación con Factory IO.
+                       <br>Cambiamos el lenguaje de programacion de OB1 a KOP. (Boton derecho sobre ob1,propiedades y elegir kop)
+  
+                      <p>Realizamos un programa "marcha paro de una cinta transportadora", que consiste en un pulsador<strong>marcha</strong>  (pulsador NA conectado a I0.0) <strong>un pulsador paro</strong>  (pulsador de paro NC conectado a I0,1) y una cinta transportadora con un motor controlado por la salida Q0.0</p>
+                       <p>Iniciamos simulación con PLC Sim</p>
+                       <p>ya tenemos preparado el TIA PORTAL</p>
+                       <h3>FACTORY IO</h3>
+                       <p>Abrimos FACTORY IO</p>
+                       <P>Vamos a crear una escena con una cinta transportadora, una caja, un cofre en el que colocamos un pulsador verde y otro rojo </P>
+                       <P>Los objetos necesarios se arrastran desde el menú de la derecha, y para colocarlos, nos colocamos sobre el objeto, click botón derecho y  nos aparecen unas opciones, entre la que destaco que con la tecla v pulsada puedo desplazar el objeto verticalmente</P>
                         <div class="div_imagen">
-                            <img class="imagen1" alt="" title="" src="">
+                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO01.png">
                         </div>
-                        <p></p> -->
+                        <h3>Conectar con TIA PORTAL</h3>
+                        
+                        <p>Una vez creada la escena, vamos a la pantalla ARCHIVO-> DRIVERS y seleccionamos PLC sim</p>
+                           <div class="div_imagen">
+                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO02.png">
+                        </div>
+                           <p>Vemos el autómata en el medio,las entradas de mi estación a la izquierda y las salidas a la derecha</p>
+                           <p>El número de entradas y salidas las podemos modificar en configuarión</p>
+                           <p>ejemplo añadir 16 entradas digitales y 16 salidas digitales</p>
+                             <div class="div_imagen">
+                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO03.png">
+                        </div>
+                           <p>Arrastramos las señales de nuestra instalación a lado de las entradas y salidas de nuestro autómata y pulsamos el botón conectar, si la conexión es correcta pasara el botón a estado desconectar y se activará el check verde</p>
+                             <div class="div_imagen">
+                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO04.png">
+                        </div>
+                           <p> Volvemos al la pantalla principal, pulsamos en el triangulo play, y en TIA Portal podemos activar observación (gafitas)</p>
+                           <p>Vemos en funcionamiento la simulación de nuestra escena y en  TIA PORTAL vemos la activación y desactivación de las entradas al pulsar sobre los pulsadores de Factory IO y el funcionamiento del programa.</p>
+                             <div class="div_imagen">
+                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO05.png">
+                        </div>
+                             <a href="https://www.programacionmultidisciplinar.com/factory-io/manual-de-uso-en-espanol/" >Manual IO Factory</a>
                             <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                     </details>
             
