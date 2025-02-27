@@ -22,8 +22,8 @@ class menuprincipal extends HTMLElement {
 
     <li> <a href="#" >Autómatas</a> 
       			 <ul> 
-           			<li> <a href="../webAutomatismos/programados.html">S7-200</a> </li> 
-           			<li> <a href="../webAutomatismos/logo.html">LOGO</a> </li> 
+           			<li> <a href="../webAutomatas/programados.html">S7-200</a> </li> 
+           			<li> <a href="../webAutomatas/logo.html">LOGO</a> </li> 
            			<li> <a href="../webAutomatas/tiaportal.html">TIA-PORTAL</a> </li> 
       			</ul>  
    		  </li> 
@@ -90,8 +90,8 @@ class menuprincipalindex extends HTMLElement {
 
     <li> <a href="#" >Autómatas</a> 
       			 <ul> 
-           			<li> <a href="webAutomatismos/programados.html">S7-200</a> </li>
-           			<li> <a href="webAutomatismos/logo.html">LOGO</a> </li>
+           			<li> <a href="webAutomatas/programados.html">S7-200</a> </li>
+           			<li> <a href="webAutomatas/logo.html">LOGO</a> </li>
            			<li> <a href="webAutomatas/tiaportal.html">TIA-PORTAL</a> </li>
       			</ul>  
   <li> <a href="#" >Mecatrónica</a> 
