@@ -17,8 +17,13 @@ class menuprincipal extends HTMLElement {
   
      
    
-    <li> <a href="../webAutomatismos/cableados.html">Automatismos</a> 
 
+<li> <a href="#">Automatismos</a> 
+    <ul>
+       <li>   <a href="../webAutomatismos/cableados.html">Cableados</a> </li> 
+        <li>   <a href="../webAutomatismos/neumaticos.html">Neumáticos</a> </li>    
+    </ul>
+</li>
 
     <li> <a href="#" >Autómatas</a> 
       			 <ul> 
@@ -85,9 +90,13 @@ class menuprincipalindex extends HTMLElement {
    <li> <a href="index.html" >Inicio</a></li> 
    
  <li> <a href="webRobotica/robotica.html" >Robotica</a></li> 
-   <li>   <a href="webAutomatismos/cableados.html">Automatismos</a> 
-      
 
+ <li> <a href="#">Automatismos</a> 
+    <ul>
+       <li>   <a href="webAutomatismos/cableados.html">Cableados</a> </li> 
+        <li>   <a href="webAutomatismos/neumaticos.html">Neumáticos</a> </li>    
+    </ul>
+</li>
     <li> <a href="#" >Autómatas</a> 
       			 <ul> 
            			<li> <a href="webAutomatas/programados.html">S7-200</a> </li>
