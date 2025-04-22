@@ -391,6 +391,12 @@ width: min(1500px, 100%);
 
 /* -----------------------clases particulares ------------------------------------------*/
 
+
+
+.fondo_azul {
+      background: #347f;
+}
+
 .azul_negrita {
     color: #00f;
     font-weight: bold;

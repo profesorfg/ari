@@ -156,6 +156,78 @@
                 </section>
                 <br>
             </article>
+  <!--  ------------------------------------otra practica --------------------------  -->        <article class="articulo">
+                <h2>Selector de una bola</h2>
+
+                <section class="section_naranja">
+                    <div class="flex_wrap_vermas">
+                        <div class="vermas_texto">
+
+                            <p> Controlamos el funcionamiento de dos cilindros cuya función es la dejar caer una bola de un recipiente lleno de bolas</p>
+                            <p>Al pulsar marcha baja el cilindro A, luego sube el cilindro B y deja caer una bola, baja el cilindro B y luego sube el cilindro A que prepara la bola, a los 5 segundos repite el ciclo.</p>
+                            <p>El ciclo se para al acabarse las bolas o pulsar paro</p>
+                            <p>Despues de un corte de tensión se debe de pulsar rearme, que coloca el cilindro A retrocedido y el cilindro B avanzado</p>
+
+
+
+
+
+                        </div>
+                        <div class="vermas_imagen">
+                            <img alt="selector de bolas" src="ima-neuma/pract_selec_bolas.png">
+                           
+                        </div>
+                    </div>
+                    <details name="info">
+                        <summary>Solución </summary>
+                       <p><strong>PARA MANTENER ACTIVADO UN PULSADOR O UN DETECTOR HACER CLICK CON LA TECLA MAYUSCULAS ACTIVADA</strong></p>
+                         <a href="ima-neuma/pract_selec_bolas.ct" download="pract_selec_bolas.ct">
+                            pincha aqui para descarga el archivo y probarlo con fluisim
+                        </a>
+
+                        <div class="div_imagen">
+                            <img class="imagen1" alt="identificacion neumatica" src="ima-neuma/pract_selec_bolas_esq1.png">
+                        </div>
+                        <p class="centrar">Esquema de fuerza.</p>
+                         <div class="div_imagen">
+                            <img class="imagen1" alt="identificacion neumatica" src="ima-neuma/pract_selec_bolas_esq2.png">
+                        </div>
+                         <p class="centrar">Resolvemos el automatismo A+, B- B+ A- con el metodo de cascada </p>
+                        <p class="centrar">KT1 es el contacto de marcha </p>
+                       <p class="centrar">KT6 es el contacto de rearme</p>
+  <div class="div_imagen">
+                            <img class="imagen1" alt="identificacion neumatica" src="ima-neuma/pract_selec_bolas_esq3.png">
+                        </div>
+                      <p class="centrar">KA4 se activa con el pulsador de marcha si hay bolas, se desactiva con el pulsador de paro y si no hay bolas</p>
+                      <p class="centrar">KA5 es un sensor inductivo que detecta si hay bolas en el deposito</p>
+                      <p class="centrar">KA6 es el contactor de rearme se debe de pulsar despues de poner en tensión el circuito, despues no vuelve a funcionar, me activa el ultimo contactor del método de cascada KA3 y coloca los cilindros en su posición inicial.</p>
+                      <p class="centrar">KT1 es el contacto de incio de ciclo, se activa 5 segundos despues de haber terminado el ciclo KA3 y estar la condición de marcha activado (KA4)</p>
+                          <div class="div_imagen">
+                         <img class="imagen1" alt="identificacion neumatica" src="ima-neuma/pract_selec_bolas_esq4.png">
+                        </div>
+                     <p class="centrar">Activación de las válvulas</p>
+                        <p class="centrar"> El rearme KA6 coloca los cilindros en su posición de partida, A en retrosceso y B en avance </p>
+                        <div class="centrar">
+                        <iframe width="280" height="420" src="https://www.youtube.com/embed/jzmVY9Nu3BY?si=hwbpSOY4kI0Xe2Xc" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
+                        <p class="centar">Ejemplo de funcionamiento de un selector con otra forma constructiva</p>
+                        </div>
+                        
+                    </details>
+                </section>
+                <br>
+            </article>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 
         </main>
 
