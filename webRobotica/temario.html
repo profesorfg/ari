@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div id="contenedor">
+    <div id="contenedor1">
         <header>
             <nav>
                 <menu-principal></menu-principal>
@@ -30,7 +30,7 @@
                <!-- *************** MENU INTERNO ********************************* -->
             <h1><a id="mozTocId41252" class="mozTocH1"></a>TEMARIO</h1>
             <br>
-            <article class="flex_wrap articulo">
+            <article class="flex_wrap articulo fondo_azul">
                 <!-- Por ejemplo: -->
                 <div class="card card_icono">
                     <a href="temario.html">
@@ -150,9 +150,39 @@
                      <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
             
-          <!-- ***************ETIQUETA   ********************************** -->          
+        
+                      
+    <!-- ***************ETIQUETA   ********************************** -->                                   
+    
+       <!--   <details class="detallescard"> <summary class="sumario">
+                    <h2 class="puntero">    QUE ES UN ROBOT</h2></summary>
+                   <ul>
+                   <li> Aplicaciones</li> 
+                   <li>   Fabricantes</li> 
+                   <li>   Ejes</li> 
+                   <li>   tipos de robot según su movimiento</li> 
+                   <li>   Partes del Robot: controladora - Brazo robotico o manipulador, flexpendant</li> 
+                   </ul>
+                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                      </details>               
+                     -->
+                    
+   
+
+               
+            
+
+
+
+            </article>
+            
+            
+            
+            <h2 class="centrar">SMARTCOMPONENTS - COMPONENTE INTELIGENTE</h2>
+                <article class="articulo article_flex_contenedor1">
+                  <!-- ***************ETIQUETA   ********************************** -->          
                 <details class="detallescard"> <summary class="sumario">
-                    <h2 class="puntero">SMART COMPONET Practica guiada</h2></summary>
+                    <h2 class="puntero">SMART COMPONENTS Practica guiada</h2></summary>
                
 <p>La practica consiste cambiar una caja de lugar con un brazo rob&oacute;tico, cuando una fotoc&eacute;lula detecta que hay una caja el brazo robotica la traslada a una nueva posici&oacute;n.</p>
 <p>Al llegar a su posici&oacute;n la caja es retirada y nos quedamos a la espera de una nueva caja.</p>
@@ -201,10 +231,42 @@
 <p>Mejora la pr&aacute;ctica anterior, incorporando un fotoc&eacute;lula que detecte la caja autom&aacute;ticamente.</p>
                      <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
+
+            
+       <!-- ***************ETIQUETA  ********************************** -->          
+                <details class="detallescard"> <summary class="sumario">
+                    <h2 class="puntero">Crear una cinta transportadora</h2></summary>
+                   <p>Abrimos Robotstudio, e importamos desde biblioteca -> conveyor-> transportador guide</p>
+                       <img class="imagen" src="imagen/tema_smart_cinta1.png" alt="cinta transportadora"><br>
+                    <img class="imagen" src="imagen/tema_smart_cinta2.png" alt="cinta transportadora"><br>
+                    <p>Desde la física de la cinta </p>
+                    <ul>
+                    <li>Comportamiento anclado</li>
+                    <li><img class="imagen" src="imagen/tema_smart_cinta3.png" alt="cinta transportadora"><br></li>
+                    <li>Seleccionamos permitir velocidad de superfice, le damos una velocidad y una direccion (valor en eje X)</li>
+                    <li><img class="imagen" src="imagen/tema_smart_cinta4.png" alt="cinta transportadora"><br></li>
+                        <li><img class="imagen" src="imagen/tema_smart_cinta5.png" alt="cinta transportadora"><br></li>               
+                
+                    </ul>
+                    <p>Creamos un smartcomponent, arrastramos la cinta al smartcomponent</p>
+                    <img class="imagen" src="imagen/tema_smart_cinta6.png" alt="cinta transportadora"><br>
+                    
+                    <p>Añadimos al smartcomponent el componente fisica-> physycalControl</p>
+                    <img class="imagen" src="imagen/tema_smart_cinta7.png" alt="cinta transportadora"><br>
+                    <p>A las propiedades de physical control añadimos el objeto cinta transportadora</p>
+                    <img class="imagen" src="imagen/tema_smart_cinta8.png" alt="cinta transportadora"><br>
+                    <p>Desde diseño podemos crear una entrada que nos habilite la marcha de la cinta trasportadora</p><p></p>
+                    
+                    <img class="imagen" src="imagen/tema_smart_cinta9.png" alt="cinta transportadora"><br>
+                    <p>Por ultimo probar el funcionamiento con un cubo de 200*200*200 con física ->comportamiento-> dinámico </p>
+                     
+                    <p></p><p></p>
+                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                      </details>
                       
-    <!-- ***************ETIQUETA   ********************************** -->                                   
-    
-         <details class="detallescard"> <summary class="sumario">
+    <!-- ***************ETIQUETA 2  ********************************** -->  
+                    
+                <details class="detallescard"> <summary class="sumario">
                     <h2 class="puntero">    QUE ES UN ROBOT</h2></summary>
                    <ul>
                    <li> Aplicaciones</li> 
@@ -214,16 +276,11 @@
                    <li>   Partes del Robot: controladora - Brazo robotico o manipulador, flexpendant</li> 
                    </ul>
                      <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
-                      </details>               
+                      </details>
                     
                     
-   
-
-               
-            
-
-
-
+          <!-- ***************FIN DE SMARTCOMPONET  ********************************** -->                     
+                    
             </article>
      
      
@@ -231,12 +288,12 @@
                
       
         </main>
-        <aside>
+  <!-- ***********************   <aside>
            
                <section class="section_naranja">
                 <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
             </section>
-        </aside>
+        </aside> ***********************-->
         <footer>Velocidad máxima del robot en modo manual 200mm/s
         </footer>
     </div>
