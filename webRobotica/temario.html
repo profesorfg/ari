@@ -150,7 +150,7 @@
                      <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
                       
-                       <!-- ***************ETIQUETA 3 ********************************** -->          
+                       <!-- ***************ETIQUETA 3 ****MODELADO****************************** -->          
                 <details class="detallescard"> <summary class="sumario">
                     <h2 class="puntero">MODELADO</h2></summary>
                    <ul>
@@ -160,19 +160,31 @@
                    <li>Aplicar comportamiento fisico a la mesa: estático  </li> 
                    <li>Aplicar comportamiento físico al vado: dinámico</li> 
                    <li>  Colocar el vaso elevado sobre la mesa</li> 
-                   <li>Activar simulación: nota para mantenerla activa desde el menú simulación-> configuración simulación -> ciclo continuo </li>
+                       <li>Activar simulación:</li>
+                         <ul class="conpunto">
+                          <li> Manteneractiva desde el menú simulación-> configuración simulación -> ciclo continuo </li>
+                             <li> Mover el robot en simulación: pestaña controlador; Modo de funcionamiento-> ponerlo en manual, el contralodor pasa de ver a amarillo    </li>
+                     
+                       </ul>
                    <li>Obervamos que al activar la simulación el vaso cae sobre la mesa</li>
-                   <li>Poner comportamiento fisico al mytool dinámico,</li>
+                   <li>Poner comportamiento fisico al mytool cinematico,</li>
                    <li>Tirar el vaso moviendo el brazo robótico,desde el menú contextual mediante ejes y mediante movimiento lineales</li>
                    </ul>
-                    
+                    <li>Guardar en biblioteca los objetos creados. Desde el menú contextual del objeto, guardar en biblioteca. Se guarda en la carpeta components de mi proyecto, con extensión rslib </li>
+                    <li>Abrir un archivo nuevo e importar biblioteca:</li>
+                       <ul class="conpunto">  
+                             <li>pestaña posición inicial;importar biblioteca-> buscar biblioteca (buscar la ubicación donde se guardo el objeto)</li>
+                    <li>Copiar los objetos de proyecto anterior a la carpeta de proyecto actual, ahora accedo a los objetos, desde biblioteca del proyecto </li>
+                          <li>En ubicaciones puede ver la ruta donde se guardan la geometrias. Si guardo los objetos rslib en la carpeta de misdocumentos/robotstudio/libreries; Puedo acceder a los objetos desde biblioteca del ususario</li>
+                    </ul>
                      <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
                       
-         <!-- ***************ETIQUETA 4 ********************************** -->          
+         <!-- ***************ETIQUETA 4 ***********PUNTOS Y TRAYECTORIAS*********************** -->          
                 <details class="detallescard"> <summary class="sumario">
                     <h2 class="puntero">PUNTOS Y TRAYECTORIAS</h2></summary>
                    <ul>
+                       
                    <li> Trasladar a posición inicial el brazo robótico </li> 
                    <li>Crear el punto de posición inicial "home": posición inicial -> programación de trayectorias- > programar posición</li>
                    <li> Ver el punto creado: Cambiar de la pestaña de diseño donde veiamos el robot, mytools, objetos modelados a la pestaña trayectorias y puntos </li> 
@@ -184,8 +196,17 @@
                    <li>Modificar el punto "targer 30" utilizando sistemas de coordenadas local ( el tcp)</li>
                    <li>Modificar el punto "targer 40" utilizando sistemas de coordenadas mundo </li>
                    <li>ver el brazo robotico en posición en cada uno de los puntos, utilizado el menu contextual del punto -> ver robot en posicion</li>
-                   </ul>
-                    
+                              <li>Crear un punto pestaña posición inicial->programación de trayectorias-> punto, Poner las coordenas x,y,z respecto el sistemas de coordenas de la estación wobj0-> añadir-> se pueden crear mas puntos-> se termina pulsar en crear. Apareceran los puntos en el wobj0</li>
+                     <li>Seleccionar un punto y pulsar en ver <strong>ver robot en posición, si el robot no puede llegar a esa posición puede ser: por que el robot no llega al punto o por la orientación </strong></li>
+                                  <li> Desde el menú contextual del punto-> seleccionar ver herramienta en posición</li>
+                                  <li>Se puede copiar la orientación de un punto ya creado, copiar posción-> orientación relativa-> mundo.</li>
+                                  <li>Modificar la orientación a mano. Menu contextual del punto->modificar posición -> fijar posición</li>
+                                  <li>Se puede duplicar un punto y añadirle un offset</li>
+                      
+                      
+                                <li>Crear un programa: Ruta-> trayectoria vacia-> añadir puntos al path, podemos cambiar el nombre de path por main </li>
+                                  </ul>
+               
                      <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
             
