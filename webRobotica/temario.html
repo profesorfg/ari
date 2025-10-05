@@ -91,7 +91,7 @@
 
             
       
-                        <!-- ***************ETIQUETA 1  ********************************** -->          
+                        <!-- **************ROBOT STUDIO ********************************** -->          
                 <details class="detallescard"> <summary class="sumario">
                     <h2 class="puntero">ROBOT STUDIO</h2></summary>
                    <ul>
@@ -146,6 +146,45 @@
                    <li>Para importar un proyecto de un ordenador a otro de debe de realizar desde archivo-> compartir -> un unpack and work </li> 
                    
                    </ul>
+                   
+                   
+                     <h2 class="puntero">Crear un proyecto vs. crear una estación</h2>
+                        </summary>
+
+
+
+                        <p>En RobotStudio, hay una diferencia importante entre crear un proyecto y crear una estación:</p>
+                        <ul class="conpunto">
+                            <li><strong>Crear una estación</strong> crea un archivo en robotsudio/Stations con extensión rsstn y los archivos que necesita el proyecto, rapid, archivos backup, controlador... Robotstudio los distribuye en sus carpetas </li>
+                            <li><strong>Crear un proyecto</strong> crea un carpteta en robotstudio/projects con el nombre del proyecto donde guarda los archivos que necesita el proyecto, y el archivo principal tiene extensión rsproj. El proyecto se puede crear sin controladores y añadir el robot y luego el controlador o si seleccionamos incluir "un robot y un controlador" se abrira con estos elementos.
+                                <br>
+                                En versiones de robotstudio antiguas la opción se llamaba soluciones y se guardaba en la carpteta solutions,
+                            </li>
+                        </ul>    
+                            <br>En resumen<strong> se recominenda</strong> la opción <strong>crear un proyecto</strong>
+                            <br>
+                            <h2>Exportar un proyecto</h2>
+                           Para <srtong>Exportar un proyecto</srtong> <br>archivo->compartir->pack and go<br>y crea una archivo con extensión rspag <br> para importalo a otro robotstudio <br>archivo->compartir->Unpack and work
+                            <br><br>
+
+                            <h2>Guardar un proyecto vs. Guardar una estación</h2>
+                            <p>En RobotStudio, hay una diferencia importante entre guardar un proyecto y guardar una estación:</p>
+                           <ul class="conpunto">
+                                <li><strong>Guardar un proyecto</strong>: Cuando guardas un proyecto, estás guardando todos los archivos y configuraciones relacionados con tu trabajo en RobotStudio. Esto incluye los programas de robot, las configuraciones de herramientas, las trayectorias, los objetos 3D, y cualquier otro recurso que hayas utilizado en tu proyecto. Guardar un proyecto te permite mantener todo organizado y fácil de acceder para futuras modificaciones o revisiones.</li>
+                                <li><strong>Guardar una estación</strong>: Guardar una estación, por otro lado, se refiere a guardar el estado actual de la simulación en RobotStudio. Esto incluye la posición y configuración de los robots, las piezas y los equipos en el entorno de simulación. Guardar una estación es útil para capturar un momento específico en tu simulación, lo que te permite volver a ese punto exacto más adelante si necesitas revisar o continuar tu trabajo desde allí.</li>
+                            </ul>
+                            <p>En resumen, guardar un proyecto es más amplio y abarca todos los recursos y configuraciones de tu trabajo, mientras que guardar una estación se enfoca en el estado actual de la simulación.</p>
+
+
+                        
+                        <br><img class="imagen" src="imagen/migas_guardar.png" alt="guardar en robotStudio">
+
+
+                   
+                   
+                   
+                   
+                   
                     
                      <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
@@ -180,47 +219,113 @@
                      <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
                       
-         <!-- ***************ETIQUETA 4 ***********PUNTOS Y TRAYECTORIAS*********************** -->          
+         <!-- ***************ETIQUETA 4 ***********PUNTOS Y TRAYECTORIAS SIMULACION*********************** -->          
                 <details class="detallescard"> <summary class="sumario">
-                    <h2 class="puntero">PUNTOS Y TRAYECTORIAS</h2></summary>
-                   <ul>
-                       
+                    <h2 class="puntero">PUNTOS, TRAYECTORIAS y SIMULACIÓN</h2></summary>
+                      <h2>Creación de puntos</h2>
+                    <ul class="conpunto">
+                    
                    <li> Trasladar a posición inicial el brazo robótico </li> 
-                   <li>Crear el punto de posición inicial "home": posición inicial -> programación de trayectorias- > programar posición</li>
-                   <li> Ver el punto creado: Cambiar de la pestaña de diseño donde veiamos el robot, mytools, objetos modelados a la pestaña trayectorias y puntos </li> 
-                   Seleccionamos el robot -> objetos de trabajo y puntos -> wobobj0-> target 10  
-                   <li>desde el menú contextual del punto podemos ver y modificar su posición</li> 
-                   <li>  Mover el robot y crear un nuevo punto target 20</li> 
-                   <li>crear un nuevo punto sin mover el robot target 30 </li>
-                   <li>crear un nuevo punto sin mover el robot target 40 </li>
-                   <li>Modificar el punto "targer 30" utilizando sistemas de coordenadas local ( el tcp)</li>
-                   <li>Modificar el punto "targer 40" utilizando sistemas de coordenadas mundo </li>
-                   <li>ver el brazo robotico en posición en cada uno de los puntos, utilizado el menu contextual del punto -> ver robot en posicion</li>
-                              <li>Crear un punto pestaña posición inicial->programación de trayectorias-> punto, Poner las coordenas x,y,z respecto el sistemas de coordenas de la estación wobj0-> añadir-> se pueden crear mas puntos-> se termina pulsar en crear. Apareceran los puntos en el wobj0</li>
+                   <li>Crear el punto de posición inicial "home": posición inicial -> programación de trayectorias- > <strong> programar posición</strong></li>
+                       <li><strong> Ver el punto creado</strong>: Cambiar de la pestaña de diseño donde veiamos el robot, mytools, objetos modelados a la pestaña trayectorias y puntos 
+                   Seleccionamos el robot -> objetos de trabajo y puntos -> wobobj0-> target 10</li>   
+                   <li>desde el menú contextual del punto podemos ver y <strong>modificar su posición</strong> fijar posición </li> 
+                       <ul class="conpunto">
+                             <li>Modificar el punto utilizando sistemas de referencia mundo</li>
+                             <li>Modificar el punto utilizando sistemas de coordenadas local ( el tcp)</li>
+                           
+                       </ul>
+                        <li> <strong>Duplicar un punto</strong> moverle un offset</li>  
+              
+                    
+                       <li>Crear puntos <strong>Punto</strong> -> crear punto</li>
+            
+                 
+                 
+                   <li><strong> ver robot en posición</strong> en cada uno de los puntos, utilizado el menu contextual del punto -> ver robot en posicion</li>
+                       <li> Desde el menú contextual del punto-> seleccionar <strong> ver herramienta en posición</strong></li>
+                       
+                       <h3> Ejercicio creacion de punto</h3>
+                              <li>Crear un punto, pestaña posición inicial->programación de trayectorias-> punto, Poner las coordenas x,y,z respecto el sistemas de coordenas de la estación wobj0-> añadir-> se pueden crear mas puntos-> se termina pulsar en crear. Apareceran los puntos en el wobj0</li>
                      <li>Seleccionar un punto y pulsar en ver <strong>ver robot en posición, si el robot no puede llegar a esa posición puede ser: por que el robot no llega al punto o por la orientación </strong></li>
-                                  <li> Desde el menú contextual del punto-> seleccionar ver herramienta en posición</li>
+                                  
+                       <ul class="conpunto">
                                   <li>Se puede copiar la orientación de un punto ya creado, copiar posción-> orientación relativa-> mundo.</li>
                                   <li>Modificar la orientación a mano. Menu contextual del punto->modificar posición -> fijar posición</li>
                                   <li>Se puede duplicar un punto y añadirle un offset</li>
-                      
-                      
+                       </ul>  </ul>
+                      <h2> Creacción de una ruta a partir de los puntos</h2>
                                 <li>Crear un programa: Ruta-> trayectoria vacia-> añadir puntos al path, podemos cambiar el nombre de path por main </li>
-                                  </ul>
+                       <li>Observar el tipo de movimiento, velocidad y precisión</li>
+                    
+                    <h3>Ejercicio</h3>
+                          <p>Crea dos caminos Path 10 y path 20, despues crea un nuevo camino sin recorrido, cambialo de nombre a main, y arrastra los path a al main. </p>      
+                    <h2>Simulación</h2>
+                    <li>Configuración de simulación-></li>
+                    <ul class="conpunto">
+                     <li>Pinchado sobre el IRB120 aparecen la opción modo de ejecución: </li>
+                        <ul>  <li>Un solo ciclo</li>
+                              <li>Continuo</li>
+                        </ul>
+                      <li>Selecionando T_robot ( Tarea del robot): puedo seleccionar el punto de entrada: path o main </li>
+                    </ul>
+                       <li>Una vez creada la trayectoria para simularla debo de <strong>SINCRONIZAR CON RAPID</strong></li>  
+                     <li>En simulación pulsamos al play y vemos la simulación</li>
+
                
                      <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
             
                
-                  
+                    <!-- ***************CREACION COLISIÓN Y GRABAR VIDEO**********PUNTOS Y TRAYECTORIAS*********************** -->          
+                <details class="detallescard"> <summary class="sumario">
+                    <h2 class="puntero">CREACION COLISIÓN Y GRABAR VIDEO</h2></summary>
+                    <br>
                      
-                        
+                        <h3 class="puntero">Crear una colisión </h3>
+                     
+                   <li> Simulación--> crear colision</li>    
+                  <li> aparecen dos carpertas</li> 
+                  <li> llevar a una carpeta my tool y a la otra el objeto de colision.</li> 
+                          
+                           <h3 class="puntero">Grabación de
+                                vídeo</h3>
+                   
+                        <br>
+                        <img class="imagen" src="imagen/m_manuales_video_extensiones.png" alt="video"><br>
+                        <br>
+                        Se puede grabar una animación del funcionamiento en distintos
+                        formatos, exe, glb o rsstnv. Nos permite cambiar el punto vista,
+                        hacer Zoom etc sin tener Robotstudio. <br>
+                        <br>
+                        Se pueden grabar vídeos en formato mp4 <br>
+                        <img class="imagen" src="imagen/m_manuales_video_parar.png" alt="video"><br>
+                        <br>
+                        Puedo grabar una simulación, al dar play a la simulación. <br>
+                        Al pulsar grabar aplicación, se pone a grabar hasta que pulsemos
+                        parar <br>
+                        Al pulsar grabar graficos, graba los graficos hasta pulsar paro <br>
+                        <br>
+                        <br>
                            
                               
                                  
                                     
-                                       
+                                        <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                      </details>
                                              </article>  
-         <!-- *************ARTICULO 2 ********************************** -->                     <h2 class="centrar">Entradas y salidas</h2>
+        
+            
+            
+            
+            
+            
+            
+            
+            <!-- *************ARTICULO 2 ********************************** -->      
+            
+            
+            <h2 class="centrar">Entradas y salidas</h2>
                 <article class="articulo article_flex_contenedor1">
     <!-- ***************ETIQUETA 2  ********************************** -->          
              <details class="detallescard"> <summary class="sumario">
