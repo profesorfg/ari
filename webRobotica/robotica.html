@@ -72,7 +72,7 @@
             <article class="articulo">
 
 
-                <!-- *************** inicio practica  ********************************** -->
+                <!-- *************** inicio practica  ********* Colocación de objetos en robotstudio.************************* -->
                 <section class="section_naranja">
 
                     <a name="prac1"></a>
@@ -93,6 +93,7 @@
 
                         crea otro soporte de 300*400*400, desplazado 300cm en dirección X<br>
                         y en el centro del soporte coloca un cono de diámetro 50 y altura 100<br>
+                        <p>Importa a la carpeta docuementos/robotstudio/libreries la mesa realiza por el alumno Sergio Morejón y coloca en tu estación <a href="libreria/Mesa_Sergio.rslib" download>Pincha aqui para descargar la mesa</a></p>
                         
                         <p>NOTA: Una contralodra IRC puede controlar 4 brazos manipuladores.</p>
 
@@ -100,7 +101,60 @@
                     </details>
                 </section>
                 <!-- fin practica  -->
-                <!-- ******************************************* inicio practica  ********************************** -->
+                
+                 <a name="prac10"></a>
+                <!-- ******************************************* inicio practica  **********************************  -->
+                <a name="prac10a"></a>
+                <section class="section_naranja">
+
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero"> 4 Taladros en un cubo 2024</h2>
+                        </summary>
+                       <p>Crea un tetraedro de longitud 300mm, anchura 400mm y altura 200mm, trasládalo a una distancia de 450mm en dirección X de la base de robot, crea 4 orificios pasantes de 12mm de diámetro a un distancia de 20mm de los bordes. llama a la figura creada guía.<a href="libreria/Base.rslib" download>Descargar la figura Base</a></p>
+                       
+                       <p>Crea otro tetraedro de 320mm, anchura 420mm y altura 175mm, y sitúalo de forma que sobresalga 10mm por los lados. Llama a la figura objetivo, desplazamiento de 460 mm en dirección X <a href="libreria/objetivo.rslib" download>Descargar la figura objetivo</a></p>
+                        <img class="imagen" src="imagen/act_taladro.png" alt="
+                        taladro"><br>
+                       
+                       
+                       
+                       
+                       <p>Crea un programa que vaya de la posición inicial, entre en un orificio toque la figura objetivo durante 2 segundos sin tocar la figura guía,  salga y vuelva a hacer la misma operación en los tres orificios restantes, vuelve a la posición inicial y desde esta posición en 5 segundos toque el centro de la figura guía sin tocar la figura objetivo.</p>
+                       <ul>Nota: 
+                           <li>Velocidad de robot 200mm/s</li>
+                           <li><del>Todos los puntos salvo el inicial deben de estar referenciados a un workobject llamado WO_objetivo situado en la esquina inferior derecha de la figura objetivo desde el punto de vista del robot.</del></li>
+                           <li>A producirse una colisión deben de cambiar de color las piezas que colisionan</li>
+                           <li> <img class="imagen" src="imagen/act_taladro_.colision.png" alt="
+                        taladro"><br></li>
+                       </ul>
+                       <p>Debes de enviar un video de la simulación, el programa rapid (module1 y calibdata) y el archivo pack and go</p>
+                       
+                       
+                       
+                       
+                        <h3> Ejemplo resuelto realizado Mario Sobradillo</h3>
+                        <a href="https://youtu.be/JywKWJin7Jg" target="_blank">  4 taladros en un cubo</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JywKWJin7Jg?si=12DzbaqSTOFGg0Fy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                         <h3> Ejemplo resuelto realizado Mario Sobradillo</h3>
+                        <a href="https://youtu.be/JywKWJin7Jg" target="_blank">  4 taladros en un cubo</a> <br>
+                        
+                         <h3> Ejemplo resuelto realizado Sergio Sanchez</h3>
+                        <a href="https://youtu.be/nYbxppdN0aI" target="_blank">  4 taladros en un cubo</a> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nYbxppdN0aI?si=SF_TqIHE1sAkxGvZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                        
+                        
+                        
+                        
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica   -->
+                
+                
+                <!-- ******************************************* inicio practica  crea uba herramienta********************************** -->
                 <section class="section_naranja">
 
                     <a name="prac2"></a>
@@ -647,56 +701,7 @@
 
                 </section>
                 <!-- fin practica -->
-                <a name="prac10"></a>
-                <!-- ******************************************* inicio practica  **********************************  -->
-                <a name="prac10a"></a>
-                <section class="section_naranja">
-
-                    <details class="detalles">
-                        <summary class="sumario">
-                            <h2 class="puntero"> 4 Taladros en un cubo 2024</h2>
-                        </summary>
-                       <p>Crea un tetraedro de longitud 300mm, anchura 400mm y altura 200mm, trasládalo a una distancia de 300mm de la base de robot, crea 4 orificios pasantes de 12mm de diámetro a un distancia de 20mm de los bordes. llama a la figura creada guía.</p>
-                       
-                       <p>Crea otro tetraedro de 320mm, anchura 420mm y altura 175mm, y sitúalo de forma que sobresalga 10mm por los lados. Llama a la figura objetivo</p>
-                        <img class="imagen" src="imagen/act_taladro.png" alt="
-                        taladro"><br>
-                       
-                       
-                       
-                       
-                       <p>Crea un programa que vaya de la posición inicial, entre en un orificio toque la figura objetivo durante 2 segundos sin tocar la figura guía,  salga y vuelva a hacer la misma operación en los tres orificios restantes, vuelve a la posición inicial y desde esta posición en 5 segundos toque el centro de la figura guía sin tocar la figura objetivo.</p>
-                       <ul>Nota: 
-                           <li>Velocidad de robot 200mm/s</li>
-                           <li>Todos los puntos salvo el inicial deben de estar referenciados a un workobject llamado WO_objetivo situado en la esquina inferior derecha de la figura objetivo desde el punto de vista del robot.</li>
-                           <li>A producirse una colisión deben de cambiar de color las piezas que colisionan</li>
-                           <li> <img class="imagen" src="imagen/act_taladro_.colision.png" alt="
-                        taladro"><br></li>
-                       </ul>
-                       <p>Debes de enviar un video de la simulación, el programa rapid (module1 y calibdata) y el archivo pack and go</p>
-                       
-                       
-                       
-                       
-                        <h3> Ejemplo resuelto realizado Mario Sobradillo</h3>
-                        <a href="https://youtu.be/JywKWJin7Jg" target="_blank">  4 taladros en un cubo</a> <br>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JywKWJin7Jg?si=12DzbaqSTOFGg0Fy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        
-                         <h3> Ejemplo resuelto realizado Mario Sobradillo</h3>
-                        <a href="https://youtu.be/JywKWJin7Jg" target="_blank">  4 taladros en un cubo</a> <br>
-                        
-                         <h3> Ejemplo resuelto realizado Sergio Sanchez</h3>
-                        <a href="https://youtu.be/nYbxppdN0aI" target="_blank">  4 taladros en un cubo</a> <br>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nYbxppdN0aI?si=SF_TqIHE1sAkxGvZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        
-                        
-                        
-                        
-                        
-                        <br><a href="#contenedor">INICIO</a>
-                    </details>
-                </section>
-                <!-- fin practica   -->
+               
                 
                 <!-- ******************************************* inicio practica  **********************************  -->
                 <section class="section_naranja">
@@ -1140,6 +1145,7 @@
                 </h2>
 <ul class="lista0"> 
                <li> <a href="#prac1">Colocación de objetos en robotstido.</a> </li>
+      <li>  <a href="#prac10a"> 4 taladros en un cubo 2024</a> </li>
               <li>  <a href="#prac2">Crea un herramienta</a> </li>
               <li>  <a href="#prac2a">Crea un WorkObject 2024</a> </li>
              <li>   <a href="#prac2b"> WObj y sistemas de coordenadas 2024</a> </li>
@@ -1152,7 +1158,7 @@
              <li>   <a href="#prac8">Trayectoria N-L 2024</a> </li>
             <li>    <a href="#prac9">Programación con Flexpendant</a> </li>
                 <li><a href="#prac10">Programación y trayectoria</a> </li>
-              <li>  <a href="#prac10a"> 4 taladros en un cubo 2024</a> </li>
+            
               <li>  <a href="#prac11">Instrucciones RAPID</a> </li>
              <li>   <a href="#prac12">Cargar un programa RAPID en IRB120</a></li>
              <li>   <a href="#prac13">Proyecto</a> </li>
