@@ -70,7 +70,7 @@
                  <article class="articulo article_flex_contenedor1">
                
                
- <!-- ***************ETIQUETA 1  ********************************** -->          
+ <!-- ***************ETIQUETA 1  **********QUE ES UN ROBOT************************ -->          
                 <details class="detallescard"> <summary class="sumario">
                     <h2 class="puntero">    QUE ES UN ROBOT</h2></summary>
                    <ul>
@@ -84,14 +84,48 @@
                       </details>
                
             </article>
+            
+            
+            
+       <!--  ////////////////////////*********     robotstudio  ////////////////**** -->     
+            
                   <h2 class="centrar">ROBOTSTUDIO</h2>
  
                  <article class="articulo article_flex_contenedor1">
 
 
+                     
+                    <!-- ***************ETIQUETA MODELO **********************************       
+                <details class="detallescard"> <summary class="sumario">
+                    <h2 class="puntero">titulo</h2></summary>
+              
+
+
+
+                   
+                   
+                   
+                   
+                   
+                    
+                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                      </details>   
+                     
+                     
+                     
+                     
+                     -->    
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
             
       
-                        <!-- **************ROBOT STUDIO ********************************** -->          
+                        <!-- **************ROBOT STUDIO ********ROBOT STUDIO************************** -->          
                 <details class="detallescard"> <summary class="sumario">
                     <h2 class="puntero">ROBOT STUDIO</h2></summary>
                    <ul>
@@ -149,7 +183,7 @@
                    
                    
                      <h2 class="puntero">Crear un proyecto vs. crear una estación</h2>
-                        </summary>
+                  
 
 
 
@@ -227,7 +261,9 @@
                     
                    <li> Trasladar a posición inicial el brazo robótico </li> 
                    <li>Crear el punto de posición inicial "home": posición inicial -> programación de trayectorias- > <strong> programar posición</strong></li>
-                       <li><strong> Ver el punto creado</strong>: Cambiar de la pestaña de diseño donde veiamos el robot, mytools, objetos modelados a la pestaña trayectorias y puntos 
+                        
+                      <h3 class="amarillo_negrita"> Ver el punto creado</h3>
+                           <li> Cambiar de la pestaña de diseño donde veiamos el robot, mytools, objetos modelados a la pestaña trayectorias y puntos 
                    Seleccionamos el robot -> objetos de trabajo y puntos -> wobobj0-> target 10</li>   
                    <li>desde el menú contextual del punto podemos ver y <strong>modificar su posición</strong> fijar posición </li> 
                        <ul class="conpunto">
@@ -235,17 +271,21 @@
                              <li>Modificar el punto utilizando sistemas de coordenadas local ( el tcp)</li>
                            
                        </ul>
-                        <li> <strong>Duplicar un punto</strong> moverle un offset</li>  
-              
+                <h3 class="amarillo_negrita">     <strong>Duplicar un punto</strong> moverle un offset</h3>  
+              <p> Desde pestaña "trayectorias y puntos"  desde el menú contextual del puntos -> dupliacar punto, y le añadimos el offset</p>
                     
-                       <li>Crear puntos <strong>Punto</strong> -> crear punto</li>
+                       <h3 class="amarillo_negrita">Opción PUNTO</h3>
+                        <p>En la pestaña posición inicial, programación y trayectorias
+                           -> crear punto</p>
+                        <p>Se pone la posción del punto y la orientación del eje de coordenadas</p>
+                        <p>Si no modifico la orientación y activo al opción ver herramienta en posición, veo como se coloca y el robot no puede llegar a esa posición, activO ver robot en posición y vemos que el robot no se mueve.</p>
             
                  
                  
                    <li><strong> ver robot en posición</strong> en cada uno de los puntos, utilizado el menu contextual del punto -> ver robot en posicion</li>
                        <li> Desde el menú contextual del punto-> seleccionar <strong> ver herramienta en posición</strong></li>
                        
-                       <h3> Ejercicio creacion de punto</h3>
+                       <h3 class="amarillo_negrita"> Ejercicio creacion de punto</h3>
                               <li>Crear un punto, pestaña posición inicial->programación de trayectorias-> punto, Poner las coordenas x,y,z respecto el sistemas de coordenas de la estación wobj0-> añadir-> se pueden crear mas puntos-> se termina pulsar en crear. Apareceran los puntos en el wobj0</li>
                      <li>Seleccionar un punto y pulsar en ver <strong>ver robot en posición, si el robot no puede llegar a esa posición puede ser: por que el robot no llega al punto o por la orientación </strong></li>
                                   
@@ -254,13 +294,23 @@
                                   <li>Modificar la orientación a mano. Menu contextual del punto->modificar posición -> fijar posición</li>
                                   <li>Se puede duplicar un punto y añadirle un offset</li>
                        </ul>  </ul>
+                    
+                     <h2>Creación de un punto a mano alzada</h2>
+                   <p>Desde la pantalla diseño ->mano alzada-> mover y rotar.</p>        
+                              
+                        <p>Selecciono mytool, y muevo mytool del robot, con solo seleccionado del menú de acceso rapido AJUSTAR A OBJETOS, el robot se movera a los puntos mas significativos de la estación de una manera rapida</p>  
+                    <h2>Para que el robot quede alineado respecto el sistema de coordenadas </h2>
+                                            <p>desde Diseño, menú contextual del robot -> <strong>Alinear TCP</strong></p>
                       <h2> Creacción de una ruta a partir de los puntos</h2>
                                 <li>Crear un programa: Ruta-> trayectoria vacia-> añadir puntos al path, podemos cambiar el nombre de path por main </li>
                        <li>Observar el tipo de movimiento, velocidad y precisión</li>
                     
-                    <h3>Ejercicio</h3>
+                    <h3 class="amarillo_negrita">Ejercicio</h3>
                           <p>Crea dos caminos Path 10 y path 20, despues crea un nuevo camino sin recorrido, cambialo de nombre a main, y arrastra los path a al main. </p>      
                     <h2>Simulación</h2>
+                    <p>La forma mas facil de simulación el recorrido, es desde el menú contextual del camino -> mover a largo de la trayectoria</p>
+                    <p>Otra forma es desde la pantalla simulación, para eso debemos de sincorinzar con rapid, (se vera mas adelante). </p>
+                    <p>Esta forma de simulación me permite grabar videos</p>
                     <li>Configuración de simulación-></li>
                     <ul class="conpunto">
                      <li>Pinchado sobre el IRB120 aparecen la opción modo de ejecución: </li>
@@ -306,14 +356,120 @@
                         parar <br>
                         Al pulsar grabar graficos, graba los graficos hasta pulsar paro <br>
                         <br>
+                        <h3 class="puntero">Ocultar una trayectoria</h3>
+                        <p>Desde la pantalla posición inicial, en la pestaña trayectorias y puntos, vamos a una ruta creada, abrimos su menu contextual en ver-> deseleccionamos visible <strong>VER</strong></p>
                         <br>
-                           
-                              
-                                 
-                                    
+                    
+               
                                         <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
-                                             </article>  
+                                          
+            
+            
+            
+            
+             <!-- ***************ETIQUETA TCP y WORKOBJECT**********************************       -->       
+                <details class="detallescard"> <summary class="sumario">
+                    <h2 class="puntero">TCP Y WORKOBJECTS</h2></summary>
+              
+
+<p>Desde modelado se dibuja una herramienta, ejemplo un cono con diametro 30 y altura 100 </p>
+<p>Desde la pestaña modelado, -> crear una herramienta.</p>
+                   <p>Se pone el peso de la herramienta 100gr, se selecciona utilizar herramienta ya existente, siguiente desde el sistema de coordenadas wobj0 se selecciona el punto TCP y se la da un nombre</p>
+                   <p>Crear una herramineta con dos TCP</p>
+                    <p>Crear una herramienta con TCP con orientación distinta al sistema de coordenas wobj0</p>
+                    <p>observar los parametros herramienta mytool, colocar en el robot en punto según un tcp u otro</p>
+                   
+                   
+                <h2>Workobjects</h2>   
+                   
+                    <p>El workobject tarea por defecto es la base del robot que coincide con el de la estación, si muevo el robot y quiero que los puntos siguan referenciados a la base de robot debo de contestar a la pregunta ¿Desea mover la base de coordenadas de la tarea? si</p>
+                    <p>workobject</p>
+                   
+                     <p>Vamos a crear una nueva base de coordenadas "  workobject" referida a un objeto.</p>
+                    <p>Si el objeto (su base de coordenadas) se mueve, los puntos 
+referenciados a el también se mueven</p>
+                    
+                    <p>Desde la pantalla posición inicial, programación de trayectorias seleccionamos otros->Crear objetos de trabajo. en la pantalla de la izquierda le podemos dar un nombre y las coordenadas de usuario </p>
+                    <img class="imagen" src="imagen/migas_wo1.png" alt="workobject">
+                    <img class="imagen" src="imagen/migas_wo2.png" alt="workobject">
+                     <img class="imagen" src="imagen/migas_wo3.png" alt="workobject">
+                    <p>Si quiero crear los puntos repecto al nuevo sistemas de coordenadas selecciono en la pantalla posición inicial, parametros. El workobject creado</p>
+                     <img class="imagen" src="imagen/migas_wo4.png" alt="workobject">
+                    <p>Todos los puntos que estan referenciados a ese workobject, se desplazaran moviendo el workobject. </p>
+                    <p>Para mover el workobject botón, accedemos al menú contextual -> fijar posción, puedo cambiar el origen y el angulo del sistema de coordenadas.</p>
+                    
+                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                      </details>   
+                     
+                     
+                     
+               <!-- ***************ETIQUETA simulacion  y rapid*********************************   -->              
+                       
+                <details class="detallescard"> <summary class="sumario">
+                    <h2 class="puntero">SIMULACIÓN Y RAPID</h2></summary>
+              
+<p>Desde el menú simulación ya hemos visto que podemos poner en marcha el robot, </p>
+<p>La simulación ejecuta el programa RAPID, que es el programa que transferimos al robot real</p>
+<p>En robot studio hay dos entornos de trabajo <strong>LA ESTACIÓN</strong> y <strong>RAPID</strong></p>
+                  <h3 class="amarillo_negrita">ESTACIÓN</h3>
+                   <p>El entorno ESTACION es entorno de ayuda para la programación del robot sin conocimientos de rapid, donde hemos visto su posibilidades, creación de objetos desde el área de modelado, creación de puntos, trayectorias, herramientas, mover el robot linealmente o por ejes,mover el robot a lo largo de una trayectoria...</p>
+                   <h3 class="amarillo_negrita">RAPID</h3> 
+                   <p>En el entorno RAPID es la creación del programa para transferirlo al robot. El programa rapid se puede crear directamente en este entorno o lo podemos crear a partir del entorno de la estación y SINCRONIZAMOS con rapid. Al hacer esta operación nos aparece en rapid el programa creado</p>
+        <p>En la pantalla rapid, en la pestaña controlador, dentro de robot podemos encontrar la opción rapid</p>
+                   <p>El programa rapid esta compuesto por modulo de programa y modulo de sistema, nosotros vamos a trabajar solo con el módulo programa</p>
+                   <p>En el modulo programa esta compuesto por dos archivos</p>
+<li>Calib data: donde encontramos los valores de los workobject, herramientas creadas</li>
+                  <li>Module1 donde se almacena el programa</li>
+                  
+                  <h4>Module 1</h4>
+                   <p>En la estructura de modulo 1 vemos primero la definición de los puntos </p>
+                   <p>El proceso principal main y desde este se llama a programas secundarios</p>
+                   <p>Por defecto los proceso secundarios se nombra con path pero pueden tener cualquier nombre</p>
+                   
+                   <h3 class="amarillo_negrita">Sincronizar</h3>
+                   
+                   <li>Se puede crear un programación desde la estación y SINCRONIZON CON RAPID y me crea mi programa en RAPID</li>
+                   <li>Se puede modificar el programa en RAPID y sincronizo con la ESTACIÓN y se modifica el programa creado desde la estación</li>
+                   
+                   <h3 class="amarillo_negrita">Simulación</h3>
+                   <p>Desde la pantalla simulación se simula siempre el programa en RAPID, osea que si hago una modificación desde la estación y no sincronizo con rapid, me simulara el programa sin modificaciones</p>
+                   <p>En la pantalla simulación, configurar ->configurar simulación</p>
+                   <li>Seleccionando el robor IRB120 puedo configurar la simulación para un ciclo o para ciclo continuos</li>
+                   <li>Desde la tarea del robot T_ROB1 puedo configurar si quiero simular el programa main o otro path creado</li>
+                   
+                   
+                   <p>Para mejorar la simulación se puede ocultar la trayectoria creadas y activar el rastreo TCP en la pantalla simulación, monitor<strong>Rastreo TCP</strong></p>
+                   
+                     <h3 class="amarillo_negrita">Ejercicio demostrativo</h3>
+                    <p>Creo un proyecto con un robot y caja, creo una trayectoria del home a dos vertices de la caja, creo un workobject que coincida con la base de coordenadas de la caja,creo una nueva trayectoria que vaya a los mismo vertices de la caja, creo una nueva trayectoria main, incluyo las dos trayectorias dentro de main. </p>
+                    <p>Simulo el programa con seguimiento TCP</p>
+                    <p>Modifico la posición de la caja y la del workobject y vuelvo a simular.</p>
+                    
+                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                      </details>   
+                     
+                     
+                     
+                     
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+      <!-- ----------------**********ETIQUETA MODELO **********************************     -->        
+            </article>  
         
             
             
@@ -349,7 +505,7 @@
                         
                         panel de control -&gt; configuraci&oacute;n -&gt;devicenet device-&gt; a&ntilde;adir -&gt; usar valores de plantilla -&gt; dsqc652 CAMBIAR ADRRES 63 por 10 -&gt; reiniciar el controlador</p>
                         <p>en device net aparece el d652</p>
-                        <h3>CONFIGURAR ENTRADAS Y SALIDAS</h3>
+                        <h3 class="amarillo_negrita">CONFIGURAR ENTRADAS Y SALIDAS</h3>
                         <p>panel de control -&gt; configuraci&oacute;n -&gt; signal-&gt; a&ntilde;adir -&gt; nombre DI0; tipo de se&ntilde;al digital input ; asignado al dispositivo d652; device maping 0; nivel de acceso all<br />reiniciar el controlador</p>
                         
                         <p>VER SE&Ntilde;ALES EN LA FLEXPENDANT<br />desde flexpendant ver entradas y salidas y fijarse en la opci&oacute;n entradas y salidas mas comunes, &iquest;como se pueden introducir entradas y salidas en esta opci&oacute;n?

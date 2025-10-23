@@ -401,6 +401,11 @@ width: min(1500px, 100%);
     color: #00f;
     font-weight: bold;
 }
+
+.amarillo_negrita {
+    color: #ff0;
+    font-weight: bold;
+}
 .fondo_verde{
     background: #0d0;
     padding: 10px;
