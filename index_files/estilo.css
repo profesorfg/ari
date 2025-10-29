@@ -391,7 +391,9 @@ width: min(1500px, 100%);
 
 /* -----------------------clases particulares ------------------------------------------*/
 
-
+.lineas3 {
+    scroll-margin-top: 7em;
+}
 
 .fondo_azul {
       background: #347f;

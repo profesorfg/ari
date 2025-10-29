@@ -72,10 +72,47 @@
             <article class="articulo">
 
 
-                <!-- *************** inicio practica  ********* Colocación de objetos en robotstudio.************************* -->
+             <!-- *************** inicio practica  ********* modelo************* 
                 <section class="section_naranja">
 
                     <a name="prac1"></a>
+                         <!--   <p class="lineas3" id="prac2b"></p> 
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero">
+
+                                Colocación de objetos en robotstudio.</h2>
+                        </summary>
+
+                        <h2 class="puntero"><a id="puntero"></a>Grabación de
+                                vídeo</h2>
+                        </summary>
+                        <br>
+                        <img class="imagen" src="imagen/m_manuales_video_extensiones.png" alt="video"><br>
+                        <br>
+                         <a href="libreria/Cubo_medidas.svg" target="_blank"> Coordenadas de la trayectoria </a>
+                        <a href="libreria/Cubo_Fabio.zip" download> Importamos la caja de fabio</a>
+                        <a href="https://youtu.be/FwL-7gO1Imk" target="_blank">Funcionamiento de la práctica</a>
+                        <div class=videos-youtube>
+                            <iframe src="https://www.youtube.com/embed/x2DC2GD8Ogo?si=5EJCcfxeXKwCkBEx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                       <p></p>
+
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica  -->   
+               
+               
+               
+               
+               
+               
+                <!-- *************** inicio practica  ********* Colocación de objetos en robotstudio.************************* -->
+                <section class="section_naranja">
+
+                 <!--    <a name="prac1"></a> -->
+             <p class="lineas3" id="prac1"></p> 
                     <details class="detalles">
                         <summary class="sumario">
                             <h2 class="puntero">
@@ -102,9 +139,13 @@
                 </section>
                 <!-- fin practica  -->
                 
-                 <a name="prac10"></a>
+               <!--   <a name="prac10"></a> -->
+                     <p class="lineas3" id="prac10"></p> 
                 <!-- ******************************************* inicio practica  ****************************4 Taladros en un cubo 2024******  -->
-                <a name="prac10a"></a>
+              
+             <!-- <a name="prac10a"></a> -->
+              <p class="lineas3" id="prac10a"></p>
+               
                 <section class="section_naranja">
 
                     <details class="detalles">
@@ -154,10 +195,11 @@
                 <!-- fin practica   -->
                 
                 
-                <!-- ******************************************* inicio practica  crea uba herramienta********************************** -->
+                <!-- ******************************************* inicio practica  crea una herramienta********************************** -->
                 <section class="section_naranja">
 
-                    <a name="prac2"></a>
+                  <!--   <a name="prac2"></a> -->
+                         <p class="lineas3" id="prac2"></p> 
                     <details class="detalles">
                         <summary class="sumario">
                             <h2 class="puntero">
@@ -199,10 +241,82 @@
 
 
 
-                <!-- ******************************************* inicio practica  ********************************** -->
+                <!-- *************** inicio practica  ****CAJA 2025****************** -->
+                <section class="section_naranja">
+<!-- <a name="pracWO2025"></a> -->
+<p class="lineas3" id="pracWO2025"></p>  
+                  
+                    
+                   
+                   
+                   
+                    <details class="detalles">
+                        <summary class="sumario">
+                            <h2 class="puntero">Caja 2025</h2>
+                        </summary>
+<p>Crear un workobject caja con centro en origen de coordenadas<br>
+                      Creamos los puntos con orientaci&oacute;n en eje y 180 y z 90 (no estoy seguro si 90 o -90)<br>
+                      
+                      <a href="libreria/Cubo_medidas.svg" target="_blank"> Coordenadas de la trayectoria </a>
+                      <p>
+                      Duplicamos los puntos 1,2,3,4 y 8 con un offset de 20mm respecto mundo<br>Creamos el punto home respecto workobject 0</p><br>
+                      Creamos la ruta. Bajamos velocidad a 200, fine a los puntos cr&iacute;ticos, convertimos el movimiento lineal a circular para crear nuestra curva
+                         <br> <img class="imagen" src="imagen/pract_caja_ConvertiraMovimientoCiruclar.png" alt="workobject"><br>
+                      
+                      <br>
+                      <a href="libreria/Cubo_Fabio.zip" download> Importamos la caja de fabio</a>
+                     <br>
+                      Ponemos su origen local en &nbsp;nuestro (0,0)<br>
+                       <br> <img class="imagen" src="imagen/pract_caja_modificarOrigenSistCoordenadas.png" alt="workobject">
+                       
+                         <br> <img class="imagen" src="imagen/pract_caja_OrigenCaja.png" alt="workobject"><br>
+                       
+                       <br>
+                       
+                       
+                      
+                      
+                     <p> Conectar workobjectcaja con la caja. ( ahora cuando mueva la caja, muevo el woorkobject)<br>Ponemos la caja con f&iacute;sica comportamiento din&aacute;mico (no muy importante)</p>
+                      <img class="imagen" src="imagen/pract_caja_ConectarWOconCaja.png" alt="workobject">
+                      
+                      <br>  <p>Creo un soporte (400,400,200) posici&oacute;n (200, -200, 0) con f&iacute;sica comportamiento anclado<br>Fijo la posici&oacute;n de la caja en &nbsp;(300, -145/2=-72,5, 300) rotada 90&ordm; respecto Z<br>Crear una colisi&oacute;n entre la caja y tool<br>Crear una ruta main<br>Sincronizar con rapid<br>Ocultar trayectoria y marca TCP</p>
+                       
+
+                     
+                        
+
+
+                        <a href="https://youtu.be/FwL-7gO1Imk" target="_blank">Funcionamiento de la práctica</a>
+                        
+                        
+                         <div class=videos-youtube>
+                            <iframe src="https://www.youtube.com/embed/FwL-7gO1Imk?si=OaC_z5WsiCMJVwXD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                       
+                       
+                     
+                       
+                       
+                      
+                        <br><a href="#contenedor">INICIO</a>
+                    </details>
+                </section>
+                <!-- fin practica  -->
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <!-- ******** inicio practica  *** Crea un WorkObject 2024**** -->
                 <section class="section_naranja">
 
-                    <a name="prac2a"></a>
+                           <p class="lineas3" id="prac2a"></p>  <!--  <a name="prac2a"></a> -->
+                                        
+
                     <details class="detalles">
                         <summary class="sumario">
                             <h2 class="puntero"> Crea un WorkObject 2024</h2>
@@ -286,12 +400,34 @@
                     </details>
                 </section>
                 <!-- fin practica  -->
-
-
-                <!-- ******************************************* inicio practica  ********************************** -->
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                 <!-- ****************** inicio practica  ****WorkObject y sistemas de coordenadas 2024** -->
                 <section class="section_naranja">
-
-                    <a name="prac2b"></a>
+<p class="lineas3" id="prac2b"></p> 
+                  <!--   <a name="prac2b"></a> -->
                     <details class="detalles">
                         <summary class="sumario">
                             <h2 class="puntero"> WorkObject y sistemas de coordenadas 2024</h2>
@@ -382,6 +518,7 @@
                 <!-- fin practica  -->
 
 
+                
 
 
 
@@ -390,7 +527,8 @@
 
 
 
-                <a name="prac3"></a>
+
+                   <p class="lineas3" id="prac3"></p>  <!--  <a name="prac3"></a> -->
                 <!-- ******************************************* inicio practica  ********************************** -->
                 <section class="section_naranja">
 
@@ -457,7 +595,7 @@
 
                 </section>
                 <!-- fin practica  -->
-                <a name="prac4"></a>
+                   <p class="lineas3" id="prac4"></p> <!--  <a name="prac4"></a> -->
                 <!-- ******************************************* inicio practica  ********************************** -->
                 <section class="section_naranja">
                     <details class="detalles">
@@ -478,7 +616,7 @@
                     </details>
                 </section>
                 <!-- fin practica  -->
-                <a name="prac5"></a>
+                    <p class="lineas3" id="prac5"></p>  <!-- <a name="prac5"></a> -->
                 <!-- ******************************************* inicio practica  **********************************  -->
                 <section class="section_naranja">
 
@@ -517,7 +655,7 @@
                     </details>
                 </section>
                 <!-- fin practica  -->
-                <a name="prac6"></a>
+                    <p class="lineas3" id="prac6"></p> <!-- <a name="prac6"></a> -->
                 <!-- ******************************************* inicio practica  ********************************** -->
                 <section class="section_naranja">
                     <details class="detalles">
@@ -538,8 +676,11 @@
                     </details>
                 </section>
                 <!-- fin practica            ********************************** -->
-                <a name="prac6a"></a>
-                <!-- ******************************************* inicio practica  ********************************** -->
+                  
+                  
+                  
+                   <p class="lineas3" id="prac6a"></p>  <!--  <a name="prac6a"></a> -->
+                <!-- ***** inicio practica *****  TCP con flexpendant 2024*** -->
                 <section class="section_naranja">
                     <details class="detalles">
                         <summary class="sumario">
@@ -618,7 +759,7 @@
 
 
 
-                <a name="prac7"></a>
+                    <p class="lineas3" id="prac7"></p> <!-- <a name="prac7"></a> -->
                 <!-- ******************************************* inicio practica  ********************************** -->
                 <section class="section_naranja">
 
@@ -641,7 +782,7 @@
                     </details>
                 </section>
                 <!-- fin practica  -->
-                <a name="prac8"></a>
+                     <p class="lineas3" id="prac8"></p>  <!--  <a name="prac8"></a> -->
                 <!-- ******************************************* inicio practica  **********************************  -->
                 <section class="section_naranja">
                     <details class="detalles">
@@ -671,7 +812,7 @@
                     </details>
                 </section>
                 <!-- fin practica   -->
-                <a name="prac9"></a>
+                     <!--   <p class="lineas3" id="prac2b"></p> -->  <a name="prac9"></a>
                 <!-- ******************************************* inicio practica  **********************************  -->
                 <section class="section_naranja">
                     <details class="detalles">
@@ -726,8 +867,8 @@
                 
                 
                 
-                <a name="prac11"></a>
-                <!-- ******************************************* inicio practica  **********************************  -->
+                   <p class="lineas3" id="prac11"></p>   <!-- <a name="prac11"></a> -->
+                <!-- ************ inicio practica  ***Instrucciones Rapid*************  -->
 
                 <section class="section_naranja">
                     <details class="detalles">
@@ -759,9 +900,8 @@
                     </details>
                 </section>
                 <!-- fin practica   -->
-                <a name="prac12"></a>
-                <!-- ******************************************* inicio practica  **********************************  
-                <!-- *****************************19 19 ************** inicio practica  19 19 19**********************************  -->
+                    <p class="lineas3" id="prac12"></p>   <!-- <a name="prac12"></a> -->
+                <!-- ******* inicio practica  *****Cargar un programa RAPID en IRB120****  -->
                 <section class="section_naranja">
                     <details class="detalles">
                         <summary class="sumario">
@@ -775,12 +915,12 @@
                     </details>
                 </section>
                 <!-- fin practica    -->
-                <a name="prac13"></a>
+                    <p class="lineas3" id="prac13"></p>  <!-- <a name="prac13"></a> -->
                 <!-- ******************************************* inicio practica  **********************************  -->
                 <section class="section_naranja">
                     <details class="detalles">
                         <summary class="sumario">
-                            <h2 class="puntero"> Proyecto</h2>
+                            <h2 class="puntero"> Trayectorias</h2>
                         </summary>
 
                         <br>
@@ -796,8 +936,8 @@
                 </section>
                 <!-- fin practica   -->
 
-                <a name="prac14"></a>
-                <!-- ******************************************* inicio practica  **********************************  -->
+                      <p class="lineas3" id="prac14"></p>  <!-- <a name="prac14"></a> -->
+                <!-- ****** inicio practica  *****Instrucción FOR y WHILE*********  -->
                 <section class="section_naranja">
                     <details class="detalles">
                         <summary class="sumario">
@@ -812,8 +952,8 @@
                     </details>
                 </section>
                 <!-- fin practica   -->
-                <a name="prac15"></a>
-                <!-- ******************************************* inicio practica  **********************************  -->
+                   <p class="lineas3" id="prac15"></p>   <!-- <a name="prac15"></a> -->
+                <!-- ************ inicio practica  *****Esquema eléctrico entradas salidas*****  -->
                 <section class="section_naranja">
                     <h2>Esquema eléctrico entradas salidas</h2>
 
@@ -829,7 +969,7 @@
 
                 </section>
                 <!-- fin practica    -->
-                <a name="prac17"></a>
+                     <!--   <p class="lineas3" id="prac2b"></p> -->  <a name="prac17"></a>
                 <!-- ******************************************* inicio practica  **********************************  
                               <!-- ******************************************* inicio practica  **********************************   -->
                 <section class="section_naranja">
@@ -847,8 +987,8 @@
                     </details>
                 </section>
                 <!-- fin practica   -->
-                <a name="prac18"></a>
-                <!-- ******************************************* inicio practica  **********************************  -->
+                      <p class="lineas3" id="prac18"></p>  <!-- <a name="prac18"></a> -->
+                <!-- ********************** inicio practica  ******OFFS***********  -->
                 <section class="section_naranja">
                     <details class="detalles">
                         <summary class="sumario">
@@ -869,7 +1009,7 @@
                     </details>
                 </section>
                 <!-- fin practica   -->
-                <a name="prac19"></a>
+                     <!--   <p class="lineas3" id="prac2b"></p> -->  <a name="prac19"></a>
                 <!-- ******************************************* inicio practica  **********************************   -->
                 <section class="section_naranja">
 
@@ -895,9 +1035,9 @@
                     </details>
                 </section>
                 <!-- fin practica  -->
-                <a name="prac20"></a>
-                <!-- ******************************************* inicio practica  **********************************  
-                <!-- *****************la etiqueta practica 19 esta despues de la 11     *************************** -->
+                     <p class="lineas3" id="prac20"></p>  <!--  <a name="prac20"></a> -->
+                <!-- ********* inicio practica  **********************************  
+              Proyecto: Creación de una instalación virtual en Robot Studio**** -->
                 <section class="section_naranja">
                     <details class="detalles">
                         <summary class="sumario">
@@ -920,7 +1060,7 @@
                     </details>
                 </section>
                 <!-- fin practica   
-                <a name="prac21"></a><br><br><br>
+                     <!--   <p class="lineas3" id="prac2b"></p> -->  <a name="prac21"></a><br><br><br>
                 <!-- ******************************************* inicio practica  **********************************  
                 <section class="section_naranja">
                     <h2>Persiana eléctrica.</h2>
@@ -949,7 +1089,7 @@
                     <br><a href="#contenedor">INICIO</a>
                 </section>
                 <!-- fin practica   
-                <a name="prac22"></a><br><br><br>
+                     <!--   <p class="lineas3" id="prac2b"></p> -->  <a name="prac22"></a><br><br><br>
                 <section class="section_naranja">
                     <h2> Circuito de calefación.</h2>
                     <br>
@@ -973,167 +1113,9 @@
                     eléctricas. <br>
                     <br><a href="#contenedor">INICIO</a>
                 </section>
-                <!-- fin practica   
-                <a name="prac23"></a><br><br><br>
-                <!-- ******************************************* inicio practica  **********************************  
-                <section class="section_naranja">
-                    <h2> Interruptor de escalera.</h2>
-                    <br>
-                    Realiza la instalación de la iluminación de
-                    una escalera utilizando un automático de escalera de carril DIN, con
-                    tres puntos de luz que se pueden encender desde 2 sitios distintos.<br>
-                    <ul>
-                        <li>a) Realiza la instalación montando el automático de escalera a
-                            tres hilos.</li>
-                        <li>b) Realiza la instalación montando el automático de escalera a
-                            cuatro hilos.</li>
-                    </ul>
-                     <img class="imagen" src="imagen/pract_Interruptor_escalera4%20hilos.jpg" alt="tablero con la práctica">
-                    Busca información de las ventajas y desventajas de cada montaje.<br>
-                    <br>
-                    Entrega un informe en el que incluya ademas del esquema,
-                    multifilar, un plano de distribución, lista de herramientas, lista de
-                    materiales...mide la tensión con respecto a neutro en el borna 4 del temporizador que este conectada a los pulsadores.<br>
-                    Comprobar que:<br>
-                    - En la conexión a 3 hilos, la tensión que en la borna 4 es de 230V, al activar el pusador pasa a 0V hasta que se escucha el relé que pasa otra vez a 230V.<br>
-                    - En la conexión a 4 hilos, la tensión que en la borna 4 es de 0V, al activar el pusador pasa a 230V hasta que se escucha el relé que pasa otra vez a 0V. <br>
-                    ( la borna 4, en 3 hilos se conecta la borna 4 a neutro a través de los pulsadores y a 4 hilos se conecta a fase [ver esquemas]). <br>
-                    El objetivo de la práctica es saber conectar temporizadores de escalera a 3 y 4 hilos.
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica   
-                <a name="prac24"></a><br><br><br>
-                <!-- ******************************************* inicio practica  **********************************  
-                <section class="section_naranja">
-                    <h2> Interruptor de escalera antiguo.</h2>
-                     <details>
-
-                        <summary>
-                        </summary>
-                    <br>
-                    Realiza la instalación de la iluminación de
-                    una escalera utilizando un automático antiguo, con
-                    tres puntos de luz que se pueden encender desde 2 sitios distintos.<br>
-
-                    Busca información de las ventajas y desventajas de cada montaje.<br>
-                    <br>
-                    Entrega un informe en el que incluya ademas del esquema,
-                    multifilar, un plano de distribución, lista de herramientas, lista de
-                    materiales.<br>
-                    El objetivo de la práctica es conectar un elemento comprendiendo su funcionamiento y deducir las conexiónes
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica   
-                <a name="prac25"></a><br><br><br>
-                <!-- ******************************************* inicio practica  **********************************  
-                <section class="section_naranja">
-                    <h2> Cuadro de contadores.</h2>
-                    <br>
-                    Desconectar un contador del cuadro de contadores, y volver a conectarlo a una línea distinta.<br>
-                    La práctica se realizara en parejas.<br>
-                    Analizar las conexiones de un cuadro de contadores, comprobar las conexiones mediante continidad. <br>
-                    Entrega un informe en el que incluya un dibujo del cuadro de contadores indicando las partes que lo componen.<br>
-                    El objetivo de la práctica es saber conectar un cuadro de contadores.
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica   
-
-                <a name="prac26"></a><br><br><br>
-                <!-- ******************************************* inicio practica  **********************************  
-                <section class="section_naranja">
-                    <h2> Contador.</h2>
-                    <br>
-                    Conecta un contador para medir el consumo de una bombilla.
-                    Busca en internet el manual de contador e indica alguna fución mas que tiene ademas de poder mider la energía consumida.<br>
-                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
-                    materiales y funcionamiento del contador.
-                    El objetivo de la práctica es saber conectar un contador y busqueda de internet del manual de funcionamiento.
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica   
-                <a name="prac27"></a><br><br><br>
-                <!-- ******************************************* inicio practica *************************  
-
-                <section class="section_naranja">
-                    <h2> Detector de presencia.</h2>
-                     <details>
-
-                        <summary>
-                        </summary>
-                    <br>
-                    Realiza una instalación del encendido de un bombilla mediante un detector de presencia.<br>
-                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
-                    materiales y funcionamiento del detector de presencia, parametros que se pueden regular, como se regulan y ejemplos de funcionamiento.
-                    El objetivo de la práctica es saber conectar un detector de presencia.
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica   
-                <a name="prac28"></a><br><br><br>
-                <!-- ******************************************* inicio practica  **********************************  
-                <section class="section_naranja">
-                    <h2> Detector crepuscular.</h2>
-                    <br>
-                    Realiza una instalación del encendido de un bombilla mediante un detector crepuscular.<br>
-                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
-                    materiales y funcionamiento del detector de crepuscular, parametros que se pueden regular, como se regulan y ejemplos de funcionamiento.
-                    El objetivo de la práctica es saber conectar un detector de crepuescular.
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica   
-                <a name="prac29"></a><br><br><br>
-                <!-- ******************************************* inicio practica  **********************************  
-                <section class="section_naranja">
-                    <h2>Alumnbrado de emergencia.</h2>
-                     <img class="imagen" src="imagen/pract_Alumbrado_emergencia.jpg" alt="tablero con la práctica">
-                    <br>
-                    Realiza una instalación un punto de luz contralado desde 1 sitio y otro punto de luz controlado desde 3 sitios distintos, y una toma de corriente,
-                    con sus circuitos C1 y C2 de forma que si se pruduce la activación del magnetotermico de iluminación se activa el alumbrado de emergencia.<br>
-                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
-                    materiales y funcionamiento del alumbrado de emergencia, donde es obligatorio su uso y que caracteristcas de iluminación (tiempos y lux) deben de tener.
-                    El objetivo de la práctica es conocer el funcionamiento de alumnbrado de emergencia.
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica   
-                <a name="prac30"></a><br><br><br>
-                <!-- ******************************************* inicio practica  **********************************  
-                <section class="section_naranja">
-                    <h2> Halogeno</h2>
-                    <br>
-                    Realiza la instalación de encendido de un halogeno de 12V desde 3 sitios distintos<br>
-                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
-                    materiales y mide la tensión de entrada al transformador, la tensión de alimentación, la intensidad de entrada y la intensidad de salida. Calcula la potencia del halogeno según los
-                    valores de entrada y los valores de salida, comprueba que coinciden con la potencia del halogeno.<br>
-                    Razona como deben de ser los cables de primario y del secundario.
-                    Selecciona unos cables para está instalación.
-                    El objetivo de la práctica es conocer el funcionamiento del encendido de un halogeno de 12V.
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica   
-                <a name="prac31"></a><br><br><br>
-                <!-- ******************************************* inicio practica  **********************************  
-                <section class="section_naranja">
-                    <h2>Tres Halogeno</h2>
-                    <br>
-                    Realiza la instalación de encendido de 3 halogenos halogeno de 12V desde 3 sitios distintos<br>
-                    Entrega un informe en el que incluya el esquema de multifilar, lista de herramientas, lista de
-                    materiales y mide la tensión de entrada al transformador, la tensión de alimentación, la intensidad de entrada y la intensidad de salida. Calcula la potencia del halogeno según los
-                    valores de entrada y los valores de salida, comprueba que coinciden con la potencia del halogeno.<br>
-                    Razona como deben de ser los cables de primario y del secundario.
-                    Selecciona unos cables para está instalación.<br>
-                    Si dejas una sección mínima en el primario y en el secundario del transformador ¿que cable rompera antes?
-                    El objetivo de la práctica es conocer el funcionamiento del encendido de un halogeno de 12V.
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica   
-
-                <a name="prac32"></a><br><br><br>
-                <section class="section_naranja">
-                    <h2>Lamparas de descarga</h2>
-                    <br>
-
-                    <br><a href="#contenedor">INICIO</a>
-                </section>
-                <!-- fin practica  -->
+                <!-- fin practica   -->
+                    
+                
                 <br><a href="#contenedor">INICIO</a>
             </article>
         </main>
@@ -1147,6 +1129,10 @@
                <li> <a href="#prac1">Colocación de objetos en robotstido.</a> </li>
       <li>  <a href="#prac10a"> 4 taladros en un cubo 2024</a> </li>
               <li>  <a href="#prac2">Crea un herramienta</a> </li>
+              
+              
+              <li>  <a href="#pracWO2025">Caja 2025</a> </li>
+              
               <li>  <a href="#prac2a">Crea un WorkObject 2024</a> </li>
              <li>   <a href="#prac2b"> WObj y sistemas de coordenadas 2024</a> </li>
              <li>   <a href="#prac3">Trayectoria</a> </li>
@@ -1161,7 +1147,7 @@
             
               <li>  <a href="#prac11">Instrucciones RAPID</a> </li>
              <li>   <a href="#prac12">Cargar un programa RAPID en IRB120</a></li>
-             <li>   <a href="#prac13">Proyecto</a> </li>
+             <li>   <a href="#prac13">Trayectorias</a> </li>
              <li>   <a href="#prac14">Instrucción FOR y WHILE</a> </li>
              <li>   <a href="#prac15">Esquema eléctrico entradas salidas</a> </li>
              <li>   <a href="#prac16">Crea una instalación con 8 entradas y 8 salidas.</a></li>
