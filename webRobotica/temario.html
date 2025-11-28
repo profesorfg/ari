@@ -381,7 +381,11 @@
                         <h3 class="puntero">Ocultar una trayectoria</h3>
                         <p>Desde la pantalla posición inicial, en la pestaña trayectorias y puntos, vamos a una ruta creada, abrimos su menu contextual en ver-> deseleccionamos visible <strong>VER</strong></p>
                         <br>
+                     <h3 class="puntero">Selección de puntos programa posición</h3>
                     
+                    <p>Otra forma de selecionar puntos es moviendo el robot desde la vista de diseño "menu -> contextual del robor -> movimiento ejes del mecanismo o movimiento lineal del mecanismos" a la posición deseada y clickcar en programar posición </p>
+                    <p>Esto es lento e impreciso desde robot studio, desde el robot real es una práctica muy habitual.</p>
+                    <p>Hay una opción en robot studio rapida, que consiste en mover el robot a mano alzada, selecionando mover y rotar y activando las herramientas de selección colocamos el robot en la posición exacta de una forma rapida</p>
                
                                         <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                       </details>
@@ -601,9 +605,18 @@ referenciados a el también se mueven</p>
                 <details class="detallescard"> <summary class="sumario">
                     <h2 class="puntero">Rapid</h2></summary>
               
-
-
-                        <!--
+<p> Creamos un programa en con un cubo, un workobject cubo, que va desde el punto home referenciada a workobject0 a una esquina referenciada al workobject caja y los sincronizamos con rapid</p>
+                    <p>Abrimos rapid y analizamos</p>
+<li>Punto: coordenadas del TCP, orientación rotación del TCP,configuración de ejes, posición de ejes externos si existen</li>
+                    <li>tipo de variable y nombre </li>
+     <li>instrucción module, como se cierra el module</li>
+                    <li>Proceso principal, como se cierra el proceso,</li>
+                    <li>Instruccion, tipo de movimiento, velocidad, precisión, herramienta y workobject y se cierra con un punto y como </li>
+                    <li>Podemos crear un punto modificando uno ya creado</li>
+                    <li>Podemos introducir una instrucción a partir de una ya creada</li>
+                    <li>Aplicar los cambios y ver que las lineas creadas pasan de amarillo a verde</li> 
+                    <li>Introducimos una instrucción de espera wait </li>
+                    <li>Sincronizamos con la estación, y vemos la modificación de puntos en la estación</li><!--
                         <!--
                         <!--
                         <br>
@@ -613,9 +626,11 @@ referenciados a el también se mueven</p>
                         <div class=videos-youtube>
                             <iframe src="https://www.youtube.com/embed/x2DC2GD8Ogo?si=5EJCcfxeXKwCkBEx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div> -->
-                       <p></p>
+                       <h3>TEORIA</h3>
                    
-                   
+                   <p>tipos de datos.</p>
+                      <p>Jointtarget</p>
+                      <P>instrucción wait</P>
                    
                    
 
@@ -632,50 +647,12 @@ referenciados a el también se mueven</p>
                  <!--   ******************   fin etiqueta  ***********       -->
                      
                      
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-           
-            </article>  
         
             
             
-            
-            
-            
-            
-            
-            <!-- *************ARTICULO 2 ********************************** -->      
-            
-            
-            <h2 class="centrar">Entradas y salidas</h2>
-                <article class="articulo article_flex_contenedor1">
-    <!-- ***************ETIQUETA 2  ********************************** -->          
+           
+             
+    <!-- ***************ETIQUETA 2  *entradas y salidas  ************************** -->          
              <details class="detallescard"> <summary class="sumario">
                     <h2 class="puntero"> Módulo de entradas y salidas DSQC652</h2></summary>
                      <p>IDENTIFICAR EL MODULO DE ENTRADAS Y SALIDAS INCORPORADO EN EL irc5 y
@@ -724,14 +701,39 @@ referenciados a el también se mueven</p>
                         <p>Simulaci&oacute;n -&gt; entradas y salidas -&gt; listas de usuario; editar listas-&gt; nueva lista -&gt; a&ntilde;adir las entradas y salidas creadas</p>
 
 
+                          <img class="imagen" src="imagen/migas_DSQC652_io_f1.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_f1.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_f2.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_f3.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_f4.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_f5.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_f6.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_f7.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_f8.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_f9.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_g1.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_g2.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_g3.png" alt="DSQC652"><br>
+                      
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       
                         <h2>Conexi&oacute;n de entradas y salida y FA </h2>
                         <img class="imagen" src="imagen/migas_conexion_entradas.png" alt="DSQC652"><br>
                         <img class="imagen" src="imagen/migas_conexion_salidas.png" alt="DSQC652"><br>
                         <img class="imagen" src="imagen/migas_conexion_FA.png" alt="DSQC652"><br>
                         <img class="imagen" src="imagen/migas_DSQC652-1.png" alt="DSQC652"><br>
-
+ <img class="imagen" src="imagen/migas_DSQC652-5.jpg" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652-6.jpg" alt="DSQC652"><br>
 
                         <h2>instrucciones relacionadas</h2>
+                         <img class="imagen" src="imagen/migas_DSQC652_io_g4.png" alt="DSQC652"><br>
+                       <img class="imagen" src="imagen/migas_DSQC652_io_g5.png" alt="DSQC652"><br>
                         <p>WaitDI DI0,1; espero hasta que la entrada este a 1<br />SetDO DO0,1; activo la salida <br />SetDO DO0,0; desactivo la salida<br /> IF DI10_0=1 AND DI10_1=1 path_10;<br />las dos siguientes instrucciones hacen lo mismo<br /> MoveL \Conc Target_10,v1000,z100,MyTool;<br /> SetDO DO10_1,1;</p>
                         <p>MoveLDo Target_10,v1000,z100,MyTool, DO10_1,1;<br /> La salida se activa despu&eacute;s de pasar por el punto de instrucci&oacute;n anterior</p>
                         <br><a href="#contenedor">INICIO</a>
