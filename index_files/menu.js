@@ -12,7 +12,7 @@ class menuprincipal extends HTMLElement {
                 </label>    
   <ul class="menu menu_ul"> 
    <li> <a href="../index.html" >Inicio</a></li> 
- <li> <a href="../webRobotica/robotica.html" >Robotica</a></li> 
+ <li> <a href="../webRobotica/temario.html" >Robotica</a></li> 
    
   
      
@@ -89,7 +89,7 @@ class menuprincipalindex extends HTMLElement {
   <ul class="menu menu_ul"> 
    <li> <a href="index.html" >Inicio</a></li> 
    
- <li> <a href="webRobotica/robotica.html" >Robotica</a></li> 
+ <li> <a href="webRobotica/temario.html" >Robotica</a></li> 
 
  <li> <a href="#">Automatismos</a> 
     <ul>
