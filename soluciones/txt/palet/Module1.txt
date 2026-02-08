@@ -1,0 +1,69 @@
+Vamos a convertir ese “pseudo‑login” en algo realmente seguro. Lo que tienes ahora solo oculta contenido por obscuridad, no por seguridad. Cualquiera puede ver el código, adivinar archivos o saltarse la “contraseña”.
+La clave es mover la validación al servidor, porque todo lo que ocurre en el navegador puede ser manipulado.
+
+🔐 Opción 1: Protección REAL con .htaccess (la más simple y segura si usas Apache)
+Si tu hosting usa Apache, puedes proteger la carpeta soluciones sin escribir una sola línea de JavaScript.
+1. Crea un archivo .htaccess dentro de /soluciones/
+AuthType Basic
+AuthName "Zona protegida"
+AuthUserFile /ruta/absoluta/.htpasswd
+Require valid-user
+2. Crea el archivo .htpasswd
+Puedes generarlo con:
+    • https://www.htaccesstools.com/htpasswd-generator/ (htaccesstools.com in Bing) 
+    • o desde terminal: 
+htpasswd -c .htpasswd usuario
+Esto sí cifra la contraseña.
+Ventajas
+    • Muy seguro 
+    • No necesitas programar nada 
+    • No se puede saltar desde el navegador 
+
+🔐 Opción 2: Login con PHP (seguro y flexible)
+Tu formulario enviaría la contraseña al servidor y este decidiría si dejarte pasar.
+HTML
+<form method="POST" action="login.php">
+    <input type="password" name="clave">
+    <input type="submit" value="Acceder">
+</form>
+login.php
+<?php
+$clave_correcta = "1234"; // Idealmente almacenada cifrada
+
+if ($_POST["clave"] === $clave_correcta) {
+    header("Location: soluciones/pagina.html");
+    exit;
+} else {
+    echo "Contraseña incorrecta";
+}
+?>
+Mejoras recomendadas
+    • Guardar la contraseña cifrada con password_hash() 
+    • Usar sesiones para evitar que el usuario acceda directamente a las páginas 
+
+🔐 Opción 3: Login con sesiones (más profesional)
+login.php
+<?php
+session_start();
+
+$clave_correcta = "1234";
+
+if ($_POST["clave"] === $clave_correcta) {
+    $_SESSION["autenticado"] = true;
+    header("Location: soluciones/pagina.html");
+    exit;
+} else {
+    echo "Contraseña incorrecta";
+}
+?>
+En cada página protegida (soluciones/pagina.html → cámbiala a .php)
+<?php
+session_start();
+if (!isset($_SESSION["autenticado"])) {
+    header("Location: ../index.html");
+    exit;
+}
+?>
+
+¿Cuál opción te interesa más?
+Puedo prepararte el código completo, adaptarlo a tu estructura de carpetas o incluso ayudarte a migrar tu sitio para que quede bien protegido.

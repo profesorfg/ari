@@ -700,6 +700,14 @@ width: min(1500px, 100%);
     height:700px;
 }
 
+.txt_pequeno iframe{
+ overflow: auto;
+    width: 100%;
+    height:100px;
+}
+
+
+
 /*  ------------------------  ENLACES  -----------------------------*/
 .boton {
     background: #69f;
