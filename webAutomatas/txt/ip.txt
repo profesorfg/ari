@@ -1,0 +1,79 @@
+@echo off
+title Menu de configuracion de red Wi-Fi
+
+:menu
+cls
+echo ================================
+echo   MENU DE CONFIGURACION Wi-Fi
+echo ================================
+echo 1. Configurar IP fija
+echo 2. Configurar DHCP (IP dinamica)
+echo 3. Mostrar interfaces de red
+echo 4. Mostrar IP actual
+echo 5. Salir
+echo ================================
+set /p opcion=Elige una opcion: 
+
+if "%opcion%"=="1" goto fija
+if "%opcion%"=="2" goto dhcp
+if "%opcion%"=="3" goto listar
+if "%opcion%"=="4" goto ipactual
+if "%opcion%"=="5" exit
+goto menu
+
+:fija
+cls
+echo Configuracion de IP fija
+echo -------------------------
+set /p IFACE=Nombre de la interfaz Wi-Fi: 
+set /p IP=IP estatica a asignar: 
+set /p MASK=Mascarilla (ej. 255.255.255.0): 
+set /p GW=Puerta de enlace: 
+set /p DNS1=DNS principal: 
+set /p DNS2=DNS secundario: 
+
+echo Aplicando configuracion...
+netsh interface ipv4 set address name="%IFACE%" static %IP% %MASK% %GW%
+netsh interface ipv4 set dns name="%IFACE%" static %DNS1%
+netsh interface ipv4 add dns name="%IFACE%" %DNS2% index=2
+
+echo IP fija configurada correctamente.
+pause
+goto menu
+
+:dhcp
+cls
+echo Configuracion DHCP
+echo -------------------
+set /p IFACE=Nombre de la interfaz Wi-Fi: 
+
+echo Aplicando configuracion...
+netsh interface ipv4 set address name="%IFACE%" source=dhcp
+netsh interface ipv4 set dns name="%IFACE%" source=dhcp
+
+echo DHCP configurado correctamente.
+pause
+goto menu
+
+:listar
+cls
+echo Interfaces de red disponibles:
+echo ------------------------------
+netsh interface ipv4 show interfaces
+echo ------------------------------
+echo Busca el nombre exacto de tu interfaz Wi-Fi.
+pause
+goto menu
+
+:ipactual
+cls
+echo Mostrar IP actual
+echo ------------------
+set /p IFACE=Nombre de la interfaz Wi-Fi: 
+
+echo IP actual de %IFACE%:
+echo ----------------------
+netsh interface ipv4 show address name="%IFACE%"
+echo ----------------------
+pause
+goto menu

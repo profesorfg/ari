@@ -22,7 +22,7 @@
             </nav>
 
         </header>
-       <!--  <aside>
+        <!--  <aside>
             <section class="enlaces-titulo">
                 <div class="enlaces-titulo">
                     <h1>TIA PORTAL - TEORÍA</h1>
@@ -43,20 +43,20 @@
         
         </aside>
          -->
-       <main>
-       <!-- *************** MENU INTERNO ********************************* -->
+        <main>
+            <!-- *************** MENU INTERNO ********************************* -->
             <h1><a id="mozTocId41252" class="mozTocH1"></a>AUTÓMATA 1200 - TEMARIO</h1>
             <br>
             <article class="flex_wrap articulo fondo_azul">
-                
+
                 <!-- Por ejemplo: -->
                 <div class="card card_icono">
                     <a href="ssp.html">
                         <img alt="automas" src="../imagenes/ssp.jpeg">AUTÓMATAS
                     </a>
                 </div>
-  
-                
+
+
                 <!-- Por ejemplo: -->
                 <div class="card card_icono">
                     <a href="tiaportal.html">
@@ -64,23 +64,23 @@
                     </a>
                 </div>
 
-       
 
-          <!--       Por ejemplo: -->
+
+                <!--       Por ejemplo: -->
                 <div class="card card_icono">
                     <a href="tiaportal_capturas.html">
 
                         <img src="imagenes/tia01pufff.png" alt="Capturas"> Capturas </a>
                 </div>
-                
-             <!--   Por ejemplo: -->
+
+                <!--   Por ejemplo: -->
                 <div class="card card_icono">
                     <a href="../webenlaces/E_automatas1200.html">
                         <img alt="Enlaces" src="../webenlaces/imagenes/enlace1.jpeg">Enlaces
                     </a>
                 </div> -->
-                
-        <!-- 
+
+                <!-- 
                 Por ejemplo:
                 <div class="card card_icono">
                     <a href="minimanuales.html">
@@ -94,21 +94,21 @@
             <br>
 
 
-   <article class="articulo article_flex_contenedor1">
-            <!--  ------------------     otra práctica 1 ----------------------------- -->
-        
+            <article class="articulo article_flex_contenedor1">
+                <!--  ------------------     otra práctica 1 ----------------------------- -->
 
 
 
 
-                <details class="detallescard"> 
-                <summary class="sumario">
-                       <h2 class="puntero">Virtual box</h2>
 
-                </summary>
-                
-                      
-                      <h3>OPCIONES DE RED EN LAS MAQUINAS VIRTUALES.</h3>
+                <details class="detallescard">
+                    <summary class="sumario">
+                        <h2 class="puntero">Virtual box</h2>
+
+                    </summary>
+
+
+                    <h3>OPCIONES DE RED EN LAS MAQUINAS VIRTUALES.</h3>
                     <p>De las configuraciones posibles vamos a utilizar tres: Adatador puente, NAT y no conectado</p>
                     <h3>Adatador puente</h3>
                     <p>En este modo de configuraci&oacute;n la m&aacute;quina virtual pasa a ser <strong>un equipo m&aacute;s dentro de la red local</strong> dom&eacute;stica o profesional con su correspondiente<strong> MAC, direcci&oacute;n IP </strong>privada etc. obtendr&aacute; un direccionamiento IP desde el servidor DHCP que tengamos en la red local, y no desde el servidor DHCP del VirtualBox. La m&aacute;quina virtual tendr&aacute; comunicaci&oacute;n con el resto de equipos de la red local y con Internet.</p>
@@ -127,52 +127,151 @@
 
 
 
-                
-
-
-
-  <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
-            </details>
 
 
 
 
+                    <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                </details>
 
-            <!--      ------------------     otra práctica 1-2 --------------------------- -->
 
 
 
-            <details class="detallescard">
-                <summary class="sumario">
-                       <h2 class="puntero">Cambiar la IP </h2>
 
-                </summary>
-               
-                       <h3>Windows XP</h3>
-                    <br>
-                    <br>
+                <!--      ------------------     otra práctica 1-2 --------------------------- -->
+
+
+
+                <details class="detallescard">
+                    <summary class="sumario">
+                        <h2 class="puntero">Cambiar la IP del ordenador</h2>
+
+                    </summary>
+                    <h3>CAMBIAR IP DESDE LINEA DE COMANDOS
+                  </h3>
+                   
+                    <p class="amarillo_negrita">1. VER EL NOMBRE DE TU INTERFAZ DE RED</p>
+                    <p>
+                        Antes de cambiar nada, necesitas saber cómo se llama tu adaptador:
+                    </p>
+                    <h4>Código</h4>
+                    <p class="section_naranja azul_negrita">
+                        netsh interface ipv4 show interfaces
+                    </p>
+                    <p>Busca algo como Ethernet, Wi-Fi, Conexión de área local, etc.</p>
+                  
+                    <p class="amarillo_negrita">2. ASIGNAR UNA IP FIJA </p>
+                    <p>Sustituye los valores por los que quieras usar: </p>
+
+                    <h4>Código</h4>
+
+                    <p class="section_naranja azul_negrita">
+                        netsh interface ipv4 set address name="Ethernet" static 192.168.1.50 255.255.255.0 192.168.1.1
+                    </p>
+
+                    <p>name → nombre del adaptador</p>
+                    <p>192.168.1.50 → nueva IP</p>
+                    <p>
+                        255.255.255.0 → máscara
+
+                    </p>
+                    <p>192.168.1.1 → puerta de enlace</p>
+
+
+
+
+
+                  
+                    <p class="amarillo_negrita">3. CONFIGURAR DNS MANUALMENTE</p>
+                    <p>Sustituye los valores por los que quieras usar: </p>
+
+                    <h4>Código</h4>
+
+                    <p class="section_naranja azul_negrita">
+                        netsh interface ipv4 set dns name="Ethernet" static 8.8.8.8
+                    </p>
+                    <p class="section_naranja azul_negrita">
+                        netsh interface ipv4 add dns name="Ethernet" 8.8.4.4 index=2
+                    </p>
+
+                 
+                    <p class="amarillo_negrita">4. VOLVER A OBTENER IP POR DHCP</p>
+                    <p>Si quieres que Windows vuelva a asignar la IP automáticamente:</p>
+
+                    <h4>Código</h4>
+
+                    <p class="section_naranja azul_negrita">
+                        netsh interface ipv4 set address name="Ethernet" source=dhcp
+                    </p>
+                    <p class="section_naranja azul_negrita">
+                        netsh interface ipv4 set dns name="Ethernet" source=dhcp
+                    </p>
+
+                   
+                    <p class="amarillo_negrita">5. CONOCER IP ACTUAL</p>
+
+                    <h4>Código</h4>
+
+
+
+                    <p class="section_naranja azul_negrita">
+                        netsh interface ipv4 show address name="Ethernet"
+                    </p>
+                    
+                    
+                    <p>Codigo para realizar un archivo bat y automatizar el proceso, debe de ejecutarse como administrador</p>
+                    
+                    <div class="txt fondo_verde ">
+                        <iframe src="txt/ip.txt" frameborder="0"></iframe>
+                    </div>
+                    
+                    <p class="section_naranja azul_negrita"> </p>
+                    <p class="section_naranja azul_negrita"> </p>
+                    <p class="section_naranja azul_negrita"> </p>
+
+                    <h3> CAMBIAR LA IP DESDE PANEL DE CONTROL (método clásico)</h3>
+
+                    <p class="section_naranja azul_negrita">
+                        Pulsa Win + R
+                    </p>
+
+                    <p>Escribe:
+                    </p>
+
+                    <h4>Código</h4>
+                    <p class="section_naranja azul_negrita">
+                        ncpa.cpl
+                    </p>
+
+
+                    <p class="section_naranja azul_negrita"> </p>
+                    <p class="section_naranja azul_negrita"> </p>
+                    <p class="section_naranja azul_negrita"> </p>
+
+
+
                     <h3>windows 7</h3>
 
                     <p>windows->panel de control->Redes e internet-> En centro de recursos compartidos seleccionar (ver estado y tareas de red)-> cambiar opciones del adaptador y a partir de realizar igual que en windows XP</p>
-                 
+
                     <div class="div_imagen">
                         <img class="imagen1" alt="Como cambiar la IP de los ordenarores" src="imagenes/tia_teoria_inf_cambiar-ip-en-w7.png">
                     </div>
 
-             
-  <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
-            </details>
+
+                    <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                </details>
 
 
 
-            <!--  ------------------     otra práctica  2----------------------------- -->
+                <!--  ------------------     otra práctica  2----------------------------- -->
 
 
-            <details class="detallescard">
-                <summary class="sumario">
-                       <h2 class="puntero"> Iniciar un proyecto</h2>
-                </summary>
-       
+                <details class="detallescard">
+                    <summary class="sumario">
+                        <h2 class="puntero"> Iniciar un proyecto</h2>
+                    </summary>
+
 
 
 
@@ -187,298 +286,300 @@
                         <li>-M&oacute;dulos de ampliaci&oacute;n</li>
                         <li>-IP del proyecto</li>
                     </ul>
-             
 
 
 
 
-                <section class="section_naranja centrar">
-                    <h3 class="mayusculas">Arrancar en vista proyecto</h3>
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_vista_proyecto1.png">
 
+                    <section class="section_naranja centrar">
+                        <h3 class="mayusculas">Arrancar en vista proyecto</h3>
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_vista_proyecto1.png">
 
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_vista_proyecto2.png">
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_vista_proyecto2.png">
 
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_vista_proyecto3.png">
-                    <h3 class="mayusculas">Selección autómata</h3>
 
-                    <h3 class="mayusculas">Nuevo proyecto</h3>
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto1.png">
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_vista_proyecto3.png">
+                        <h3 class="mayusculas">Selección autómata</h3>
 
-                    <h3 class="mayusculas">Seleccionar un autómata</h3>
+                        <h3 class="mayusculas">Nuevo proyecto</h3>
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto1.png">
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto2.png">
+                        <h3 class="mayusculas">Seleccionar un autómata</h3>
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto2.png">
 
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto3.png">
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto3.png">
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto4.png">
 
-                    <h3 class="mayusculas">Selección dispositivos Online</h3>
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto4.png">
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_Seleccion-dispositivos-on-line1.png">
+                        <h3 class="mayusculas">Selección dispositivos Online</h3>
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_Seleccion-dispositivos-on-line1.png">
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_Seleccion-dispositivos-on-line2.png">
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_Seleccion-dispositivos-on-line2.png">
 
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_Seleccion-dispositivos-on-line3.png">
 
-                    <h3 class="mayusculas">Módulos de amplilación</h3>
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_Seleccion-dispositivos-on-line3.png">
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_modulos-de-amplicion1.png">
+                        <h3 class="mayusculas">Módulos de amplilación</h3>
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_modulos-de-amplicion1.png">
 
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_modulos-de-amplicion2.png">
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_modulos-de-amplicion2.png">
 
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_modulos-de-amplicion3.png">
 
-                    <h3 class="mayusculas">IP del proyecto</h3>
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_modulos-de-amplicion3.png">
 
+                        <h3 class="mayusculas">IP del proyecto</h3>
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto5.png">
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto5.png">
 
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto6.png">
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto6.png">
 
 
-                    <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto7.png">
 
+                        <img class="imagen1" alt="" title="captura tia portal" src="imagenes/tia_teoria_nuevo_proyecto7.png">
 
 
 
-                </section>
 
+                    </section>
 
 
 
-  <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
-            </details>
 
+                    <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                </details>
 
 
 
-            <!--  ------------------     otra práctica  3----------------------------- -->
-            <details class="detallescard">
-                <summary class="sumario">
-                       <h2 class="puntero"> IP Autómata 1200</h2>
-                </summary>
-                  
-                        <ul>
-                            <li>-Cambiar IP del aut&oacute;mata</li>
-                            <li>-Localizar dispositivos</li>
-                        </ul>
-               
-                 
 
+                <!--  ------------------     otra práctica  3----------------------------- -->
+                <details class="detallescard">
+                    <summary class="sumario">
+                        <h2 class="puntero"> IP Autómata 1200</h2>
+                    </summary>
 
-                        <section class="centrar">
+                    <ul>
+                        <li>-Cambiar IP del aut&oacute;mata</li>
+                        <li>-Localizar dispositivos</li>
+                    </ul>
 
-                            <h3>CAMBIAR IP DEL AUT&Oacute;MATA</h3>
-                            <p>Accesos online&rarr; selecionamos nuestra tarjeta de red&rarr; actualizamos&rarr; y nos localiza los aut&oacute;matas (pueden estar en con una IP que pertenezca a otra red, que TIA PORTAL los puede localizar.)&rarr; online y diagnostico</p>
 
 
-                            <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_301cambiarIP00.png">
-                            <p>Y puedo ver la MAC del autómata, la dirección IP y si la puedo cambiar la IP del autómata, primero debemos de borrar la ip asignada</p>
-                            <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_302cambiarIP01.png">
-
-                            <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_303cambiarIP-1.png">
-                            <p>CAMBIAR IP DEL AUTÓMATA</p>
-                            <p>Volvemos a actualizar los dispostivos accesibles y aparece la MAC del dipositivo que no tiene la IP</p>
-                            <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_304cambiarIP2.png">
-
-                            <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_305cambiarIP3.png">
-                            <h3>CAMBIAR NOMBRE DISPOSITIVO Y PARPADEO DESDE ACCESO ONLINE </h3>
-                            <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_306parpadeo-online.png">
-                           <h3>LOCALIZAR DISPOSITIVOS</h3>
-                            <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_307Localizar1.png">
-
-                            <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_308Localizar2.png">
-
-                            <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_309Localizar3.png">
-
-
-
-                        </section>
-
-
-
-                    </details>
-
-
-
-                    <!--  ------------------     otra práctica 4 ----------------------------- -->
-                    <details class="detallescard">
-                        <summary class="sumario">
-                               <h2 class="puntero"> Guardar un programa</h2>
-
-                        </summary>
-                    
-
-                            <p>Al crear el proyecto le tenemos que dar el nombre del proyecto y la ruta donde le vamos a guardar, se creara una CARPETA con el nombre del proyecto y todos los archivos donde se almacenar&aacute; todo la informaci&oacute;n del proyecto.</p>
-                            <p>Una vez creado el programa, cuando quiera guardar modificaciones, click en proyecto y GUARDAR.</p>
-                            <p>Si quiero cambiar el nombre del proyecto, click GUARDAR COMO, y se creara una carpeta nueva que incluye a todos los archivos necesarios con la informaci&oacute;n del proyecto.</p>
-                            <p>Si quiero llevarlo a otro ordenador puedo hacerlo de distantas formas</p>
-                            <ul>
-                                <li>Llevar toda la carpeta.</li>
-                                <li>Llevar la carpeta comprimida con un compresor gen&eacute;rico.</li>
-                                <li>La MEJOR OPCI&Oacute;N Llevar la carpeta comprimida con la opci&oacute;n de archivar, creando un archivo comprimido, con extensi&oacute;n ZAP (versi&oacute;n del TIA PORTAL con el que se ha creado), ejemplo prueba.ZAP 16</li>
-                            </ul>
-                            <p>Abrir el archivo en otro ordenador</p>
-                            <ul>
-                                <li>Si he llevado la carpeta comprimida con un compresor gen&eacute;nico, desmpimir el archivo en la carpeta donde guardamos los proyectos. Y desde proyecto -&gt; abrir -&gt; examinar-&gt; busco la carpeta y click sobre el archivo con el logo del TIA PORTAL</li>
-                                <li>Si he llevado la carpeta sin comprimir, copiar la carpeta de nuestro proyecto en la carpeta donde guardamos los proyectos. Y desde proyecto -&gt; abrir -&gt; examinar-&gt; busco la carpeta y click sobre el archivo con el logo del TIA PORTAL</li>
-                                <li>Si tengo el archivo comprimido con TIA PORTAL, Desde el programa Proyecto -&gt; abrir-&gt; click en examinar, y busco mi archivo-&gt; lo selecciono y clik en abrir -&gt; busco la carpeta done quiero guarda el proyecto SELECCIONAR CARPETA, y se descomprime mi proyecto en esa carpeta.</li>
-                            </ul>
-
-
-                    </details>
-
-
-
-
-                    <!--      ------------------     otra práctica  --------------------------- -->
-
-
-              <details class="detallescard"> <summary class="sumario">
-                 <h2 class="puntero">PLC Sim </h2>
-              
-                  </summary>
-                   
-              <br>
-                       <p>Eliminar la contraseña y </p>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_01.png">
-                        </div>
-                        <br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_02.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_03.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_04.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_05.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_06.png">
-                        </div><br>
-                        <p>Minimizamos el simulador y establecemos comunicación TIA portal con PLCSIM</p>
-                        <p>Si cerramos la comunicación y queremos volver a establecerla, click en cargar en dispositivo y seleccionar PLCSIM</p>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_07.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_08.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_09.png">
-                        </div><br>
-                        <p>Seleccionar arrancar módulo</p>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_10.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_11.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_12.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_13.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_14.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_15.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_16.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_17.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_18.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_19.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_20.png">
-                        </div><br>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_21.png">
-                        </div>
-                        <p></p>
-                            <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
-                    </details>
-            
-             <!--      ------------------     otra práctica  ----------------------------- -->
-
-
-              <details class="detallescard"> <summary class="sumario">
-                 <h2 class="puntero">IO Factory</h2>
-              
-      </summary>
-                 <h3>PREPARACIÓN TIA PORTAL</h3>
-              
-                      <p>Descargar la plantilla template de Factory IO  para plc sim</p>
-                       <p>Abrimos TIA portal y cargamos el proyecto template</p>
-                       <p>Al cargar el proyecto template, inserta un autómata 1200, se crea un nuevo bloque, y en la primera linea del OB1 hace una llamada a un bloque, en ese bloque esta toda la programación para la comunicación con Factory IO.
-                       <br>Cambiamos el lenguaje de programacion de OB1 a KOP. (Boton derecho sobre ob1,propiedades y elegir kop)
-  
-                      <p>Realizamos un programa "marcha paro de una cinta transportadora", que consiste en un pulsador<strong>marcha</strong>  (pulsador NA conectado a I0.0) <strong>un pulsador paro</strong>  (pulsador de paro NC conectado a I0,1) y una cinta transportadora con un motor controlado por la salida Q0.0</p>
-                       <p>Iniciamos simulación con PLC Sim</p>
-                       <p>ya tenemos preparado el TIA PORTAL</p>
-                       <h3>FACTORY IO</h3>
-                       <p>Abrimos FACTORY IO</p>
-                       <P>Vamos a crear una escena con una cinta transportadora, una caja, un cofre en el que colocamos un pulsador verde y otro rojo </P>
-                       <P>Los objetos necesarios se arrastran desde el menú de la derecha, y para colocarlos, nos colocamos sobre el objeto, click botón derecho y  nos aparecen unas opciones, entre la que destaco que con la tecla v pulsada puedo desplazar el objeto verticalmente</P>
-                        <div class="div_imagen">
-                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO01.png">
-                        </div>
-                        <h3>Conectar con TIA PORTAL</h3>
-                        
-                        <p>Una vez creada la escena, vamos a la pantalla ARCHIVO-> DRIVERS y seleccionamos PLC sim</p>
-                           <div class="div_imagen">
-                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO02.png">
-                        </div>
-                           <p>Vemos el autómata en el medio,las entradas de mi estación a la izquierda y las salidas a la derecha</p>
-                           <p>El número de entradas y salidas las podemos modificar en configuarión</p>
-                           <p>ejemplo añadir 16 entradas digitales y 16 salidas digitales</p>
-                             <div class="div_imagen">
-                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO03.png">
-                        </div>
-                           <p>Arrastramos las señales de nuestra instalación a lado de las entradas y salidas de nuestro autómata y pulsamos el botón conectar, si la conexión es correcta pasara el botón a estado desconectar y se activará el check verde</p>
-                             <div class="div_imagen">
-                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO04.png">
-                        </div>
-                           <p> Volvemos al la pantalla principal, pulsamos en el triangulo play, y en TIA Portal podemos activar observación (gafitas)</p>
-                           <p>Vemos en funcionamiento la simulación de nuestra escena y en  TIA PORTAL vemos la activación y desactivación de las entradas al pulsar sobre los pulsadores de Factory IO y el funcionamiento del programa.</p>
-                             <div class="div_imagen">
-                            <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO05.png">
-                        </div>
-                             <a href="https://www.programacionmultidisciplinar.com/factory-io/manual-de-uso-en-espanol/" >Manual IO Factory</a>
-                            <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
-                    </details>
-            
-    <!--      ------------------     otra práctica  -----------------------------
+
+                    <section class="centrar">
+
+                        <h3>CAMBIAR IP DEL AUT&Oacute;MATA</h3>
+                        <p>Accesos online&rarr; selecionamos nuestra tarjeta de red&rarr; actualizamos&rarr; y nos localiza los aut&oacute;matas (pueden estar en con una IP que pertenezca a otra red, que TIA PORTAL los puede localizar.)&rarr; online y diagnostico</p>
+
+
+                        <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_301cambiarIP00.png">
+                        <p>Y puedo ver la MAC del autómata, la dirección IP y si la puedo cambiar la IP del autómata, primero debemos de borrar la ip asignada</p>
+                        <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_302cambiarIP01.png">
+
+                        <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_303cambiarIP-1.png">
+                        <p>CAMBIAR IP DEL AUTÓMATA</p>
+                        <p>Volvemos a actualizar los dispostivos accesibles y aparece la MAC del dipositivo que no tiene la IP</p>
+                        <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_304cambiarIP2.png">
+
+                        <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_305cambiarIP3.png">
+                        <h3>CAMBIAR NOMBRE DISPOSITIVO Y PARPADEO DESDE ACCESO ONLINE </h3>
+                        <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_306parpadeo-online.png">
+                        <h3>LOCALIZAR DISPOSITIVOS</h3>
+                        <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_307Localizar1.png">
+
+                        <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_308Localizar2.png">
+
+                        <img class="imagen1" alt="captura tia portal" src="imagenes/tia_teoria_309Localizar3.png">
+
+
+
+                    </section>
+
+
+
+                </details>
+
+
+
+                <!--  ------------------     otra práctica 4 ----------------------------- -->
+                <details class="detallescard">
+                    <summary class="sumario">
+                        <h2 class="puntero"> Guardar un programa</h2>
+
+                    </summary>
+
+
+                    <p>Al crear el proyecto le tenemos que dar el nombre del proyecto y la ruta donde le vamos a guardar, se creara una CARPETA con el nombre del proyecto y todos los archivos donde se almacenar&aacute; todo la informaci&oacute;n del proyecto.</p>
+                    <p>Una vez creado el programa, cuando quiera guardar modificaciones, click en proyecto y GUARDAR.</p>
+                    <p>Si quiero cambiar el nombre del proyecto, click GUARDAR COMO, y se creara una carpeta nueva que incluye a todos los archivos necesarios con la informaci&oacute;n del proyecto.</p>
+                    <p>Si quiero llevarlo a otro ordenador puedo hacerlo de distantas formas</p>
+                    <ul>
+                        <li>Llevar toda la carpeta.</li>
+                        <li>Llevar la carpeta comprimida con un compresor gen&eacute;rico.</li>
+                        <li>La MEJOR OPCI&Oacute;N Llevar la carpeta comprimida con la opci&oacute;n de archivar, creando un archivo comprimido, con extensi&oacute;n ZAP (versi&oacute;n del TIA PORTAL con el que se ha creado), ejemplo prueba.ZAP 16</li>
+                    </ul>
+                    <p>Abrir el archivo en otro ordenador</p>
+                    <ul>
+                        <li>Si he llevado la carpeta comprimida con un compresor gen&eacute;nico, desmpimir el archivo en la carpeta donde guardamos los proyectos. Y desde proyecto -&gt; abrir -&gt; examinar-&gt; busco la carpeta y click sobre el archivo con el logo del TIA PORTAL</li>
+                        <li>Si he llevado la carpeta sin comprimir, copiar la carpeta de nuestro proyecto en la carpeta donde guardamos los proyectos. Y desde proyecto -&gt; abrir -&gt; examinar-&gt; busco la carpeta y click sobre el archivo con el logo del TIA PORTAL</li>
+                        <li>Si tengo el archivo comprimido con TIA PORTAL, Desde el programa Proyecto -&gt; abrir-&gt; click en examinar, y busco mi archivo-&gt; lo selecciono y clik en abrir -&gt; busco la carpeta done quiero guarda el proyecto SELECCIONAR CARPETA, y se descomprime mi proyecto en esa carpeta.</li>
+                    </ul>
+
+
+                </details>
+
+
+
+
+                <!--      ------------------     otra práctica  --------------------------- -->
+
+
+                <details class="detallescard">
+                    <summary class="sumario">
+                        <h2 class="puntero">PLC Sim </h2>
+
+                    </summary>
+
+                    <br>
+                    <p>Eliminar la contraseña y </p>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_01.png">
+                    </div>
+                    <br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_02.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_03.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_04.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_05.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_06.png">
+                    </div><br>
+                    <p>Minimizamos el simulador y establecemos comunicación TIA portal con PLCSIM</p>
+                    <p>Si cerramos la comunicación y queremos volver a establecerla, click en cargar en dispositivo y seleccionar PLCSIM</p>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_07.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_08.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_09.png">
+                    </div><br>
+                    <p>Seleccionar arrancar módulo</p>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_10.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_11.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_12.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_13.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_14.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_15.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_16.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_17.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_18.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_19.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_20.png">
+                    </div><br>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="" title="plcSIM" src="imagenes/plcSIM_21.png">
+                    </div>
+                    <p></p>
+                    <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                </details>
+
+                <!--      ------------------     otra práctica  ----------------------------- -->
+
+
+                <details class="detallescard">
+                    <summary class="sumario">
+                        <h2 class="puntero">IO Factory</h2>
+
+                    </summary>
+                    <h3>PREPARACIÓN TIA PORTAL</h3>
+
+                    <p>Descargar la plantilla template de Factory IO para plc sim</p>
+                    <p>Abrimos TIA portal y cargamos el proyecto template</p>
+                    <p>Al cargar el proyecto template, inserta un autómata 1200, se crea un nuevo bloque, y en la primera linea del OB1 hace una llamada a un bloque, en ese bloque esta toda la programación para la comunicación con Factory IO.
+                        <br>Cambiamos el lenguaje de programacion de OB1 a KOP. (Boton derecho sobre ob1,propiedades y elegir kop)
+
+                    <p>Realizamos un programa "marcha paro de una cinta transportadora", que consiste en un pulsador<strong>marcha</strong> (pulsador NA conectado a I0.0) <strong>un pulsador paro</strong> (pulsador de paro NC conectado a I0,1) y una cinta transportadora con un motor controlado por la salida Q0.0</p>
+                    <p>Iniciamos simulación con PLC Sim</p>
+                    <p>ya tenemos preparado el TIA PORTAL</p>
+                    <h3>FACTORY IO</h3>
+                    <p>Abrimos FACTORY IO</p>
+                    <P>Vamos a crear una escena con una cinta transportadora, una caja, un cofre en el que colocamos un pulsador verde y otro rojo </P>
+                    <P>Los objetos necesarios se arrastran desde el menú de la derecha, y para colocarlos, nos colocamos sobre el objeto, click botón derecho y nos aparecen unas opciones, entre la que destaco que con la tecla v pulsada puedo desplazar el objeto verticalmente</P>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO01.png">
+                    </div>
+                    <h3>Conectar con TIA PORTAL</h3>
+
+                    <p>Una vez creada la escena, vamos a la pantalla ARCHIVO-> DRIVERS y seleccionamos PLC sim</p>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO02.png">
+                    </div>
+                    <p>Vemos el autómata en el medio,las entradas de mi estación a la izquierda y las salidas a la derecha</p>
+                    <p>El número de entradas y salidas las podemos modificar en configuarión</p>
+                    <p>ejemplo añadir 16 entradas digitales y 16 salidas digitales</p>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO03.png">
+                    </div>
+                    <p>Arrastramos las señales de nuestra instalación a lado de las entradas y salidas de nuestro autómata y pulsamos el botón conectar, si la conexión es correcta pasara el botón a estado desconectar y se activará el check verde</p>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO04.png">
+                    </div>
+                    <p> Volvemos al la pantalla principal, pulsamos en el triangulo play, y en TIA Portal podemos activar observación (gafitas)</p>
+                    <p>Vemos en funcionamiento la simulación de nuestra escena y en TIA PORTAL vemos la activación y desactivación de las entradas al pulsar sobre los pulsadores de Factory IO y el funcionamiento del programa.</p>
+                    <div class="div_imagen">
+                        <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/teoria_factoryIO05.png">
+                    </div>
+                    <a href="https://www.programacionmultidisciplinar.com/factory-io/manual-de-uso-en-espanol/">Manual IO Factory</a>
+                    <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                </details>
+
+                <!--      ------------------     otra práctica  -----------------------------
 
 
               <details class="detallescard"> <summary class="sumario">
@@ -499,7 +600,7 @@
 
             <!--  ------------------    FIN DEL ARTICULO ----------------------------- -->
 
-                    </article>
+            </article>
         </main>
 
         <footer>El fin de hombre es perseguir la
