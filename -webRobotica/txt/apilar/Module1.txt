@@ -1,0 +1,30 @@
+MODULE Module1
+    CONST robtarget inicio:=[[310.334591186,0,440.435935394],[0.258819045,0,-0.965925826,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10:=[[590.589058249,107.133669034,77.210444148],[0.015424305,0.090036277,-0.995802425,-0.005752415],[0,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_1:=[[590.589058249,107.133669034,87.210444148],[0.015424305,0.090036277,-0.995802425,-0.005752415],[0,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20_1:=[[590.589058249,-107.133669034,87.210444148],[0.015424305,0.090036277,-0.995802425,-0.005752415],[0,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+     CONST robtarget Target_20_2:=[[590.589058249,-107.133669034,107.210444148],[0.015424305,0.090036277,-0.995802425,-0.005752415],[0,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[590.589058249,-107.133669034,77.210444148],[0.015424305,0.090036277,-0.995802425,-0.005752415],[0,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    PROC Path_10()
+        MoveJ inicio,v100,z100,ventosa\WObj:=Workobject_1;
+ 
+        MoveJ Target_10_1,v100,z0,ventosa\WObj:=Workobject_1;
+       WaitTime 1;
+        IF Di_0=1 THEN
+             MoveJDO Target_10,v100,z0,ventosa\WObj:=Workobject_1, Do_0,1;
+        MoveJ Target_10_1,v100,z0,ventosa\WObj:=Workobject_1;
+    !Set Do_0;
+        MoveL Target_20_1,v100,z0,ventosa\WObj:=Workobject_1;
+      
+      
+          MoveJDO Target_20_2,v500,z0,ventosa\WObj:=Workobject_1, Do_0,0;
+        MoveJ inicio,v500,z100,ventosa\WObj:=Workobject_1;
+        ELSE
+          Reset Do_0;
+          MoveJ inicio,v500,z100,ventosa\WObj:=Workobject_1;
+        ENDIF
+    ENDPROC
+    PROC main()
+        Path_10;
+    ENDPROC
+ENDMODULE

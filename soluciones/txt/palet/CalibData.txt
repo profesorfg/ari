@@ -1,4 +1,4 @@
 MODULE CalibData
-    PERS tooldata ventosa:=[TRUE,[[160,0,30],[0.707106781,0,0.707106781,0]],[1,[0,0,1],[1,0,0,0],0,0,0]];
-    TASK PERS wobjdata Workobject_1:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    PERS tooldata traspalet:=[TRUE,[[31.79,0,229.64],[0.945519,0,0.325568,0]],[1,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS wobjdata Workobject_1:=[FALSE,TRUE,"",[[100,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
 ENDMODULE

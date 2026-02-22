@@ -1,69 +1,90 @@
-Vamos a convertir ese “pseudo‑login” en algo realmente seguro. Lo que tienes ahora solo oculta contenido por obscuridad, no por seguridad. Cualquiera puede ver el código, adivinar archivos o saltarse la “contraseña”.
-La clave es mover la validación al servidor, porque todo lo que ocurre en el navegador puede ser manipulado.
-
-🔐 Opción 1: Protección REAL con .htaccess (la más simple y segura si usas Apache)
-Si tu hosting usa Apache, puedes proteger la carpeta soluciones sin escribir una sola línea de JavaScript.
-1. Crea un archivo .htaccess dentro de /soluciones/
-AuthType Basic
-AuthName "Zona protegida"
-AuthUserFile /ruta/absoluta/.htpasswd
-Require valid-user
-2. Crea el archivo .htpasswd
-Puedes generarlo con:
-    • https://www.htaccesstools.com/htpasswd-generator/ (htaccesstools.com in Bing) 
-    • o desde terminal: 
-htpasswd -c .htpasswd usuario
-Esto sí cifra la contraseña.
-Ventajas
-    • Muy seguro 
-    • No necesitas programar nada 
-    • No se puede saltar desde el navegador 
-
-🔐 Opción 2: Login con PHP (seguro y flexible)
-Tu formulario enviaría la contraseña al servidor y este decidiría si dejarte pasar.
-HTML
-<form method="POST" action="login.php">
-    <input type="password" name="clave">
-    <input type="submit" value="Acceder">
-</form>
-login.php
-<?php
-$clave_correcta = "1234"; // Idealmente almacenada cifrada
-
-if ($_POST["clave"] === $clave_correcta) {
-    header("Location: soluciones/pagina.html");
-    exit;
-} else {
-    echo "Contraseña incorrecta";
-}
-?>
-Mejoras recomendadas
-    • Guardar la contraseña cifrada con password_hash() 
-    • Usar sesiones para evitar que el usuario acceda directamente a las páginas 
-
-🔐 Opción 3: Login con sesiones (más profesional)
-login.php
-<?php
-session_start();
-
-$clave_correcta = "1234";
-
-if ($_POST["clave"] === $clave_correcta) {
-    $_SESSION["autenticado"] = true;
-    header("Location: soluciones/pagina.html");
-    exit;
-} else {
-    echo "Contraseña incorrecta";
-}
-?>
-En cada página protegida (soluciones/pagina.html → cámbiala a .php)
-<?php
-session_start();
-if (!isset($_SESSION["autenticado"])) {
-    header("Location: ../index.html");
-    exit;
-}
-?>
-
-¿Cuál opción te interesa más?
-Puedo prepararte el código completo, adaptarlo a tu estructura de carpetas o incluso ayudarte a migrar tu sitio para que quede bien protegido.
+MODULE Module1
+    CONST robtarget Target_05:=[[489.122888793,200.000004715,51.710166889],[0.000000028,0.707106418,-0.000000043,0.707107144],[0,0,1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10:=[[559.122905088,199.99999557,51.710475918],[0.000000019,0.707106781,-0.000000019,0.707106781],[0,0,1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[559.122908398,200.000001062,101.710134289],[0.000000021,0.707106367,0.000000517,0.707107195],[0,0,1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[559.122903312,-10.0000012,101.709931239],[0.000000007,0.707106369,0.000000377,0.707107193],[-1,-1,2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40:=[[559.122925877,-9.999998556,41.709685469],[0.000000001,0.707106335,0.000000421,0.707107227],[-1,-1,2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_50:=[[459.122816742,-9.999987978,41.709221174],[-0.000000013,0.707106336,0.000000506,0.707107226],[-1,-1,1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget inicio:=[[547.332902798,0,451.649052414],[0.190808996,0,0.981627183,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30_2:=[[560,-10,171],[0.000000007,0.707106369,0.000000377,0.707107193],[-1,-1,2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+      CONST robtarget Target_30_3:=[[560,-10,240],[0.000000007,0.707106369,0.000000377,0.707107193],[-1,-1,2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40_2:=[[560,-10,111],[0.000000001,0.707106335,0.000000421,0.707107227],[-1,-1,2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+     CONST robtarget Target_40_3:=[[560,-10,170],[0.000000001,0.707106335,0.000000421,0.707107227],[-1,-1,2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_50_2:=[[460,-10,111],[-0.000000013,0.707106336,0.000000506,0.707107226],[-1,-1,2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+     CONST robtarget Target_50_3:=[[460,-10,170],[-0.000000013,0.707106336,0.000000506,0.707107226],[-1,-1,2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    VAR num cajas;
+    !***********************************************************
+    !
+  
+    !***********************************************************
+    PROC main()
+          TPErase;
+        RESET DO_0;
+        TPWrite "Escribre entre 1 y 3, ";
+      TPReadNum cajas, "el número de yogures que quieres apilar";
+      TPErase;
+       
+        TPErase;
+      IF cajas<1 OR cajas>3 THEN
+             TPWrite "";
+          TPWrite "EL NÚMERO INTRODUCIDO NO ESTA ENTRE 1 Y 3 VUELVE A INTENTARLO";
+          WaitTime 3;
+          TPErase;
+      ELSE
+           TPWrite "VAS A COLOCAR ";
+          TPWrite ""\Num:=cajas;
+            TPWrite "YOGURES ";
+        WaitTime 3;
+          Set DO_0;
+          MoveJ inicio,v200,z100,traspalet\WObj:=wobj0;
+       TEST cajas
+       CASE 1:
+           
+            Path_10;
+            MoveJ inicio,v200,z100,traspalet\WObj:=wobj0;
+       CASE 2:
+          
+            Path_10;
+            Path_20;
+            MoveJ inicio,v200,z100,traspalet\WObj:=wobj0;
+      CASE 3:
+            Path_10;
+            Path_20;
+             Path_30;
+             MoveJ inicio,v200,z100,traspalet\WObj:=wobj0;
+       ENDTEST
+      ENDIF
+    ENDPROC
+    PROC Path_10()
+        MoveJ inicio,v200,z100,traspalet\WObj:=wobj0;
+        MoveJ Target_05,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveL Target_10,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveL Target_20,v200,z0,traspalet\WObj:=Workobject_1;
+        MoveL Target_30,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveL Target_40,v200,z0,traspalet\WObj:=Workobject_1;
+        MoveL Target_50,v200,z100,traspalet\WObj:=Workobject_1;
+      
+       
+    ENDPROC
+      PROC Path_20()
+      
+       
+        MoveL Target_05,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveL Target_10,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveL Target_20,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveJ Target_30_2,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveL Target_40_2,v200,z0,traspalet\WObj:=Workobject_1;
+        MoveL Target_50_2,v200,z100,traspalet\WObj:=Workobject_1;
+       
+    ENDPROC
+      PROC Path_30()
+       
+        MoveL Target_05,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveL Target_10,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveL Target_20,v200,z100,traspalet\WObj:=Workobject_1;
+        MoveJ Target_30_3,v200,z100,traspalet\WObj:=Workobject_1; !COLOCADO
+        MoveL Target_40_3,v200,z0,traspalet\WObj:=Workobject_1;  !BAJO
+        MoveL Target_50_3,v200,z100,traspalet\WObj:=Workobject_1; ! ME RETIRO
+       
+    ENDPROC
+ENDMODULE

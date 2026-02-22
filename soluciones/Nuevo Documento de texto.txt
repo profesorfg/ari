@@ -1,0 +1,317 @@
+MODULE Module1
+  
+    CONST robtarget INCIO:=[[547.330736772,0,451.647300748],[0.190809274,0,0.981627129,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget caja1:=[[500.000005126,200.000011571,229.999983554],[0.000000011,0.000000003,1,0.000000012],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget caja2:=[[500.000004241,100.000005775,229.999972217],[0.000000005,-0.000000006,1,-0.000000001],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget cajadesplazada:=[[500.000000582,-10.000000181,229.999974246],[-0.000000003,0,1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+!ENTRADAS
+!DI_0   SENSOR EN CAJA 1  caja situada en 500,200,200 
+!DI_1   SENSOR EN CAJA 2  caja situada en 500,100,200
+!DI_2   STOP/RUN.   STOP a 0,  RUN a 1
+!DI_3   no utilizada
+!DI_4   PULSADOR TRABAJO TERMINADO
+
+!SALIDAS
+!DO_0  BALIZA
+!DO_1 VENTOSA
+!DO_0  luz verde DO_0 a 1,  luz roja, DO_0 a 0
+
+    PROC main()
+          
+        TPErase;
+        SET DO_0;
+        TPErase;
+          TPWrite "Coloca una pieza";
+          WAITTIME 2;
+          IF do_0= 0 OR do_0=0 then
+           TPWrite "SIN PIEZA EN LA MESA";
+           WAITTIME 1;
+          endif
+     
+   
+   
+        IF DI_0=1 THEN
+            RESET DO_0;
+            MoveL INCIO,v1000,z100,MyTool\WObj:=wobj0;
+              MoveLDO caja1,v1000,z0,MyTool\WObj:=wobj0,DO_1,1;
+               MoveL INCIO,v1000,z100,MyTool\WObj:=wobj0;
+                MoveL cajadesplazada,v500,z100,MyTool\WObj:=Workobject_1;
+                WaitTime 2;
+                Reset DO_1;
+                 MoveL INCIO,v1000,z100,MyTool\WObj:=wobj0;
+                  TPERASE;
+       TPWrite "Pulsa TERMINAR proceso";
+       WaitDI DI_4,1;
+                
+        ENDIF
+        IF DI_1=1 THEN
+            RESET DO_0;
+            MoveL INCIO,v1000,z100,MyTool\WObj:=wobj0;
+              MoveLDO caja2,v1000,z0,MyTool\WObj:=wobj0,DO_1,1;
+               MoveL INCIO,v1000,z100,MyTool\WObj:=wobj0;
+                MoveL cajadesplazada,v500,z100,MyTool\WObj:=Workobject_1;
+                WaitTime 2;
+                Reset DO_1;
+                 MoveL INCIO,v1000,z100,MyTool\WObj:=wobj0;
+                  TPERASE;
+       TPWrite "Pulsa TERMINAR proceso";
+       WaitDI DI_4,1;
+                
+        ENDIF
+        
+         
+           
+       
+         
+     
+
+    ENDPROC
+
+ENDMODULE
+
+
+
+
+
+
+
+
+ ENTRADAS
+DI_0   SENSOR EN CAJA 1  caja situada en 500,200,231 
+DI_1   SENSOR EN CAJA 2  caja situada en 500,100,231
+DI_2   STOP/RUN.   STOP a 0,  RUN a 1
+DI_3   no utilizada
+DI_4   PULSADOR TRABAJO TERMINADO
+
+SALIDAS
+DO_0  BALIZA
+DO_1 VENTOSA
+DO_0  luz verde DO_0 a 1,  luz roja, DO_0 a 0
+
+
+
+
+la flexpendant aparece el mensaje 
+cuantas cajas quieres colocar entre 1y 3
+si el número no es correcto
+borra la pantalla
+aparece el mensaje durante 3 segundos
+numero incorrecto
+y vuelve a preguntarlo 
+
+en la posición de inicio el robot esta a la espera se enciende la luz verde
+con la luz verde puedo colocar una caja manualmente ( en el programa pulsar sacar pieza)
+saco una pieza1
+
+al detectar la pieza el sensor, el robot recoge la caja y la coloca en y =-10
+así hasta apilar el numero de cajas
+Aparece un mensaje en la flexpendant 
+
+
+tp erase
+tp read cuantas caja quieres
+si caja es mayor que 0 y menor que 3
+while numero de cajas
+inicializo altura 
+inicio
+dO luz verde
+wait di pieza colocada
+voy a  por la caja y la cojo
+inicio
+desplazada offs
+inicio
+fin while
+tp write pulsa terminar proceso
+wait di pulsar terminar proceso
+
+else
+tp erase
+tp write el numero no esta entre 1 y 3
+wait time 3
+fin de if
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+ENTRADAS
+DI_0   SENSOR EN CAJA 1  caja situada en 500,200,200 
+DI_1   SENSOR EN CAJA 2  caja situada en 500,100,200
+DI_2   STOP/RUN.   STOP a 0,  RUN a 1
+DI_3   no utilizada
+DI_4   PULSADOR EMPEZAR PROCESO
+
+SALIDAS
+DO_0  BALIZA
+DO_1 VENTOSA
+DO_0  luz verde DO_0 a 1,  luz roja, DO_0 a 0
+
+en la posición de inicio el robot esta a la espera 
+Aparece el mensaje en la flexpendant
+PULSA STOP E INTRODUCE UNA PIEZA
+al pulsar stop se enciende la luz verde y colocamos piezas
+al pulsar se borra la pantalla y se enciende la luz DO_0 a 1 verde
+con la luz verde puedo colocar una caja manualmente no hace falta programación ( en el programa pulsar sacar pieza1 o sacar pieza2)
+
+los sensores detectar la posición de la pieza la luz se apaga DO_0 a 0(roja) se pone en marcha el robot  y la coloca la caja1 o 2   en y=-10
+vuelve a inicio 
+en la flexpendant aparece el mensaje
+pulsa final de proceso
+y repetimos el proceso
+
+
+tpwrite pulsa terminar proceso
+waitdo di terminar proceso
+tperasa
+dO enciende luz verde
+if di caja 1 
+path 10
+if di caja 2
+path 20
+
+path *
+inicio
+caja * y activa ventosa
+inicio
+deplaza
+espera
+desactiva la ventosa
+inicio
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+Desde la flexpendant  aparece la pantalla pregunta
+INTRODUCE EL NÚMERO DE CAJAS A APILAR,  entre 1 y 3 
+
+si el numero introducido no esta en ese rango borra la pantalla y aparece el mensaje,
+SELECCION INCORRECTA, 
+durante 3 segundos, borra la pantalla y vuelve a la pantalla de pregunta.
+
+si el numero esta en 1 y 3, el robot comprueba si hay pieza en la mesa, si no hay ninguna pieza, aparece EL mensaje en la flexpendant de proceso para introducir caja
+
+Pon el interruptor  en STOP
+coloca  cajas en la mesa
+y vuelve a poner el interruptor un RUN
+
+cuando hay cajas y el interruptor esta en run, el robot se dirige a la posición donde esta la caja, activa la ventosa DO_1 a 1, la lleva a la posición 500,-10,200, vuelve al inicio y se hay caja en la mesa repite el proceso y la apila sobre la anterior y las sigue apilando hasta que el número de cajas apiladas coincida con el numero introducido
+
+si se acaban las cajas sobre la mesas se  vuelve indicar el proceso para introducir caja.
+
+terminado el proceso aparece el mensaje en la flexpendant 
+pulsa el botón trabajo concluido 
+
+y cuando se pulse se borra la pantalla 
+y se vuelve a repetir el proceso
+
+
+
+ENTRADAS
+DI_0   SENSOR EN CAJA 1  caja situada en 500,200,200 
+DI_1   SENSOR EN CAJA 2  caja situada en 500,100,200
+DI_2   STOP/RUN.   STOP a 0,  RUN a 1
+DI_3   no utilizada
+DI_4   PULSADOR TRABAJO TERMINADO
+
+SALIDAS
+DO_0  BALIZA
+DO_1 VENTOSA
+DO_0  luz verde DO_0 a 1,  luz roja, DO_0 a 0
+
+
+
+
+
+.
+
+
+NOTA
+En el apilamiento se debe de utilizar la instrucción move_offs
+La caja tiene una dimensión de 50x40 y altura 30
+Un operario puede colocar una o dos piezas sobre la mesa cuando la luz esta en verde ( en la simulación colocamos la pieza pulsado sacar_caja1 y/o sacar:_caja2)
+
+
+
+yogur 
+base 55mm
+altura 70
+tapa 60*80
+altura 2mm
+
+mesa 400*800*200 punto central. desplazada 400 el centro del mesa 400.0.200
+
+ventosa
+cilindro diámetro 40 altura 50
+punta cono diámetro 40 altura 160 girado 90 respecto de y desplazado z=30
+
+
+
+
+mesa 200*600*200 posición 400 300 0 comportamiento cinematica controlado por linea mover 2 dirección 0.-40.0 distancia
+40 duración 3s referencia global
+
+caja 50*40*30 comportamiento anclado  punto de esquina -25.-20.0
+source caja  position 500. 200. 200 transient activado physic behavior Dynamic
+
+
+
+
+    CONST robtarget Target_10:=[[90,350,230],[0,0,1,0],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_50:=[[90,136.793,230],[0,0,1,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+
+
+
+
+
+App030311112$
+
+encoder cuasiabsoluto necesita un movimiento para saber donde esta
+encoder absoluto sabe en todo momento donde esta.
+
+
+movimiento manual hay que decir si tiene carga, y el movimiento lo hace según la fuerza apliacda y el peso de la carga
+ si quitas la carga se mueve
+
+omron Jorge rueda
+ 
+el robot de omron se llama moma es un AMR es un robot móvil que puede evitar obstáculos en tiempo real, recalculando la trayectoria
+los AGV son robot móvil que no recalculan la trayectoria.
+
+OMRVIPER conectarse IP admin admin
+comunicación MQTT mejor protocolo
+TELNET mala
+SQL
+
+SOFWARE DEL ORDENADOR: Mobile planner, no tiene simulador y se descarga después de comunicarse con el robot AMR
+
+Crear un mapa: el robot automáticamente crea un mapa
+
+
+
+
+
+para el moviento del robot en el icono inferior derecha el primero 4 flechas unidireciones y los orientadas en la derecha para salir en la flecha superior "volver"
+
+lógica ->set
+información > display
+Administrador -> variables
+subrutinas lógica subflow  crearla en el + se borra desde el start de la subrutina
+pause  se para hasta que vuelva a dar play
+stop  para y comienza el programa.
+administrador stop watch te calcula el tiempo entre dos nodos
+move movimiento incremental
+logica->waitfor esperar a que una entrada este a 1
+modificar estado de entradas -> desde simulación en i/o se fuerzan.
+Gateway es la instrucción case
+manual-decisión dialogo hombre maquina a través de menús que se escogen con la teclas +-
+touch stop ir hasta que toque un objeto que lo detectara por sobrecorriente.
+
+contraseña de seguridad por defecto 0000 0000 ósea 8 ceros

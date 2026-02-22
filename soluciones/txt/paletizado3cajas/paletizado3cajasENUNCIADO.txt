@@ -1,0 +1,49 @@
+
+Desde la flexpendant  aparece la pantalla pregunta
+INTRODUCE EL NÚMERO DE CAJAS A APILAR,  entre 1 y 3 
+
+si el numero introducido no esta en ese rango borra la pantalla y aparece el mensaje,
+SELECCION INCORRECTA, 
+durante 3 segundos, borra la pantalla y vuelve a la pantalla de pregunta.
+
+si el numero esta en 1 y 3, el robot comprueba si hay pieza en la mesa, si no hay ninguna pieza, aparece EL mensaje en la flexpendant de proceso para introducir caja
+
+Pon el interruptor  en STOP
+coloca  cajas en la mesa
+y vuelve a poner el interruptor un RUN
+
+cuando hay cajas y el interruptor esta en run, el robot se dirige a la posición donde esta la caja, activa la ventosa DO_1 a 1, la lleva a la posición 500,-10,200, vuelve al inicio y se hay caja en la mesa repite el proceso y la apila sobre la anterior y las sigue apilando hasta que el número de cajas apiladas coincida con el numero introducido
+
+si se acaban las cajas sobre la mesas se  vuelve indicar el proceso para introducir caja.
+
+terminado el proceso aparece el mensaje en la flexpendant 
+pulsa el botón trabajo concluido 
+
+y cuando se pulse se borra la pantalla 
+y se vuelve a repetir el proceso
+
+
+
+ENTRADAS
+DI_0   SENSOR EN CAJA 1  caja situada en 500,200,200 
+DI_1   SENSOR EN CAJA 2  caja situada en 500,100,200
+DI_2   STOP/RUN.   STOP a 0,  RUN a 1
+DI_3   no utilizada
+DI_4   PULSADOR TRABAJO TERMINADO
+
+SALIDAS
+DO_0  BALIZA
+DO_1 VENTOSA
+DO_0  luz verde DO_0 a 1,  luz roja, DO_0 a 0
+
+
+
+
+
+.
+
+
+NOTA
+En el apilamiento se debe de utilizar la instrucción move_offs
+La caja tiene una dimensión de 50x40 y altura 30
+Un operario puede colocar una o dos piezas sobre la mesa cuando la luz esta en verde ( en la simulación colocamos la pieza pulsado sacar_caja1 y/o sacar:_caja2)
