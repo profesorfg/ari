@@ -579,7 +579,139 @@
                     <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
                 </details>
 
-                <!--      ------------------     otra práctica  -----------------------------
+                <!--      ------------------     otra práctica  ----------------------------->
+
+
+
+
+
+
+
+                <details class="detallescard">
+                    <summary class="sumario">
+                        <h2 class="puntero">Cambio de PLC</h2>
+
+                    </summary>
+                  
+
+
+ <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/tia_cambiar_automata1.png">
+
+ <img class="imagen1" alt="Factory IO" title="Factory IO" src="imagenes/tia_cambiar_automata2.png">
+
+
+<p>Para pasar un proyecto de un S7‑1200 a otro S7‑1200 dentro de TIA Portal, lo esencial es cambiar la CPU en la configuración de hardware y dejar que el proyecto se adapte automáticamente. El proceso es sencillo, pero hay varios puntos importantes para evitar errores de compatibilidad.</p>
+<h3>Pasos para cambiar la CPU S7‑1200 por otra S7‑1200</h3>
+                    
+<p>Abre el proyecto en TIA Portal.</p>
+                    <p>En el árbol del proyecto, ve a:</p><p>Dispositivos y redes → [Tu PLC] → Configuración del dispositivo.</p>
+                    
+                    <p>En la parte derecha, busca la opción:</p>
+                    <p>“Reemplazar dispositivo” o “Cambiar dispositivo”.
+</p><p>Elige la nueva CPU S7‑1200 que vas a usar</p><p>(por ejemplo, cambiar de una 1212C a una 1214C, o de una versión V4.2 a V4.5).</p><p>TIA Portal te preguntará si quieres adaptar automáticamente el programa.
+</p><p>Acepta para que actualice bloques, direcciones y configuraciones.</p>
+                    <h3>Revisa:</h3>
+                    <p>Direcciones de entradas/salidas físicas (pueden cambiar según el modelo).</p><p>Módulos adicionales si los hay.
+</p><p>Firmware: la CPU nueva debe tener un firmware compatible con la versión del proyecto.</p><p>Compila el proyecto y descarga a la nueva CPU.</p>
+                    
+  <h3>Cosas importantes a tener en cuenta</h3>                  
+ <p>Si cambias a una CPU más pequeña, puede que falte memoria o no soporte algunas funciones.</p>
+ <p>Si cambias a una CPU más grande, normalmente no hay problema.</p>
+ <p>Si la CPU nueva tiene otro firmware, TIA puede pedirte actualizar el proyecto o la CPU.</p>
+ <p>Las direcciones de E/S integradas pueden variar entre modelos (1211, 1212, 1214…).</p>
+                    <h3>Verificación final</h3>
+ <p>Después de reemplazar la CPU:</p>
+ <p>Compila todo el proyecto.</p>
+
+ <p>Abre “Dispositivos y redes” y revisa que no haya módulos en rojo.</p>
+ <p>Entra en “Monitorización online” para comprobar que las variables funcionan igual que antes.</p>
+
+
+
+ 
+
+
+    <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                </details>
+
+                
+                  <!--      ------------------     otra práctica  ---------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <details class="detallescard"> <summary class="sumario">
+                 <h2 class="puntero">Determinar un PLC comunicandose con él </h2>
+              
+      </summary>
+                   
+              
+                        <p>Disponemos de un autómata cableado en red, no podemor comunicar con el aunque reste en otra red "IP", y poedemos ver la IP del PLC</p>
+                  <p>Si estamos dentro de la misma red "IP" ademas podemos obtener información de sus caracteristicas y firmware</p>
+                        <div class="div_imagen">
+                            <img class="imagen1" alt="Determinar PLC" title="Determinar PLC" src="imagenes/online_access01.png"><br><br>
+                               <img class="imagen1" alt="Determinar PLC" title="Determinar PLC" src="imagenes/online_access02.png"><br><br>
+                               <img class="imagen1" alt="Determinar PLC" title="Determinar PLC" src="imagenes/online_access03.png"><br><br>
+                               <img class="imagen1" alt="Determinar PLC" title="Determinar PLC" src="imagenes/online_access04.png"><br>
+               
+                        </div>
+                       
+                            <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                    </details>
+            
+
+                
+                <!--      ------------------     otra práctica  ---------------------------->
+
+
+              <details class="detallescard"> <summary class="sumario">
+                 <h2 class="puntero">GRAFCET</h2>
+              
+      </summary>
+                   
+              
+                      <h3>Disponemos de un siguiente grafcet</h3>
+                         <img class="imagen1" alt="GRAFCET" title="GRAFCET" src="imagenes/GRAFCET.png"><br><br>
+                     <h3>OB100 de inicio, desactivamos todas las etapas y activamos la etapa inicial</h3>
+                         <img class="imagen1" alt="GRAFCETC" title="GRAFCET" src="imagenes/GRAFCETstratup.png"><br><br>
+                       <h3>FC Secuencial</h3>
+                         <img class="imagen1" alt="GRAFCETC" title="GRAFCET" src="imagenes/GRAFCETsecuencial.png"><br><br>
+                         <h3>FC acciones</h3>
+                         <img class="imagen1" alt="GRAFCETC" title="GRAFCET" src="imagenes/GRAFCETacciones.png"><br><br>
+                           <h3>OBmain. hacemos las llamadas a los FC secuencial y de acciones</h3>
+                         <img class="imagen1" alt="GRAFCETC" title="GRAFCET" src="imagenes/GRAFCETmain.png"><br><br>
+                       
+                            <input class="boton" type="button" value="cerrar todas las cuestiones" onClick="location.reload();">
+                    </details>
+            
+
+                
+                <!--      ------------------     otra práctica  ----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
               <details class="detallescard"> <summary class="sumario">
