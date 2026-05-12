@@ -1,4 +1,13 @@
- * {	/*elinina todos los margenes a todo alinea todos los li al borde*/
+/*titulos*/
+/* ---    ORGANIZACION: CONTENEDOR, MAIN ASIDE LATERAL FOOTER--ASIDE SECTION      -------*/
+/* para paginas de imagenes o videos*/
+/*   ----------------------  particularidades   colores flex ancho--------------------*/
+/* ----------------------------- listas-  ul------------*/
+/* ----------------------- imagenes  ------------------------------------------475*/
+/* ------------------  details----------------------------*/
+/*   MEDIA SCREEN  --------------------------para el movil -----------------------  1195*/  
+
+* {	/*elinina todos los margenes a todo alinea todos los li al borde*/
 			margin:0px;
             padding:0px;
 			}	
@@ -500,6 +509,10 @@ width: min(1500px, 100%);
     max-height: 230px;
 }
 
+.max-height_50px{
+    max-height: 50px;
+}
+
 
 .overflow_auto{
    overflow:auto; 
@@ -570,7 +583,7 @@ width: min(1500px, 100%);
  
 
 
-/* ------------------  ver mas  ----------------------------*/
+/* ------------------  ver mas  ------------------utilizado en logo-practicas----------*/
   .flex_wrap_vermas {
 
     display: flex;
